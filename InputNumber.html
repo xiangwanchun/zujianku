@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)http://ant.design/components/input-number/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="一个 UI 设计语言">
+    <title>InputNumber 数字输入框 - Ant Design</title>
+    <link rel="icon" href="https://t.alipayobjects.com/images/T1QUBfXo4fXXXXXXXX.png" type="image/x-icon">
+    <link rel="shortcut icon" href="https://t.alipayobjects.com/images/T1QUBfXo4fXXXXXXXX.png" type="image/x-icon">
+    
+    <link rel="stylesheet" href="./dist/demo.css">
+    <link rel="stylesheet" href="./lib/style.css">
+    <link rel="stylesheet" href="./lib/tomorrow.css">
+    <!--[if IE 8]>
+    <script src="https://t.alipayobjects.com/images/rmsweb/T1q8JiXftaXXXXXXXX.js"></script>
+    <![endif]-->
+   
+    <script src="./lib/script.js"></script>
+    <script>
+      window.antdVersion = {
+        latest: '0.11.2'
+      };
+    </script>
+    <script src="./dist/demo.js"></script>
+    <script src="./lib/T1DrxhXe0mXXXXXXXX.js"></script>
+    
+  <style>#instantclick{position:fixed;top:0;left:0;width:100%;pointer-events:none;z-index:2147483647;transition:opacity .25s .1s}.instantclick-bar{background:#29d;width:100%;margin-left:-100%;height:2px;transition:all .25s;}</style></head>
+  <body>
+
+    <div class="main-wrapper">
+      
+
+ 
+
+
+
+<section class="main-container">
+  <article class="markdown">
+    <h1>
+      InputNumber 数字输入框
+    </h1>
+    <p>通过鼠标或键盘，输入范围内的数值。</p>
+<h2 id="何时使用">何时使用<a href="#何时使用" class="anchor">#</a> </h2><p>当需要获取标准数值时。</p>
+
+
+
+  </article>
+<h2 class="component-demos">
+  代码演示
+  <i class="anticon anticon-appstore icon-all" title="展开全部代码"></i>
+</h2>
+<div class="code-boxes">
+  <div class="code-boxes-col-2-1"><div class="code-box" id="number-demo-basic">
+  <div class="code-box-demo">
+    <div id="components-input-number-demo-basic"><div class="ant-input-number" data-reactid=".1e"><div class="ant-input-number-handler-wrap" data-reactid=".1e.0"><a unselectable="unselectable" class="ant-input-number-handler ant-input-number-handler-up " data-reactid=".1e.0.0"><span unselectable="unselectable" class="ant-input-number-handler-up-inner" data-reactid=".1e.0.0.0"></span></a><a unselectable="unselectable" class="ant-input-number-handler ant-input-number-handler-down " data-reactid=".1e.0.1"><span unselectable="unselectable" class="ant-input-number-handler-down-inner" data-reactid=".1e.0.1.0"></span></a></div><div class="ant-input-number-input-wrap" data-reactid=".1e.1"><input class="ant-input-number-input" autocomplete="off" max="10" min="1" value="3" data-reactid=".1e.1.0"></div></div></div>
+    <script>mountNode = document.getElementById('components-input-number-demo-basic');</script>
+    <script>(function(){'use strict';
+
+var _antd = require('antd');
+
+function onChange(value) {
+  console.log('changed', value);
+}
+
+ReactDOM.render(React.createElement(_antd.InputNumber, { min: 1, max: 10, defaultValue: 3, onChange: onChange }), mountNode);})()</script>
+  </div>
+  <div class="code-box-meta markdown">
+    <div class="code-box-title">
+      <a href="http://ant.design/components/input-number/#number-demo-basic">基本</a>
+    </div>
+    <p>数字输入框</p>
+    <span class="collapse anticon anticon-circle-o-right" unselectable="none" style="-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;"></span>
+  </div>
+<div class="highlight"><pre><code class="javascript"><span class="hljs-keyword">import</span> { InputNumber } <span class="hljs-keyword">from</span> <span class="hljs-string">'antd'</span>;
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">onChange</span>(<span class="hljs-params">value</span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'changed'</span>, value);
+}
+
+ReactDOM.render(
+<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">InputNumber</span> <span class="hljs-attribute">min</span>=<span class="hljs-value">{1}</span> <span class="hljs-attribute">max</span>=<span class="hljs-value">{10}</span> <span class="hljs-attribute">defaultValue</span>=<span class="hljs-value">{3}</span> <span class="hljs-attribute">onChange</span>=<span class="hljs-value">{onChange}</span> /&gt;</span>
+, mountNode);</span></code></pre></div></div><div class="code-box" id="number-demo-disabled">
+  <div class="code-box-demo">
+    <div id="components-input-number-demo-disabled"><div data-reactid=".1f"><div class="ant-input-number ant-input-number-disabled" data-reactid=".1f.0"><div class="ant-input-number-handler-wrap" data-reactid=".1f.0.0"><a unselectable="unselectable" class="ant-input-number-handler ant-input-number-handler-up " data-reactid=".1f.0.0.0"><span unselectable="unselectable" class="ant-input-number-handler-up-inner" data-reactid=".1f.0.0.0.0"></span></a><a unselectable="unselectable" class="ant-input-number-handler ant-input-number-handler-down " data-reactid=".1f.0.0.1"><span unselectable="unselectable" class="ant-input-number-handler-down-inner" data-reactid=".1f.0.0.1.0"></span></a></div><div class="ant-input-number-input-wrap" data-reactid=".1f.0.1"><input class="ant-input-number-input" autocomplete="off" disabled="" max="10" min="1" value="3" data-reactid=".1f.0.1.0"></div></div><div style="margin-top:20px;" data-reactid=".1f.1"><button type="button" class="ant-btn ant-btn-primary" data-reactid=".1f.1.0"><span data-reactid=".1f.1.0.0">Toggle disabled</span></button></div></div></div>
+    <script>mountNode = document.getElementById('components-input-number-demo-disabled');</script>
+    <script>(function(){"use strict";
+
+var _antd = require("antd");
+
+var Test = React.createClass({
+  displayName: "Test",
+  getInitialState: function getInitialState() {
+    return {
+      disabled: true
+    };
+  },
+  toggle: function toggle() {
+    this.setState({
+      disabled: !this.state.disabled
+    });
+  },
+  render: function render() {
+    return React.createElement(
+      "div",
+      null,
+      React.createElement(_antd.InputNumber, { min: 1, max: 10, disabled: this.state.disabled, defaultValue: 3 }),
+      React.createElement(
+        "div",
+        { style: { marginTop: 20 } },
+        React.createElement(
+          _antd.Button,
+          { onClick: this.toggle, type: "primary" },
+          "Toggle disabled"
+        )
+      )
+    );
+  }
+});
+
+ReactDOM.render(React.createElement(Test, null), mountNode);})()</script>
+  </div>
+  <div class="code-box-meta markdown">
+    <div class="code-box-title">
+      <a href="http://ant.design/components/input-number/#number-demo-disabled">不可用</a>
+    </div>
+    <p>点击按钮切换可用状态。</p>
+    <span class="collapse anticon anticon-circle-o-right" unselectable="none" style="-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;"></span>
+  </div>
+<div class="highlight"><pre><code class="javascript"><span class="hljs-keyword">import</span> { InputNumber, Button } <span class="hljs-keyword">from</span> <span class="hljs-string">'antd'</span>;
+
+<span class="hljs-keyword">const</span> Test = React.createClass({
+  getInitialState() {
+    <span class="hljs-keyword">return</span> {
+      disabled: <span class="hljs-literal">true</span>
+    };
+  },
+  toggle() {
+    <span class="hljs-keyword">this</span>.setState({
+      disabled: !<span class="hljs-keyword">this</span>.state.disabled
+    });
+  },
+  render() {
+    <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">InputNumber</span> <span class="hljs-attribute">min</span>=<span class="hljs-value">{1}</span> <span class="hljs-attribute">max</span>=<span class="hljs-value">{10}</span> <span class="hljs-attribute">disabled</span>=<span class="hljs-value">{this.state.disabled}</span> <span class="hljs-attribute">defaultValue</span>=<span class="hljs-value">{3}</span> /&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">{{marginTop:</span> <span class="hljs-attribute">20</span>}}&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Button</span> <span class="hljs-attribute">onClick</span>=<span class="hljs-value">{this.toggle}</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"primary"</span>&gt;</span>Toggle disabled<span class="hljs-tag">&lt;/<span class="hljs-title">Button</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>;</span>
+  }
+});
+
+ReactDOM.render(<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">Test</span> /&gt;</span>, mountNode);</span></code></pre></div></div>
+  </div>
+  <div class="code-boxes-col-2-1"><div class="code-box" id="number-demo-size">
+  <div class="code-box-demo">
+    <div id="components-input-number-demo-size"><div data-reactid=".1g"><div class="ant-input-number ant-input-number-lg" data-reactid=".1g.0"><div class="ant-input-number-handler-wrap" data-reactid=".1g.0.0"><a unselectable="unselectable" class="ant-input-number-handler ant-input-number-handler-up " data-reactid=".1g.0.0.0"><span unselectable="unselectable" class="ant-input-number-handler-up-inner" data-reactid=".1g.0.0.0.0"></span></a><a unselectable="unselectable" class="ant-input-number-handler ant-input-number-handler-down " data-reactid=".1g.0.0.1"><span unselectable="unselectable" class="ant-input-number-handler-down-inner" data-reactid=".1g.0.0.1.0"></span></a></div><div class="ant-input-number-input-wrap" data-reactid=".1g.0.1"><input class="ant-input-number-input" autocomplete="off" max="100000" min="1" value="3" data-reactid=".1g.0.1.0"></div></div><div class="ant-input-number" data-reactid=".1g.1"><div class="ant-input-number-handler-wrap" data-reactid=".1g.1.0"><a unselectable="unselectable" class="ant-input-number-handler ant-input-number-handler-up " data-reactid=".1g.1.0.0"><span unselectable="unselectable" class="ant-input-number-handler-up-inner" data-reactid=".1g.1.0.0.0"></span></a><a unselectable="unselectable" class="ant-input-number-handler ant-input-number-handler-down " data-reactid=".1g.1.0.1"><span unselectable="unselectable" class="ant-input-number-handler-down-inner" data-reactid=".1g.1.0.1.0"></span></a></div><div class="ant-input-number-input-wrap" data-reactid=".1g.1.1"><input class="ant-input-number-input" autocomplete="off" max="100000" min="1" value="3" data-reactid=".1g.1.1.0"></div></div><div class="ant-input-number ant-input-number-sm" data-reactid=".1g.2"><div class="ant-input-number-handler-wrap" data-reactid=".1g.2.0"><a unselectable="unselectable" class="ant-input-number-handler ant-input-number-handler-up " data-reactid=".1g.2.0.0"><span unselectable="unselectable" class="ant-input-number-handler-up-inner" data-reactid=".1g.2.0.0.0"></span></a><a unselectable="unselectable" class="ant-input-number-handler ant-input-number-handler-down " data-reactid=".1g.2.0.1"><span unselectable="unselectable" class="ant-input-number-handler-down-inner" data-reactid=".1g.2.0.1.0"></span></a></div><div class="ant-input-number-input-wrap" data-reactid=".1g.2.1"><input class="ant-input-number-input" autocomplete="off" max="100000" min="1" value="3" data-reactid=".1g.2.1.0"></div></div></div></div>
+    <script>mountNode = document.getElementById('components-input-number-demo-size');</script>
+    <script>(function(){'use strict';
+
+var _antd = require('antd');
+
+function onChange(value) {
+  console.log('changed', value);
+}
+
+ReactDOM.render(React.createElement(
+  'div',
+  null,
+  React.createElement(_antd.InputNumber, { size: 'large', min: 1, max: 100000, defaultValue: 3, onChange: onChange }),
+  React.createElement(_antd.InputNumber, { min: 1, max: 100000, defaultValue: 3, onChange: onChange }),
+  React.createElement(_antd.InputNumber, { size: 'small', min: 1, max: 100000, defaultValue: 3, onChange: onChange })
+), mountNode);})()</script><style type="text/css">.ant-input-number{
+  margin-right: 10px;
+}</style>
+  </div>
+  <div class="code-box-meta markdown">
+    <div class="code-box-title">
+      <a href="http://ant.design/components/input-number/#number-demo-size">三种大小</a>
+    </div>
+    <p>三种大小的数字输入框，当 size 分别为 <code>large</code> 和 <code>small</code> 时，输入框高度为 <code>32px</code> 和 <code>22px</code> ，默认高度为 <code>28px</code></p>
+    <span class="collapse anticon anticon-circle-o-right" unselectable="none" style="-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;"></span>
+  </div>
+<div class="highlight"><pre><code class="javascript"><span class="hljs-keyword">import</span> { InputNumber } <span class="hljs-keyword">from</span> <span class="hljs-string">'antd'</span>;
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">onChange</span>(<span class="hljs-params">value</span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'changed'</span>, value);
+}
+
+ReactDOM.render(
+<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">InputNumber</span> <span class="hljs-attribute">size</span>=<span class="hljs-value">"large"</span> <span class="hljs-attribute">min</span>=<span class="hljs-value">{1}</span> <span class="hljs-attribute">max</span>=<span class="hljs-value">{100000}</span> <span class="hljs-attribute">defaultValue</span>=<span class="hljs-value">{3}</span> <span class="hljs-attribute">onChange</span>=<span class="hljs-value">{onChange}</span> /&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">InputNumber</span> <span class="hljs-attribute">min</span>=<span class="hljs-value">{1}</span> <span class="hljs-attribute">max</span>=<span class="hljs-value">{100000}</span> <span class="hljs-attribute">defaultValue</span>=<span class="hljs-value">{3}</span> <span class="hljs-attribute">onChange</span>=<span class="hljs-value">{onChange}</span> /&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">InputNumber</span> <span class="hljs-attribute">size</span>=<span class="hljs-value">"small"</span> <span class="hljs-attribute">min</span>=<span class="hljs-value">{1}</span> <span class="hljs-attribute">max</span>=<span class="hljs-value">{100000}</span> <span class="hljs-attribute">defaultValue</span>=<span class="hljs-value">{3}</span> <span class="hljs-attribute">onChange</span>=<span class="hljs-value">{onChange}</span> /&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+, mountNode);</span></code></pre></div><div class="highlight"><pre><code class="css"><span class="hljs-class">.ant-input-number</span><span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">margin-right</span>:<span class="hljs-value"> <span class="hljs-number">10px</span></span></span>;
+}</span></code></pre></div></div>
+  </div>
+</div>
+<ul class="demos-anchor">
+  <li>
+    <a title="基本" href="http://ant.design/components/input-number/#number-demo-basic">
+      <span>基本</span>
+    </a>
+  </li>
+  <li>
+    <a title="三种大小" href="http://ant.design/components/input-number/#number-demo-size">
+      <span>三种大小</span>
+    </a>
+  </li>
+  <li>
+    <a title="不可用" href="http://ant.design/components/input-number/#number-demo-disabled">
+      <span>不可用</span>
+    </a>
+  </li>
+</ul>
+  <div class="api-container markdown"><h2 id="api">API<a href="http://ant.design/components/input-number/#api" class="anchor">#</a> </h2><p>属性如下</p><table>
+<thead>
+<tr>
+<th>成员</th>
+<th>说明</th>
+<th>类型</th>
+<th>默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>min</td>
+<td>最小值</td>
+<td>Number</td>
+<td>-Infinity</td>
+</tr>
+<tr>
+<td>max</td>
+<td>最大值</td>
+<td>Number</td>
+<td>Infinity</td>
+</tr>
+<tr>
+<td>value</td>
+<td>当前值</td>
+<td>Number</td>
+<td></td>
+</tr>
+<tr>
+<td>step</td>
+<td>每次改变步数</td>
+<td>Number</td>
+<td>1</td>
+</tr>
+<tr>
+<td>defaultValue</td>
+<td>初始值</td>
+<td>Number</td>
+<td></td>
+</tr>
+<tr>
+<td>onChange</td>
+<td>变化回调</td>
+<td>Function</td>
+<td></td>
+</tr>
+<tr>
+<td>disabled</td>
+<td>禁用</td>
+<td>Boolean</td>
+<td>false</td>
+</tr>
+<tr>
+<td>size</td>
+<td>输入框大小</td>
+<td>String</td>
+<td>无</td>
+</tr>
+</tbody>
+</table></div>
+</section>
+
+    </div>
+    <script src="./lib/T1AmXhXg0kXXXXXXXX.js" data-no-instant=""></script>
+    <script data-no-instant="">
+      InstantClick.on('change', function() {
+        InstantClickChangeFns.forEach(function(fn) {
+          fn();
+        });
+      });
+      InstantClick.init();
+    </script>
+  
+<div id="instantclick" style="opacity: 0;"><div id="instantclick-bar" class="instantclick-bar" style="transform: translate(100%);"></div></div></body></html>

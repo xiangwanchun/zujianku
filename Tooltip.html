@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)http://ant.design/components/tooltip/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="一个 UI 设计语言">
+    <title>Tooltip 文字提示 - Ant Design</title>
+    <link rel="icon" href="https://t.alipayobjects.com/images/T1QUBfXo4fXXXXXXXX.png" type="image/x-icon">
+    <link rel="shortcut icon" href="https://t.alipayobjects.com/images/T1QUBfXo4fXXXXXXXX.png" type="image/x-icon">
+    
+    <link rel="stylesheet" href="./dist/demo.css">
+    <link rel="stylesheet" href="./lib/style.css">
+    <link rel="stylesheet" href="./lib/tomorrow.css">
+    <!--[if IE 8]>
+    <script src="https://t.alipayobjects.com/images/rmsweb/T1q8JiXftaXXXXXXXX.js"></script>
+    <![endif]-->
+    <script src="./lib/saved_resource"></script>
+    <script src="./lib/saved_resource(1)"></script>
+    <script>
+    (function() {
+      window.ANT_COMPONENTS = [];
+      window.InstantClickChangeFns = [];
+      ANT_COMPONENTS.push({
+        title: 'Popconfirm',
+        desc: '气泡确认框'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Affix',
+        desc: '固钉'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Badge',
+        desc: '徽标数'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Breadcrumb',
+        desc: '面包屑'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Button',
+        desc: '按钮'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Calendar',
+        desc: '日历'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Carousel',
+        desc: '走马灯'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Checkbox',
+        desc: '多选框'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Collapse',
+        desc: '折叠面板'
+      });
+      ANT_COMPONENTS.push({
+        title: 'DatePicker',
+        desc: '日期选择框'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Dropdown',
+        desc: '下拉菜单'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Form',
+        desc: '表单'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Icon',
+        desc: '图标'
+      });
+      ANT_COMPONENTS.push({
+        title: 'InputNumber',
+        desc: '数字输入框'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Layout',
+        desc: '布局'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Menu',
+        desc: '导航菜单'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Message',
+        desc: '全局提示'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Modal',
+        desc: '对话框'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Notification',
+        desc: '通知提醒框'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Pagination',
+        desc: '分页'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Alert',
+        desc: '警告提示'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Popover',
+        desc: '气泡卡片'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Progress',
+        desc: '进度条'
+      });
+      ANT_COMPONENTS.push({
+        title: 'QueueAnim',
+        desc: '进出场动画'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Radio',
+        desc: '单选框'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Select',
+        desc: '选择器'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Slider',
+        desc: '滑动输入条'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Spin',
+        desc: '加载中'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Steps',
+        desc: '步骤条'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Switch',
+        desc: '开关'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Table',
+        desc: '表格'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Tabs',
+        desc: '标签页'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Tag',
+        desc: '标签'
+      });
+      ANT_COMPONENTS.push({
+        title: 'TimePicker',
+        desc: '时间选择框'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Timeline',
+        desc: '时间轴'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Tooltip',
+        desc: '文字提示'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Transfer',
+        desc: '穿梭框'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Tree',
+        desc: '树形控件'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Upload',
+        desc: '文件上传'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Validation',
+        desc: '表单校验'
+      });
+      var i = location.pathname.split('/').lastIndexOf('ant-design');
+      if (i > 0) {
+        window.rootUrl = location.origin + location.pathname.split('/').slice(0, 2+1).join('/');
+      } else {
+        window.rootUrl = location.origin;
+      }
+    })();
+    </script>
+    <script src="./lib/script.js"></script>
+    <script>
+      window.antdVersion = {
+        latest: '0.11.2'
+      };
+    </script>
+    <script src="./dist/demo.js"></script>
+    <script src="./lib/T1DrxhXe0mXXXXXXXX.js"></script>
+    
+  <style>#instantclick{position:fixed;top:0;left:0;width:100%;pointer-events:none;z-index:2147483647;transition:opacity .25s .1s;}
+        .instantclick-bar{background:#29d;width:100%;margin-left:-100%;height:2px;transition:all .25s;}</style>
+  </head>
+  <body>
+    <header id="header" class="clearfix">
+      <a class="logo" href="http://ant.design/">
+        <img width="60" src="./lib/T1B9hfXcdvXXXXXXXX.svg">
+        Ant Design
+      </a>
+      <div class="search">
+        <div id="autoComplete"><span style="width:100%;" class="ant-select ant-select-combobox ant-select-enabled" data-reactid=".23"><span class="ant-select-selection ant-select-selection--single" role="combobox" aria-autocomplete="list" aria-haspopup="true" data-reactid=".23.$selection"><ul class="ant-select-selection__rendered" data-reactid=".23.$selection.0"><li class="ant-select-search ant-select-search--inline" data-reactid=".23.$selection.0.$__input"><span class="ant-select-search__field__wrap" data-reactid=".23.$selection.0.$__input.0"><input value="" class="ant-select-search__field" role="textbox" data-reactid=".23.$selection.0.$__input.0.0"><span style="display:block;" class="ant-select-search__field__placeholder" data-reactid=".23.$selection.0.$__input.0.1">搜索组件...</span></span></li></ul><span class="ant-select-arrow" tabindex="-1" style="outline:none;" data-reactid=".23.$selection.$arrow"><b data-reactid=".23.$selection.$arrow.0"></b></span></span></span></div>
+      </div>
+      <div class="global-hint">
+        0.11 已发布，0.10 文档请访问 <a href="http://010x.ant.design/">010x.ant.design</a>
+      </div>
+      <nav class="nav">
+        <span class="bar" style="left: 144px; width: 100px; display: inline;"></span>
+        <ul>
+          <li class="">
+            <a href="http://ant.design/" data-no-instant="">首页</a>
+          </li>
+          <li class="">
+            <a href="http://ant.design/spec/introduce">设计</a>
+          </li>
+          <li class="current">
+            <a href="http://ant.design/docs/introduce">React UI</a>
+          </li>
+          <li>
+            <a target="_blank" href="https://github.com/ant-design/ant-design">Github</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav-phone-icon"></div>
+    </header>
+    <div class="main-wrapper">
+      
+<aside class="aside-container">
+  <ul>
+      <li class="">
+        <a href="http://ant.design/docs/introduce" class="">
+          Ant Design of React
+          <span class="chinese"></span>
+        </a>
+      </li>
+      <li class="">
+        <a href="http://ant.design/docs/getting-started" class="">
+          快速上手
+          <span class="chinese"></span>
+        </a>
+      </li>
+      <li class="">
+        <a href="http://ant.design/docs/install" class="">
+          安装
+          <span class="chinese"></span>
+        </a>
+      </li>
+      <li class="">
+        <a href="http://ant.design/docs/upgrade-notes" class="">
+          升级指南
+          <span class="chinese"></span>
+        </a>
+      </li>
+      <li class="">
+        <a href="http://ant.design/changelog" class="">
+          更新日志
+          <span class="chinese"></span>
+        </a>
+      </li>
+    <li open="open">
+      <h4>Components</h4>
+      <ul class="">
+          <li class="type-divider">基本</li>
+          <li class="">
+            <a href="http://ant.design/components/button/" class="">
+              Button
+              <span class="chinese">按钮</span>
+            </a>
+          </li>
+          <li class="">
+            <a href="http://ant.design/components/icon/" class="">
+              Icon
+              <span class="chinese">图标</span>
+            </a>
+          </li>
+          <li class="">
+            <a href="http://ant.design/components/layout/" class="">
+              Layout
+              <span class="chinese">布局</span>
+            </a>
+          </li>
+          <li class="type-divider">表单</li>
+          <li class="">
+            <a href="http://ant.design/components/checkbox/" class="">
+              Checkbox
+              <span class="chinese">多选框</span>
+            </a>
+          </li>
+          <li class="">
+            <a href="http://ant.design/components/date-picker/" class="">
+              DatePicker
+              <span class="chinese">日期选择框</span>
+            </a>
+          </li>
+          <li class="">
+            <a href="http://ant.design/components/form/" class="">
+              Form
+              <span class="chinese">表单</span>
+            </a>
+          </li>
+          <li class="">
+            <a href="http://ant.design/components/input-number/" class="">
+              InputNumber
+              <span class="chinese">数字输入框</span>
+            </a>
+          </li>
+          <li class="">
+            <a href="http://ant.design/components/radio/" class="">
+              Radio
+              <span class="chinese">单选框</span>
+            </a>
+          </li>
+          <li class="">
+            <a href="http://ant.design/components/select/" class="">
+              Select
+              <span class="chinese">选择器</span>
+            </a>
+          </li>
+          <li class="">
+            <a href="http://ant.design/components/slider/" class="">
+              Slider
+              <span class="chinese">滑动输入条</span>
+            </a>
+          </li>
+          <li class="">
+            <a href="http://ant.design/components/switch/" class="">
+              Switch
+              <span class="chinese">开关</span>
+            </a>
+          </li>
+          <li class="">
+            <a href="http://ant.design/components/time-picker/" class="">
+              TimePicker
+              <span class="chinese">时间选择框</span>
+            </a>
+          </li>
+          <li class="">
+            <a href="http://ant.design/components/transfer/" class="">
+              Transfer
+              <span class="chinese">穿梭框</span>
+            </a>
+          </li>
+          <li class="">
+            <a href="http://ant.design/components/upload/" class="">
+              Upload
+              <span class="chinese">文件上传</span>
+            </a>
+          </li>
+          <li class="">
+            <a href="http://ant.design/components/validation/" class="">
+              Validation
+              <span class="chinese">表单校验</span>
+            </a>
+          </li>
+          <li class="type-divider">展示</li>
+          <li class="">
+            <a href="http://ant.design/components/alert/" class="">
+              Alert
+              <span class="chinese">警告提示</span>
+            </a>
+          </li>
+          <li class="">
+            <a href="http://ant.design/components/badge/" class="">
+              Badge
+              <span class="chinese">徽标数</span>
+            </a>
+          </li>
+          <li class="">
+            <a href="http://ant.design/components/calendar/" class="">
+              Calendar
+              <span class="chinese">日历</span>
+            </a>
+          </li>
+          <li class="">
+            <a href="http://ant.design/components/carousel/" class="">
+              Carousel
+              <span class="chinese">走马灯</span>
+            </a>
+          </li>
+          <li class="">
+            <a href="http://ant.design/components/collapse/" class="">
+              Collapse
+              <span class="chinese">折叠面板</span>
+            </a>
+          </li>
+          <li class="">
+            <a href="http://ant.design/components/dropdown/" class="">
+              Dropdown
+              <span class="chinese">下拉菜单</span>
+            </a>
+          </li>
+          <li class="">
+            <a href="http://ant.design/components/message/" class="" data-no-instant="">
+              Message
+              <span class="chinese">全局提示</span>
+            </a>
+          </li>
+          <li class="">
+            <a href="http://ant.design/components/modal/" class="">
+              Modal
+              <span class="chinese">对话框</span>
+            </a>
+          </li>
+          <li class="">
+            <a href="http://ant.design/components/notification/" class="" data-no-instant="">
+              Notification
+              <span class="chinese">通知提醒框</span>
+            </a>
+          </li>
+          <li class="">
+            <a href="http://ant.design/components/popconfirm/" class="">
+              Popconfirm
+              <span class="chinese">气泡确认框</span>
+            </a>
+          </li>
+          <li class="">
+            <a href="http://ant.design/components/popover/" class="">
+              Popover
+              <span class="chinese">气泡卡片</span>
+            </a>
+          </li>
+          <li class="">
+            <a href="http://ant.design/components/progress/" class="">
+              Progress
+              <span class="chinese">进度条</span>
+            </a>
+          </li>
+          <li class="">
+            <a href="http://ant.design/components/table/" class="">
+              Table
+              <span class="chinese">表格</span>
+            </a>
+          </li>
+          <li class="">
+            <a href="http://ant.design/components/tag/" class="">
+              Tag
+              <span class="chinese">标签</span>
+            </a>
+          </li>
+          <li class="">
+            <a href="http://ant.design/components/timeline/" class="">
+              Timeline
+              <span class="chinese">时间轴</span>
+            </a>
+          </li>
+          <li class="current">
+            <a href="./lib/Tooltip 文字提示 - Ant Design.html" class="">
+              Tooltip
+              <span class="chinese">文字提示</span>
+            </a>
+          </li>
+          <li class="">
+            <a href="http://ant.design/components/tree/" class="">
+              Tree
+              <span class="chinese">树形控件</span>
+            </a>
+          </li>
+          <li class="type-divider">导航</li>
+          <li class="">
+            <a href="http://ant.design/components/breadcrumb/" class="">
+              Breadcrumb
+              <span class="chinese">面包屑</span>
+            </a>
+          </li>
+          <li class="">
+            <a href="http://ant.design/components/menu/" class="">
+              Menu
+              <span class="chinese">导航菜单</span>
+            </a>
+          </li>
+          <li class="">
+            <a href="http://ant.design/components/pagination/" class="">
+              Pagination
+              <span class="chinese">分页</span>
+            </a>
+          </li>
+          <li class="">
+            <a href="http://ant.design/components/steps/" class="">
+              Steps
+              <span class="chinese">步骤条</span>
+            </a>
+          </li>
+          <li class="">
+            <a href="http://ant.design/components/tabs/" class="">
+              Tabs
+              <span class="chinese">标签页</span>
+            </a>
+          </li>
+          <li class="type-divider">其他</li>
+          <li class="">
+            <a href="http://ant.design/components/affix/" class="">
+              Affix
+              <span class="chinese">固钉</span>
+            </a>
+          </li>
+          <li class="">
+            <a href="http://ant.design/components/queue-anim/" class="">
+              QueueAnim
+              <span class="chinese">进出场动画</span>
+            </a>
+          </li>
+          <li class="">
+            <a href="http://ant.design/components/spin/" class="">
+              Spin
+              <span class="chinese">加载中</span>
+            </a>
+          </li>
+      </ul>
+    </li>
+  </ul>
+</aside>
+ 
+<section class="main-container">
+  <article class="markdown">
+    <h1>
+      Tooltip 文字提示
+    </h1>
+    <p>简单的文字提示气泡框。</p>
+<h2 id="何时使用">何时使用<a href="#何时使用" class="anchor">#</a> </h2><p>鼠标移入则显示提示，移出消失，气泡浮层不承载复杂文本和操作。</p>
+<p>可用来代替系统默认的 <code>title</code> 提示，提供一个<code>按钮/文字/操作</code>的文案解释。</p>
+
+
+  </article>
+<h2 class="component-demos">
+  代码演示
+  <i class="anticon anticon-appstore icon-all" title="展开全部代码"></i>
+</h2>
+<div class="code-boxes">
+  <div class="code-boxes-col-2-1"><div class="code-box" id="demo-basic">
+  <div class="code-box-demo">
+    <div id="components-tooltip-demo-basic"><span data-reactid=".21">鼠标移上来就会出现提示</span></div>
+    <script>mountNode = document.getElementById('components-tooltip-demo-basic');</script>
+    <script>(function(){"use strict";
+
+var _antd = require("antd");
+
+ReactDOM.render(React.createElement(
+  _antd.Tooltip,
+  { title: "提示文字" },
+  React.createElement(
+    "span",
+    null,
+    "鼠标移上来就会出现提示"
+  )
+), mountNode);})()</script>
+  </div>
+  <div class="code-box-meta markdown">
+    <div class="code-box-title">
+      <a href="http://ant.design/components/tooltip/#demo-basic">基本</a>
+    </div>
+    <p>最简单的用法。</p>
+    <span class="collapse anticon anticon-circle-o-right" unselectable="none" style="-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;"></span>
+  </div>
+<div class="highlight"><pre><code class="javascript"><span class="hljs-keyword">import</span> { Tooltip } <span class="hljs-keyword">from</span> <span class="hljs-string">'antd'</span>;
+
+ReactDOM.render(
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">Tooltip</span> <span class="hljs-attribute">title</span>=<span class="hljs-value">"提示文字"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>鼠标移上来就会出现提示<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">Tooltip</span>&gt;</span>
+, mountNode);</span></code></pre></div></div>
+  </div>
+  <div class="code-boxes-col-2-1"><div class="code-box" id="demo-placement">
+  <div class="code-box-demo">
+    <div id="components-tooltip-demo-placement"><div data-reactid=".22"><div style="margin-left:60px;" data-reactid=".22.0"><a href="http://ant.design/components/tooltip/#" data-reactid=".22.0.0">上左</a><a href="http://ant.design/components/tooltip/#" data-reactid=".22.0.1">上边</a><a href="http://ant.design/components/tooltip/#" data-reactid=".22.0.2">上右</a></div><div style="width:60px;float:left;" data-reactid=".22.1"><a href="http://ant.design/components/tooltip/#" data-reactid=".22.1.0">左上</a><a href="http://ant.design/components/tooltip/#" data-reactid=".22.1.1">左边</a><a href="http://ant.design/components/tooltip/#" data-reactid=".22.1.2">左下</a></div><div style="width:60px;margin-left:270px;" data-reactid=".22.2"><a href="http://ant.design/components/tooltip/#" data-reactid=".22.2.0">右上</a><a href="http://ant.design/components/tooltip/#" data-reactid=".22.2.1">右边</a><a href="http://ant.design/components/tooltip/#" data-reactid=".22.2.2">右下</a></div><div style="margin-left:60px;clear:both;" data-reactid=".22.3"><a href="http://ant.design/components/tooltip/#" data-reactid=".22.3.0">上右</a><a href="http://ant.design/components/tooltip/#" data-reactid=".22.3.1">下边</a><a href="http://ant.design/components/tooltip/#" data-reactid=".22.3.2">下右</a></div></div></div>
+    <script>mountNode = document.getElementById('components-tooltip-demo-placement');</script>
+    <script>(function(){"use strict";
+
+var _antd = require("antd");
+
+var text = React.createElement(
+  "span",
+  null,
+  "提示文字"
+);
+
+ReactDOM.render(React.createElement(
+  "div",
+  null,
+  React.createElement(
+    "div",
+    { style: { marginLeft: 60 } },
+    React.createElement(
+      _antd.Tooltip,
+      { placement: "topLeft", title: text },
+      React.createElement(
+        "a",
+        { href: "#" },
+        "上左"
+      )
+    ),
+    React.createElement(
+      _antd.Tooltip,
+      { placement: "top", title: text },
+      React.createElement(
+        "a",
+        { href: "#" },
+        "上边"
+      )
+    ),
+    React.createElement(
+      _antd.Tooltip,
+      { placement: "topRight", title: text },
+      React.createElement(
+        "a",
+        { href: "#" },
+        "上右"
+      )
+    )
+  ),
+  React.createElement(
+    "div",
+    { style: { width: 60, float: 'left' } },
+    React.createElement(
+      _antd.Tooltip,
+      { placement: "leftTop", title: text },
+      React.createElement(
+        "a",
+        { href: "#" },
+        "左上"
+      )
+    ),
+    React.createElement(
+      _antd.Tooltip,
+      { placement: "left", title: text },
+      React.createElement(
+        "a",
+        { href: "#" },
+        "左边"
+      )
+    ),
+    React.createElement(
+      _antd.Tooltip,
+      { placement: "leftBottom", title: text },
+      React.createElement(
+        "a",
+        { href: "#" },
+        "左下"
+      )
+    )
+  ),
+  React.createElement(
+    "div",
+    { style: { width: 60, marginLeft: 270 } },
+    React.createElement(
+      _antd.Tooltip,
+      { placement: "rightTop", title: text },
+      React.createElement(
+        "a",
+        { href: "#" },
+        "右上"
+      )
+    ),
+    React.createElement(
+      _antd.Tooltip,
+      { placement: "right", title: text },
+      React.createElement(
+        "a",
+        { href: "#" },
+        "右边"
+      )
+    ),
+    React.createElement(
+      _antd.Tooltip,
+      { placement: "rightBottom", title: text },
+      React.createElement(
+        "a",
+        { href: "#" },
+        "右下"
+      )
+    )
+  ),
+  React.createElement(
+    "div",
+    { style: { marginLeft: 60, clear: 'both' } },
+    React.createElement(
+      _antd.Tooltip,
+      { placement: "bottomLeft", title: text },
+      React.createElement(
+        "a",
+        { href: "#" },
+        "上右"
+      )
+    ),
+    React.createElement(
+      _antd.Tooltip,
+      { placement: "bottom", title: text },
+      React.createElement(
+        "a",
+        { href: "#" },
+        "下边"
+      )
+    ),
+    React.createElement(
+      _antd.Tooltip,
+      { placement: "bottomRight", title: text },
+      React.createElement(
+        "a",
+        { href: "#" },
+        "下右"
+      )
+    )
+  )
+), mountNode);})()</script><style>
+#components-tooltip-demo-placement a {
+  display: inline-block;
+  line-height: 32px;
+  height: 32px;
+  width: 60px;
+  font-size: 14px;
+  text-align: center;
+  background: #f5f5f5;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  border-radius: 6px;
+}
+</style>
+
+  </div>
+  <div class="code-box-meta markdown">
+    <div class="code-box-title">
+      <a href="http://ant.design/components/tooltip/#demo-placement">位置</a>
+    </div>
+    <p>位置有 12 个方向。</p>
+    <span class="collapse anticon anticon-circle-o-right" unselectable="none" style="-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;"></span>
+  </div>
+<div class="highlight"><pre><code class="javascript"><span class="hljs-keyword">import</span> { Tooltip } <span class="hljs-keyword">from</span> <span class="hljs-string">'antd'</span>;
+<span class="hljs-keyword">const</span> text = <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>提示文字<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>;</span>
+
+ReactDOM.render(
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">{{marginLeft:</span> <span class="hljs-attribute">60</span>}}&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Tooltip</span> <span class="hljs-attribute">placement</span>=<span class="hljs-value">"topLeft"</span> <span class="hljs-attribute">title</span>=<span class="hljs-value">{text}</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>上左<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">Tooltip</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Tooltip</span> <span class="hljs-attribute">placement</span>=<span class="hljs-value">"top"</span> <span class="hljs-attribute">title</span>=<span class="hljs-value">{text}</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>上边<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">Tooltip</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Tooltip</span> <span class="hljs-attribute">placement</span>=<span class="hljs-value">"topRight"</span> <span class="hljs-attribute">title</span>=<span class="hljs-value">{text}</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>上右<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">Tooltip</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">{{width:</span> <span class="hljs-attribute">60</span>, <span class="hljs-attribute">float:</span> '<span class="hljs-attribute">left</span>'}}&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Tooltip</span> <span class="hljs-attribute">placement</span>=<span class="hljs-value">"leftTop"</span> <span class="hljs-attribute">title</span>=<span class="hljs-value">{text}</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>左上<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">Tooltip</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Tooltip</span> <span class="hljs-attribute">placement</span>=<span class="hljs-value">"left"</span> <span class="hljs-attribute">title</span>=<span class="hljs-value">{text}</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>左边<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">Tooltip</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Tooltip</span> <span class="hljs-attribute">placement</span>=<span class="hljs-value">"leftBottom"</span> <span class="hljs-attribute">title</span>=<span class="hljs-value">{text}</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>左下<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">Tooltip</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">{{width:</span> <span class="hljs-attribute">60</span>, <span class="hljs-attribute">marginLeft:</span> <span class="hljs-attribute">270</span>}}&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Tooltip</span> <span class="hljs-attribute">placement</span>=<span class="hljs-value">"rightTop"</span> <span class="hljs-attribute">title</span>=<span class="hljs-value">{text}</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>右上<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">Tooltip</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Tooltip</span> <span class="hljs-attribute">placement</span>=<span class="hljs-value">"right"</span> <span class="hljs-attribute">title</span>=<span class="hljs-value">{text}</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>右边<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">Tooltip</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Tooltip</span> <span class="hljs-attribute">placement</span>=<span class="hljs-value">"rightBottom"</span> <span class="hljs-attribute">title</span>=<span class="hljs-value">{text}</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>右下<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">Tooltip</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">{{marginLeft:</span> <span class="hljs-attribute">60</span>, <span class="hljs-attribute">clear:</span> '<span class="hljs-attribute">both</span>'}}&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Tooltip</span> <span class="hljs-attribute">placement</span>=<span class="hljs-value">"bottomLeft"</span> <span class="hljs-attribute">title</span>=<span class="hljs-value">{text}</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>上右<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">Tooltip</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Tooltip</span> <span class="hljs-attribute">placement</span>=<span class="hljs-value">"bottom"</span> <span class="hljs-attribute">title</span>=<span class="hljs-value">{text}</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>下边<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">Tooltip</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Tooltip</span> <span class="hljs-attribute">placement</span>=<span class="hljs-value">"bottomRight"</span> <span class="hljs-attribute">title</span>=<span class="hljs-value">{text}</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>下右<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">Tooltip</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+, mountNode);</span></code></pre></div></div>
+  </div>
+</div>
+<ul class="demos-anchor">
+  <li>
+    <a title="基本" href="http://ant.design/components/tooltip/#demo-basic">
+      <span>基本</span>
+    </a>
+  </li>
+  <li>
+    <a title="位置" href="http://ant.design/components/tooltip/#demo-placement">
+      <span>位置</span>
+    </a>
+  </li>
+</ul>
+  <div class="api-container markdown"><h2 id="api">API<a href="http://ant.design/components/tooltip/#api" class="anchor">#</a> </h2><table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+<th>类型</th>
+<th>默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>placement</td>
+<td>气泡框位置，可选 <code>top/left/right/bottom/topLeft/topRight/bottomLeft/bottomRight/leftTop/leftBottom/rightTop/rightBottom</code></td>
+<td>string</td>
+<td>top</td>
+</tr>
+<tr>
+<td>title</td>
+<td>提示文字</td>
+<td>string/jsx</td>
+<td>无</td>
+</tr>
+</tbody>
+</table></div>
+</section>
+
+    </div><footer id="footer">
+  <ul>
+    <li>
+      <h2>GitHub</h2>
+      <a target="_blank " href="https://github.com/ant-design/ant-design">仓库</a>
+      <a target="_blank" href="https://github.com/ant-design/ant-design/tree/master/style">样式</a>
+      <a target="_blank" href="https://github.com/ant-tool/xtool">开发工具</a>
+    </li>
+    <li>
+      <h2>关于我们</h2>
+      <a href="https://github.com/ant-ued/blog">博客 - Ant UED</a>
+    </li>
+    <li>
+      <h2>联系我们</h2>
+      <a target="_blank" href="https://github.com/ant-design/ant-design/issues">反馈和建议</a>
+      <a target="_blank" href="https://gitter.im/ant-design/ant-design">讨论</a>
+      <a target="_blank" href="http://t.cn/R4XEpoQ">报告 Bug</a>
+    </li>
+    <li>
+      <h3>©2015 蚂蚁金服体验技术部出品</h3>
+      <h3>文档版本：<span id="versions-select"><span class="ant-select-sm ant-select ant-select-enabled" data-reactid=".24"><span class="ant-select-selection ant-select-selection--single" role="combobox" aria-autocomplete="list" aria-haspopup="true" tabindex="0" data-reactid=".24.$selection"><span class="ant-select-selection__rendered" data-reactid=".24.$selection.0"><span data-reactid=".24.$selection.0.$value">0.11.2</span></span><span class="ant-select-arrow" tabindex="-1" style="outline:none;" data-reactid=".24.$selection.$arrow"><b data-reactid=".24.$selection.$arrow.0"></b></span></span></span></span></h3>
+    </li>
+  </ul>
+</footer>
+    <script src="./lib/T1AmXhXg0kXXXXXXXX.js" data-no-instant=""></script>
+    <script data-no-instant="">
+      InstantClick.on('change', function() {
+        InstantClickChangeFns.forEach(function(fn) {
+          fn();
+        });
+      });
+      InstantClick.init();
+    </script>
+  
+<div id="instantclick" style="opacity: 0;"><div id="instantclick-bar" class="instantclick-bar" style="transform: translate(100%);"></div></div><div><div class="ant-tooltip  ant-tooltip-placement-left  ant-tooltip-hidden" data-reactid=".25" style="left: 998.109px; top: 621.781px;"><div class="ant-tooltip-arrow" data-reactid=".25.$arrow"></div><div class="ant-tooltip-inner" data-reactid=".25.$content"><span data-reactid=".25.$content.0">提示文字</span></div></div></div><div><div class="ant-tooltip  ant-tooltip-placement-leftTop  ant-tooltip-hidden" data-reactid=".26" style="left: 998.109px; top: 576.781px;"><div class="ant-tooltip-arrow" data-reactid=".26.$arrow"></div><div class="ant-tooltip-inner" data-reactid=".26.$content"><span data-reactid=".26.$content.0">提示文字</span></div></div></div><div><div class="ant-tooltip  ant-tooltip-placement-topLeft  ant-tooltip-hidden" data-reactid=".27" style="left: 1143.11px; top: 479.781px;"><div class="ant-tooltip-arrow" data-reactid=".27.$arrow"></div><div class="ant-tooltip-inner" data-reactid=".27.$content"><span data-reactid=".27.$content.0">提示文字</span></div></div></div><div><div class="ant-tooltip  ant-tooltip-placement-top  ant-tooltip-hidden" data-reactid=".28" style="left: 1213.11px; top: 479.781px;"><div class="ant-tooltip-arrow" data-reactid=".28.$arrow"></div><div class="ant-tooltip-inner" data-reactid=".28.$content"><span data-reactid=".28.$content.0">提示文字</span></div></div></div><div><div class="ant-tooltip  ant-tooltip-placement-topRight  ant-tooltip-hidden" data-reactid=".29" style="left: 1283.11px; top: 479.781px;"><div class="ant-tooltip-arrow" data-reactid=".29.$arrow"></div><div class="ant-tooltip-inner" data-reactid=".29.$content"><span data-reactid=".29.$content.0">提示文字</span></div></div></div><div><div class="ant-tooltip  ant-tooltip-placement-rightBottom  ant-tooltip-hidden" data-reactid=".2a" style="left: 1416.11px; top: 666.781px;"><div class="ant-tooltip-arrow" data-reactid=".2a.$arrow"></div><div class="ant-tooltip-inner" data-reactid=".2a.$content"><span data-reactid=".2a.$content.0">提示文字</span></div></div></div><div><div class="ant-tooltip  ant-tooltip-placement-bottomRight  ant-tooltip-hidden" data-reactid=".2b" style="left: 1283.11px; top: 749.781px;"><div class="ant-tooltip-arrow" data-reactid=".2b.$arrow"></div><div class="ant-tooltip-inner" data-reactid=".2b.$content"><span data-reactid=".2b.$content.0">提示文字</span></div></div></div><div><div class="ant-tooltip  ant-tooltip-placement-bottom  ant-tooltip-hidden" data-reactid=".2c" style="left: 1213.11px; top: 749.781px;"><div class="ant-tooltip-arrow" data-reactid=".2c.$arrow"></div><div class="ant-tooltip-inner" data-reactid=".2c.$content"><span data-reactid=".2c.$content.0">提示文字</span></div></div></div><div><div class="ant-tooltip  ant-tooltip-placement-bottomLeft  ant-tooltip-hidden" data-reactid=".2d" style="left: 1143.11px; top: 749.781px;"><div class="ant-tooltip-arrow" data-reactid=".2d.$arrow"></div><div class="ant-tooltip-inner" data-reactid=".2d.$content"><span data-reactid=".2d.$content.0">提示文字</span></div></div></div><div><div class="ant-tooltip  ant-tooltip-placement-leftBottom  ant-tooltip-hidden" data-reactid=".2e" style="left: 998.109px; top: 666.781px;"><div class="ant-tooltip-arrow" data-reactid=".2e.$arrow"></div><div class="ant-tooltip-inner" data-reactid=".2e.$content"><span data-reactid=".2e.$content.0">提示文字</span></div></div></div></body></html>

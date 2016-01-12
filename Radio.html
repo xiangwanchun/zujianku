@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)http://ant.design/components/radio/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="一个 UI 设计语言">
+    <title>Radio 单选框 - Ant Design</title>
+    <link rel="icon" href="https://t.alipayobjects.com/images/T1QUBfXo4fXXXXXXXX.png" type="image/x-icon">
+    <link rel="shortcut icon" href="https://t.alipayobjects.com/images/T1QUBfXo4fXXXXXXXX.png" type="image/x-icon">
+    
+    <link rel="stylesheet" href="./dist/demo.css">
+    <link rel="stylesheet" href="./lib/style.css">
+    <link rel="stylesheet" href="./lib/tomorrow.css">
+    <!--[if IE 8]>
+    <script src="https://t.alipayobjects.com/images/rmsweb/T1q8JiXftaXXXXXXXX.js"></script>
+    <![endif]-->
+    <script src="./lib/saved_resource"></script>
+    <script src="./lib/saved_resource(1)"></script>
+    <script>
+    (function() {
+      window.ANT_COMPONENTS = [];
+      window.InstantClickChangeFns = [];
+      ANT_COMPONENTS.push({
+        title: 'Popconfirm',
+        desc: '气泡确认框'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Affix',
+        desc: '固钉'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Badge',
+        desc: '徽标数'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Breadcrumb',
+        desc: '面包屑'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Button',
+        desc: '按钮'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Calendar',
+        desc: '日历'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Carousel',
+        desc: '走马灯'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Checkbox',
+        desc: '多选框'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Collapse',
+        desc: '折叠面板'
+      });
+      ANT_COMPONENTS.push({
+        title: 'DatePicker',
+        desc: '日期选择框'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Dropdown',
+        desc: '下拉菜单'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Form',
+        desc: '表单'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Icon',
+        desc: '图标'
+      });
+      ANT_COMPONENTS.push({
+        title: 'InputNumber',
+        desc: '数字输入框'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Layout',
+        desc: '布局'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Menu',
+        desc: '导航菜单'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Message',
+        desc: '全局提示'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Modal',
+        desc: '对话框'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Notification',
+        desc: '通知提醒框'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Pagination',
+        desc: '分页'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Alert',
+        desc: '警告提示'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Popover',
+        desc: '气泡卡片'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Progress',
+        desc: '进度条'
+      });
+      ANT_COMPONENTS.push({
+        title: 'QueueAnim',
+        desc: '进出场动画'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Radio',
+        desc: '单选框'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Select',
+        desc: '选择器'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Slider',
+        desc: '滑动输入条'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Spin',
+        desc: '加载中'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Steps',
+        desc: '步骤条'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Switch',
+        desc: '开关'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Table',
+        desc: '表格'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Tabs',
+        desc: '标签页'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Tag',
+        desc: '标签'
+      });
+      ANT_COMPONENTS.push({
+        title: 'TimePicker',
+        desc: '时间选择框'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Timeline',
+        desc: '时间轴'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Tooltip',
+        desc: '文字提示'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Transfer',
+        desc: '穿梭框'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Tree',
+        desc: '树形控件'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Upload',
+        desc: '文件上传'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Validation',
+        desc: '表单校验'
+      });
+      var i = location.pathname.split('/').lastIndexOf('ant-design');
+      if (i > 0) {
+        window.rootUrl = location.origin + location.pathname.split('/').slice(0, 2+1).join('/');
+      } else {
+        window.rootUrl = location.origin;
+      }
+    })();
+    </script>
+    <script src="./lib/script.js"></script>
+    <script>
+      window.antdVersion = {
+        latest: '0.11.2'
+      };
+    </script>
+    <script src="./dist/demo.js"></script>
+    <script src="./lib/T1DrxhXe0mXXXXXXXX.js"></script>
+    
+  <style>#instantclick{position:fixed;top:0;left:0;width:100%;pointer-events:none;z-index:2147483647;transition:opacity .25s .1s}.instantclick-bar{background:#29d;width:100%;margin-left:-100%;height:2px;transition:all .25s;}</style></head>
+  <body>
+  
+    <div class="main-wrapper">
+      
+
+ 
+<section class="main-container">
+  <article class="markdown">
+    <h1>
+      Radio 单选框
+    </h1>
+    <p>单选框。</p>
+<h2 id="何时使用">何时使用<a href="#何时使用" class="anchor">#</a> </h2><ul>
+<li>用于在多个备选项中选中单个状态。</li>
+<li>和 Select 的区别是，Radio 所有选项默认可见，方便用户在比较中选择，因此选项不宜过多。</li>
+</ul>
+
+
+
+
+  </article>
+<h2 class="component-demos">
+  代码演示
+  <i class="anticon anticon-appstore icon-all" title="展开全部代码"></i>
+</h2>
+<div class="code-boxes">
+  <div class="code-boxes-col-2-1"><div class="code-box" id="demo-basic">
+  <div class="code-box-demo">
+    <div id="components-radio-demo-basic"><label data-reactid=".1j"><span class="ant-radio" data-reactid=".1j.0"><span class="ant-radio-inner" data-reactid=".1j.0.0"></span><input type="radio" class="ant-radio-input" data-reactid=".1j.0.1"></span><span data-reactid=".1j.1">Radio</span></label></div>
+    <script>mountNode = document.getElementById('components-radio-demo-basic');</script>
+    <script>(function(){'use strict';
+
+var _antd = require('antd');
+
+ReactDOM.render(React.createElement(
+  _antd.Radio,
+  null,
+  'Radio'
+), mountNode);})()</script>
+  </div>
+  <div class="code-box-meta markdown">
+    <div class="code-box-title">
+      <a href="http://ant.design/components/radio/#demo-basic">基本</a>
+    </div>
+    <p>最简单的用法。</p>
+    <span class="collapse anticon anticon-circle-o-right" unselectable="none" style="-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;"></span>
+  </div>
+<div class="highlight"><pre><code class="javascript"><span class="hljs-keyword">import</span> { Radio } <span class="hljs-keyword">from</span> <span class="hljs-string">'antd'</span>;
+
+ReactDOM.render(<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">Radio</span>&gt;</span>Radio<span class="hljs-tag">&lt;/<span class="hljs-title">Radio</span>&gt;</span>
+, mountNode);</span></code></pre></div></div><div class="code-box" id="demo-radiogroup">
+  <div class="code-box-demo">
+    <div id="components-radio-demo-radiogroup"><div data-reactid=".1k"><div class="ant-radio-group" data-reactid=".1k.0"><label data-reactid=".1k.0.$a/=10"><span class="ant-radio ant-radio-checked ant-radio-checked-1" data-reactid=".1k.0.$a/=10.0"><span class="ant-radio-inner" data-reactid=".1k.0.$a/=10.0.0"></span><input value="a" checked="" type="radio" class="ant-radio-input" data-reactid=".1k.0.$a/=10.0.1"></span><span data-reactid=".1k.0.$a/=10.1">A</span></label><label data-reactid=".1k.0.$b/=11"><span class="ant-radio" data-reactid=".1k.0.$b/=11.0"><span class="ant-radio-inner" data-reactid=".1k.0.$b/=11.0.0"></span><input value="b" type="radio" class="ant-radio-input" data-reactid=".1k.0.$b/=11.0.1"></span><span data-reactid=".1k.0.$b/=11.1">B</span></label><label data-reactid=".1k.0.$c/=12"><span class="ant-radio" data-reactid=".1k.0.$c/=12.0"><span class="ant-radio-inner" data-reactid=".1k.0.$c/=12.0.0"></span><input value="c" type="radio" class="ant-radio-input" data-reactid=".1k.0.$c/=12.0.1"></span><span data-reactid=".1k.0.$c/=12.1">C</span></label><label data-reactid=".1k.0.$d/=13"><span class="ant-radio" data-reactid=".1k.0.$d/=13.0"><span class="ant-radio-inner" data-reactid=".1k.0.$d/=13.0.0"></span><input value="d" type="radio" class="ant-radio-input" data-reactid=".1k.0.$d/=13.0.1"></span><span data-reactid=".1k.0.$d/=13.1">D</span></label></div><div style="margin-top:20px;" data-reactid=".1k.1"><span data-reactid=".1k.1.0">你选中的: </span><span data-reactid=".1k.1.1">a</span></div></div></div>
+    <script>mountNode = document.getElementById('components-radio-demo-radiogroup');</script>
+    <script>(function(){'use strict';
+
+var _antd = require('antd');
+
+var RadioGroup = _antd.Radio.Group;
+
+var App = React.createClass({
+  displayName: 'App',
+
+  getInitialState: function getInitialState() {
+    return {
+      value: 'a'
+    };
+  },
+  onChange: function onChange(e) {
+    console.log('radio checked:' + e.target.value);
+    this.setState({
+      value: e.target.value
+    });
+  },
+  render: function render() {
+    return React.createElement(
+      'div',
+      null,
+      React.createElement(
+        RadioGroup,
+        { onChange: this.onChange, value: this.state.value },
+        React.createElement(
+          _antd.Radio,
+          { value: 'a' },
+          'A'
+        ),
+        React.createElement(
+          _antd.Radio,
+          { value: 'b' },
+          'B'
+        ),
+        React.createElement(
+          _antd.Radio,
+          { value: 'c' },
+          'C'
+        ),
+        React.createElement(
+          _antd.Radio,
+          { value: 'd' },
+          'D'
+        )
+      ),
+      React.createElement(
+        'div',
+        { style: { marginTop: 20 } },
+        '你选中的: ',
+        this.state.value
+      )
+    );
+  }
+});
+ReactDOM.render(React.createElement(App, null), mountNode);})()</script>
+  </div>
+  <div class="code-box-meta markdown">
+    <div class="code-box-title">
+      <a href="http://ant.design/components/radio/#demo-radiogroup">RadioGroup 组合</a>
+    </div>
+    <p>一组互斥的 Radio 配合使用。</p>
+    <span class="collapse anticon anticon-circle-o-right" unselectable="none" style="-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;"></span>
+  </div>
+<div class="highlight"><pre><code class="javascript"><span class="hljs-keyword">import</span> { Radio } <span class="hljs-keyword">from</span> <span class="hljs-string">'antd'</span>;
+<span class="hljs-keyword">const</span> RadioGroup = Radio.Group;
+
+<span class="hljs-keyword">const</span> App = React.createClass({
+  getInitialState: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">return</span> {
+      value: <span class="hljs-string">'a'</span>
+    };
+  },
+  onChange(e) {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'radio checked:'</span> + e.target.value);
+    <span class="hljs-keyword">this</span>.setState({
+      value: e.target.value
+    });
+  },
+  render() {
+    <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">RadioGroup</span> <span class="hljs-attribute">onChange</span>=<span class="hljs-value">{this.onChange}</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">{this.state.value}</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Radio</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"a"</span>&gt;</span>A<span class="hljs-tag">&lt;/<span class="hljs-title">Radio</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Radio</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"b"</span>&gt;</span>B<span class="hljs-tag">&lt;/<span class="hljs-title">Radio</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Radio</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"c"</span>&gt;</span>C<span class="hljs-tag">&lt;/<span class="hljs-title">Radio</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Radio</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"d"</span>&gt;</span>D<span class="hljs-tag">&lt;/<span class="hljs-title">Radio</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">RadioGroup</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">{{marginTop:</span> <span class="hljs-attribute">20</span>}}&gt;</span>你选中的: {this.state.value}<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>;</span>
+  }
+});
+ReactDOM.render(<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">App</span> /&gt;</span>, mountNode);</span></code></pre></div></div>
+  </div>
+  <div class="code-boxes-col-2-1"><div class="code-box" id="demo-disable">
+  <div class="code-box-demo">
+    <div id="components-radio-demo-disable"><div data-reactid=".1l"><label class="undefined undefined-disabled" data-reactid=".1l.0"><span class="ant-radio ant-radio-disabled" data-reactid=".1l.0.0"><span class="ant-radio-inner" data-reactid=".1l.0.0.0"></span><input disabled="" type="radio" class="ant-radio-input" data-reactid=".1l.0.0.1"></span><span data-reactid=".1l.0.1">不可用</span></label><br data-reactid=".1l.1"><label class="undefined undefined-disabled" data-reactid=".1l.2"><span class="ant-radio ant-radio-checked ant-radio-checked-1 ant-radio-disabled" data-reactid=".1l.2.0"><span class="ant-radio-inner" data-reactid=".1l.2.0.0"></span><input disabled="" type="radio" class="ant-radio-input" checked="" data-reactid=".1l.2.0.1"></span><span data-reactid=".1l.2.1">不可用</span></label><div style="margin-top:20px;" data-reactid=".1l.3"><button type="button" class="ant-btn ant-btn-primary" data-reactid=".1l.3.0"><span data-reactid=".1l.3.0.0">Toggle disabled</span></button></div></div></div>
+    <script>mountNode = document.getElementById('components-radio-demo-disable');</script>
+    <script>(function(){"use strict";
+
+var _antd = require("antd");
+
+var App = React.createClass({
+  displayName: "App",
+  getInitialState: function getInitialState() {
+    return {
+      disabled: true
+    };
+  },
+  toggleDisabled: function toggleDisabled() {
+    this.setState({
+      disabled: !this.state.disabled
+    });
+  },
+  render: function render() {
+    return React.createElement(
+      "div",
+      null,
+      React.createElement(
+        _antd.Radio,
+        { defaultChecked: false, disabled: this.state.disabled },
+        "不可用"
+      ),
+      React.createElement("br", null),
+      React.createElement(
+        _antd.Radio,
+        { defaultChecked: true, disabled: this.state.disabled },
+        "不可用"
+      ),
+      React.createElement(
+        "div",
+        { style: { marginTop: 20 } },
+        React.createElement(
+          _antd.Button,
+          { type: "primary", onClick: this.toggleDisabled },
+          "Toggle disabled"
+        )
+      )
+    );
+  }
+});
+
+ReactDOM.render(React.createElement(App, null), mountNode);})()</script>
+  </div>
+  <div class="code-box-meta markdown">
+    <div class="code-box-title">
+      <a href="http://ant.design/components/radio/#demo-disable">不可用</a>
+    </div>
+    <p>Radio 不可用。</p>
+    <span class="collapse anticon anticon-circle-o-right" unselectable="none" style="-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;"></span>
+  </div>
+<div class="highlight"><pre><code class="javascript"><span class="hljs-keyword">import</span> { Radio, Button } <span class="hljs-keyword">from</span> <span class="hljs-string">'antd'</span>;
+
+<span class="hljs-keyword">const</span> App = React.createClass({
+  getInitialState() {
+    <span class="hljs-keyword">return</span> {
+      disabled: <span class="hljs-literal">true</span>
+    };
+  },
+  toggleDisabled() {
+    <span class="hljs-keyword">this</span>.setState({
+      disabled: !<span class="hljs-keyword">this</span>.state.disabled
+    });
+  },
+  render() {
+    <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Radio</span> <span class="hljs-attribute">defaultChecked</span>=<span class="hljs-value">{false}</span> <span class="hljs-attribute">disabled</span>=<span class="hljs-value">{this.state.disabled}</span>&gt;</span>不可用<span class="hljs-tag">&lt;/<span class="hljs-title">Radio</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">br</span> /&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Radio</span> <span class="hljs-attribute">defaultChecked</span> <span class="hljs-attribute">disabled</span>=<span class="hljs-value">{this.state.disabled}</span>&gt;</span>不可用<span class="hljs-tag">&lt;/<span class="hljs-title">Radio</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">{{marginTop:</span> <span class="hljs-attribute">20</span>}}&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"primary"</span> <span class="hljs-attribute">onClick</span>=<span class="hljs-value">{this.toggleDisabled}</span>&gt;</span>
+          Toggle disabled
+        <span class="hljs-tag">&lt;/<span class="hljs-title">Button</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>;</span>
+  }
+});
+
+ReactDOM.render(<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">App</span> /&gt;</span>, mountNode);</span></code></pre></div></div><div class="code-box" id="demo-radiobutton">
+  <div class="code-box-demo">
+    <div id="components-radio-demo-radiobutton"><div data-reactid=".1m"><div data-reactid=".1m.0"><div class="ant-radio-group" data-reactid=".1m.0.0"><label class="ant-radio-button ant-radio-button-checked" data-reactid=".1m.0.0.$a/=10"><span class="ant-radio-button ant-radio ant-radio-checked ant-radio-checked-1" data-reactid=".1m.0.0.$a/=10.0"><span class="ant-radio-inner" data-reactid=".1m.0.0.$a/=10.0.0"></span><input value="a" class="ant-radio-input" checked="" type="radio" data-reactid=".1m.0.0.$a/=10.0.1"></span><span data-reactid=".1m.0.0.$a/=10.1">杭州</span></label><label class="ant-radio-button ant-radio-button-disabled" data-reactid=".1m.0.0.$b/=11"><span class="ant-radio-button ant-radio ant-radio-disabled" data-reactid=".1m.0.0.$b/=11.0"><span class="ant-radio-inner" data-reactid=".1m.0.0.$b/=11.0.0"></span><input value="b" disabled="" class="ant-radio-input" type="radio" data-reactid=".1m.0.0.$b/=11.0.1"></span><span data-reactid=".1m.0.0.$b/=11.1">上海</span></label><label class="ant-radio-button" data-reactid=".1m.0.0.$c/=12"><span class="ant-radio-button ant-radio" data-reactid=".1m.0.0.$c/=12.0"><span class="ant-radio-inner" data-reactid=".1m.0.0.$c/=12.0.0"></span><input value="c" class="ant-radio-input" type="radio" data-reactid=".1m.0.0.$c/=12.0.1"></span><span data-reactid=".1m.0.0.$c/=12.1">北京</span></label><label class="ant-radio-button" data-reactid=".1m.0.0.$d/=13"><span class="ant-radio-button ant-radio" data-reactid=".1m.0.0.$d/=13.0"><span class="ant-radio-inner" data-reactid=".1m.0.0.$d/=13.0.0"></span><input value="d" class="ant-radio-input" type="radio" data-reactid=".1m.0.0.$d/=13.0.1"></span><span data-reactid=".1m.0.0.$d/=13.1">成都</span></label></div></div><div style="margin-top:16px;" data-reactid=".1m.1"><div class="ant-radio-group" data-reactid=".1m.1.0"><label class="ant-radio-button ant-radio-button-checked ant-radio-button-disabled" data-reactid=".1m.1.0.$a/=10"><span class="ant-radio-button ant-radio ant-radio-checked ant-radio-checked-1 ant-radio-disabled" data-reactid=".1m.1.0.$a/=10.0"><span class="ant-radio-inner" data-reactid=".1m.1.0.$a/=10.0.0"></span><input value="a" class="ant-radio-input" checked="" disabled="" type="radio" data-reactid=".1m.1.0.$a/=10.0.1"></span><span data-reactid=".1m.1.0.$a/=10.1">杭州</span></label><label class="ant-radio-button ant-radio-button-disabled" data-reactid=".1m.1.0.$b/=11"><span class="ant-radio-button ant-radio ant-radio-disabled" data-reactid=".1m.1.0.$b/=11.0"><span class="ant-radio-inner" data-reactid=".1m.1.0.$b/=11.0.0"></span><input value="b" class="ant-radio-input" disabled="" type="radio" data-reactid=".1m.1.0.$b/=11.0.1"></span><span data-reactid=".1m.1.0.$b/=11.1">上海</span></label><label class="ant-radio-button ant-radio-button-disabled" data-reactid=".1m.1.0.$c/=12"><span class="ant-radio-button ant-radio ant-radio-disabled" data-reactid=".1m.1.0.$c/=12.0"><span class="ant-radio-inner" data-reactid=".1m.1.0.$c/=12.0.0"></span><input value="c" class="ant-radio-input" disabled="" type="radio" data-reactid=".1m.1.0.$c/=12.0.1"></span><span data-reactid=".1m.1.0.$c/=12.1">北京</span></label><label class="ant-radio-button ant-radio-button-disabled" data-reactid=".1m.1.0.$d/=13"><span class="ant-radio-button ant-radio ant-radio-disabled" data-reactid=".1m.1.0.$d/=13.0"><span class="ant-radio-inner" data-reactid=".1m.1.0.$d/=13.0.0"></span><input value="d" class="ant-radio-input" disabled="" type="radio" data-reactid=".1m.1.0.$d/=13.0.1"></span><span data-reactid=".1m.1.0.$d/=13.1">成都</span></label></div></div></div></div>
+    <script>mountNode = document.getElementById('components-radio-demo-radiobutton');</script>
+    <script>(function(){'use strict';
+
+var _antd = require('antd');
+
+var RadioButton = _antd.Radio.Button;
+var RadioGroup = _antd.Radio.Group;
+
+function onChange(e) {
+  console.log('radio checked:' + e.target.value);
+}
+
+ReactDOM.render(React.createElement(
+  'div',
+  null,
+  React.createElement(
+    'div',
+    null,
+    React.createElement(
+      RadioGroup,
+      { onChange: onChange, defaultValue: 'a' },
+      React.createElement(
+        RadioButton,
+        { value: 'a' },
+        '杭州'
+      ),
+      React.createElement(
+        RadioButton,
+        { value: 'b', disabled: true },
+        '上海'
+      ),
+      React.createElement(
+        RadioButton,
+        { value: 'c' },
+        '北京'
+      ),
+      React.createElement(
+        RadioButton,
+        { value: 'd' },
+        '成都'
+      )
+    )
+  ),
+  React.createElement(
+    'div',
+    { style: { marginTop: 16 } },
+    React.createElement(
+      RadioGroup,
+      { disabled: true, onChange: onChange, defaultValue: 'a' },
+      React.createElement(
+        RadioButton,
+        { value: 'a' },
+        '杭州'
+      ),
+      React.createElement(
+        RadioButton,
+        { value: 'b' },
+        '上海'
+      ),
+      React.createElement(
+        RadioButton,
+        { value: 'c' },
+        '北京'
+      ),
+      React.createElement(
+        RadioButton,
+        { value: 'd' },
+        '成都'
+      )
+    )
+  )
+), mountNode);})()</script>
+  </div>
+  <div class="code-box-meta markdown">
+    <div class="code-box-title">
+      <a href="http://ant.design/components/radio/#demo-radiobutton">按钮样式</a>
+    </div>
+    <p>按钮样式的单选组合。</p>
+    <span class="collapse anticon anticon-circle-o-right" unselectable="none" style="-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;"></span>
+  </div>
+<div class="highlight"><pre><code class="javascript"><span class="hljs-keyword">import</span> { Radio } <span class="hljs-keyword">from</span> <span class="hljs-string">'antd'</span>;
+<span class="hljs-keyword">const</span> RadioButton = Radio.Button;
+<span class="hljs-keyword">const</span> RadioGroup = Radio.Group;
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">onChange</span>(<span class="hljs-params">e</span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'radio checked:'</span> + e.target.value);
+}
+
+ReactDOM.render(<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">RadioGroup</span> <span class="hljs-attribute">onChange</span>=<span class="hljs-value">{onChange}</span> <span class="hljs-attribute">defaultValue</span>=<span class="hljs-value">"a"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">RadioButton</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"a"</span>&gt;</span>杭州<span class="hljs-tag">&lt;/<span class="hljs-title">RadioButton</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">RadioButton</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"b"</span> <span class="hljs-attribute">disabled</span>&gt;</span>上海<span class="hljs-tag">&lt;/<span class="hljs-title">RadioButton</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">RadioButton</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"c"</span>&gt;</span>北京<span class="hljs-tag">&lt;/<span class="hljs-title">RadioButton</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">RadioButton</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"d"</span>&gt;</span>成都<span class="hljs-tag">&lt;/<span class="hljs-title">RadioButton</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">RadioGroup</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">{{</span> <span class="hljs-attribute">marginTop:</span> <span class="hljs-attribute">16</span> }}&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">RadioGroup</span> <span class="hljs-attribute">disabled</span> <span class="hljs-attribute">onChange</span>=<span class="hljs-value">{onChange}</span> <span class="hljs-attribute">defaultValue</span>=<span class="hljs-value">"a"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">RadioButton</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"a"</span>&gt;</span>杭州<span class="hljs-tag">&lt;/<span class="hljs-title">RadioButton</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">RadioButton</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"b"</span>&gt;</span>上海<span class="hljs-tag">&lt;/<span class="hljs-title">RadioButton</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">RadioButton</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"c"</span>&gt;</span>北京<span class="hljs-tag">&lt;/<span class="hljs-title">RadioButton</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">RadioButton</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"d"</span>&gt;</span>成都<span class="hljs-tag">&lt;/<span class="hljs-title">RadioButton</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">RadioGroup</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>, mountNode);</span></code></pre></div></div>
+  </div>
+</div>
+<ul class="demos-anchor">
+  <li>
+    <a title="基本" href="http://ant.design/components/radio/#demo-basic">
+      <span>基本</span>
+    </a>
+  </li>
+  <li>
+    <a title="不可用" href="http://ant.design/components/radio/#demo-disable">
+      <span>不可用</span>
+    </a>
+  </li>
+  <li>
+    <a title="RadioGroup 组合" href="http://ant.design/components/radio/#demo-radiogroup">
+      <span>RadioGroup 组合</span>
+    </a>
+  </li>
+  <li>
+    <a title="按钮样式" href="http://ant.design/components/radio/#demo-radiobutton">
+      <span>按钮样式</span>
+    </a>
+  </li>
+</ul>
+  <div class="api-container markdown"><h2 id="api">API<a href="http://ant.design/components/radio/#api" class="anchor">#</a> </h2><h3 id="radio">Radio<a href="http://ant.design/components/radio/#radio" class="anchor">#</a> </h3><table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+<th>类型</th>
+<th>可选值</th>
+<th>默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>checked</td>
+<td>指定当前是否选中</td>
+<td>Boolean</td>
+<td></td>
+<td>false</td>
+</tr>
+<tr>
+<td>defaultChecked</td>
+<td>初始是否选中</td>
+<td>Boolean</td>
+<td></td>
+<td>false</td>
+</tr>
+<tr>
+<td>value</td>
+<td>根据 value 进行比较，判断是否选中</td>
+<td>String</td>
+<td></td>
+<td>无</td>
+</tr>
+</tbody>
+</table><h3 id="radiogroup">RadioGroup<a href="http://ant.design/components/radio/#radiogroup" class="anchor">#</a> </h3><p>单选框组合，用于包裹一组 <code>Radio</code>。</p><table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+<th>类型</th>
+<th>可选值</th>
+<th>默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>onChange</td>
+<td>选项变化时的回调函数</td>
+<td>Function(e:Event)</td>
+<td>无</td>
+<td>无</td>
+</tr>
+<tr>
+<td>value</td>
+<td>用于设置当前选中的值</td>
+<td>String</td>
+<td>无</td>
+<td>无</td>
+</tr>
+<tr>
+<td>defaultValue</td>
+<td>默认选中的值</td>
+<td>String</td>
+<td>无</td>
+<td>无</td>
+</tr>
+</tbody>
+</table></div>
+</section>
+
+    </div>
+    <script src="./lib/T1AmXhXg0kXXXXXXXX.js" data-no-instant=""></script>
+    <script data-no-instant="">
+      InstantClick.on('change', function() {
+        InstantClickChangeFns.forEach(function(fn) {
+          fn();
+        });
+      });
+      InstantClick.init();
+    </script>
+  
+<div id="instantclick" style="opacity: 0;"><div id="instantclick-bar" class="instantclick-bar" style="transform: translate(100%);"></div></div></body></html>

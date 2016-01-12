@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)http://ant.design/components/steps/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="一个 UI 设计语言">
+    <title>Steps 步骤条 - Ant Design</title>
+    <link rel="icon" href="https://t.alipayobjects.com/images/T1QUBfXo4fXXXXXXXX.png" type="image/x-icon">
+    <link rel="shortcut icon" href="https://t.alipayobjects.com/images/T1QUBfXo4fXXXXXXXX.png" type="image/x-icon">
+    
+    <link rel="stylesheet" href="./dist/demo.css">
+    <link rel="stylesheet" href="./lib/style.css">
+    <link rel="stylesheet" href="./lib/tomorrow.css">
+    <!--[if IE 8]>
+    <script src="https://t.alipayobjects.com/images/rmsweb/T1q8JiXftaXXXXXXXX.js"></script>
+    <![endif]-->
+    <script src="./lib/saved_resource"></script>
+    <script src="./lib/saved_resource(1)"></script>
+    <script>
+    (function() {
+      window.ANT_COMPONENTS = [];
+      window.InstantClickChangeFns = [];
+      ANT_COMPONENTS.push({
+        title: 'Popconfirm',
+        desc: '气泡确认框'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Affix',
+        desc: '固钉'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Badge',
+        desc: '徽标数'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Breadcrumb',
+        desc: '面包屑'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Button',
+        desc: '按钮'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Calendar',
+        desc: '日历'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Carousel',
+        desc: '走马灯'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Checkbox',
+        desc: '多选框'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Collapse',
+        desc: '折叠面板'
+      });
+      ANT_COMPONENTS.push({
+        title: 'DatePicker',
+        desc: '日期选择框'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Dropdown',
+        desc: '下拉菜单'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Form',
+        desc: '表单'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Icon',
+        desc: '图标'
+      });
+      ANT_COMPONENTS.push({
+        title: 'InputNumber',
+        desc: '数字输入框'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Layout',
+        desc: '布局'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Menu',
+        desc: '导航菜单'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Message',
+        desc: '全局提示'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Modal',
+        desc: '对话框'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Notification',
+        desc: '通知提醒框'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Pagination',
+        desc: '分页'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Alert',
+        desc: '警告提示'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Popover',
+        desc: '气泡卡片'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Progress',
+        desc: '进度条'
+      });
+      ANT_COMPONENTS.push({
+        title: 'QueueAnim',
+        desc: '进出场动画'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Radio',
+        desc: '单选框'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Select',
+        desc: '选择器'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Slider',
+        desc: '滑动输入条'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Spin',
+        desc: '加载中'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Steps',
+        desc: '步骤条'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Switch',
+        desc: '开关'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Table',
+        desc: '表格'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Tabs',
+        desc: '标签页'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Tag',
+        desc: '标签'
+      });
+      ANT_COMPONENTS.push({
+        title: 'TimePicker',
+        desc: '时间选择框'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Timeline',
+        desc: '时间轴'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Tooltip',
+        desc: '文字提示'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Transfer',
+        desc: '穿梭框'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Tree',
+        desc: '树形控件'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Upload',
+        desc: '文件上传'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Validation',
+        desc: '表单校验'
+      });
+      var i = location.pathname.split('/').lastIndexOf('ant-design');
+      if (i > 0) {
+        window.rootUrl = location.origin + location.pathname.split('/').slice(0, 2+1).join('/');
+      } else {
+        window.rootUrl = location.origin;
+      }
+    })();
+    </script>
+    <script src="./lib/script.js"></script>
+    <script>
+      window.antdVersion = {
+        latest: '0.11.2'
+      };
+    </script>
+    <script src="./dist/demo.js"></script>
+    <script src="./lib/T1DrxhXe0mXXXXXXXX.js"></script>
+    
+  <style>#instantclick{position:fixed;top:0;left:0;width:100%;pointer-events:none;z-index:2147483647;transition:opacity .25s .1s;}.instantclick-bar{background:#29d;width:100%;margin-left:-100%;height:2px;transition:all .25s;}</style></head>
+  <body>
+ 
+    <div class="main-wrapper">
+      
+
+ 
+<section class="main-container">
+  <article class="markdown">
+    <h1>
+      Steps 步骤条
+    </h1>
+    <p>引导用户按照流程完成任务的导航条。</p>
+<h2 id="何时使用">何时使用<a href="#何时使用" class="anchor">#</a> </h2><p>当任务复杂或者存在先后关系时，将其分解成一系列步骤，从而简化任务。</p>
+
+
+
+
+
+  </article>
+<h2 class="component-demos">
+  代码演示
+  <i class="anticon anticon-appstore icon-all" title="展开全部代码"></i>
+</h2>
+<div class="code-boxes">
+    <div class="code-boxes-col-1-1"><div class="code-box" id="demo-simple">
+  <div class="code-box-demo">
+    <div id="components-steps-demo-simple"><div class="ant-steps" data-reactid=".38"><div class="ant-steps-item ant-steps-status-finish" style="width: 359px;" data-reactid=".38.$0/=1$0"><div class="ant-steps-tail" data-reactid=".38.$0/=1$0.0"><i data-reactid=".38.$0/=1$0.0.0"></i></div><div class="ant-steps-head" data-reactid=".38.$0/=1$0.1"><div class="ant-steps-head-inner" data-reactid=".38.$0/=1$0.1.0"><span class="ant-steps-icon anticon anticon-check" data-reactid=".38.$0/=1$0.1.0.0"></span></div></div><div class="ant-steps-main" style="max-width:100px;" data-reactid=".38.$0/=1$0.2"><div class="ant-steps-title" data-reactid=".38.$0/=1$0.2.0">已完成</div><div class="ant-steps-description" data-reactid=".38.$0/=1$0.2.1">这里是多信息的描述啊</div></div></div><div class="ant-steps-item ant-steps-status-process" style="width: 359px;" data-reactid=".38.$1/=1$1"><div class="ant-steps-tail" data-reactid=".38.$1/=1$1.0"><i data-reactid=".38.$1/=1$1.0.0"></i></div><div class="ant-steps-head" data-reactid=".38.$1/=1$1.1"><div class="ant-steps-head-inner" data-reactid=".38.$1/=1$1.1.0"><span class="ant-steps-icon" data-reactid=".38.$1/=1$1.1.0.0">2</span></div></div><div class="ant-steps-main" style="max-width:100px;" data-reactid=".38.$1/=1$1.2"><div class="ant-steps-title" data-reactid=".38.$1/=1$1.2.0">进行中</div><div class="ant-steps-description" data-reactid=".38.$1/=1$1.2.1">这里是多信息的耶哦耶哦哦耶哦耶</div></div></div><div class="ant-steps-item ant-steps-status-wait" style="width: 353px;" data-reactid=".38.$2/=1$2"><div class="ant-steps-tail" data-reactid=".38.$2/=1$2.0"><i data-reactid=".38.$2/=1$2.0.0"></i></div><div class="ant-steps-head" data-reactid=".38.$2/=1$2.1"><div class="ant-steps-head-inner" data-reactid=".38.$2/=1$2.1.0"><span class="ant-steps-icon" data-reactid=".38.$2/=1$2.1.0.0">3</span></div></div><div class="ant-steps-main" style="max-width:100px;" data-reactid=".38.$2/=1$2.2"><div class="ant-steps-title" data-reactid=".38.$2/=1$2.2.0">又一个待运行</div><div class="ant-steps-description" data-reactid=".38.$2/=1$2.2.1">描述啊描述啊</div></div></div><div class="ant-steps-item ant-steps-item-last ant-steps-status-wait" style="width: auto; position: absolute;" data-reactid=".38.$3/=1$3"><span data-reactid=".38.$3/=1$3.0"></span><div class="ant-steps-head" data-reactid=".38.$3/=1$3.1"><div class="ant-steps-head-inner" data-reactid=".38.$3/=1$3.1.0"><span class="ant-steps-icon" data-reactid=".38.$3/=1$3.1.0.0">4</span></div></div><div class="ant-steps-main" style="max-width:100px;" data-reactid=".38.$3/=1$3.2"><div class="ant-steps-title" data-reactid=".38.$3/=1$3.2.0">待运行</div><div class="ant-steps-description" data-reactid=".38.$3/=1$3.2.1">这里是多信息的描述啊</div></div></div></div></div>
+    <script>mountNode = document.getElementById('components-steps-demo-simple');</script>
+    <script>(function(){'use strict';
+
+var _antd = require('antd');
+
+var Step = _antd.Steps.Step;
+
+var steps = [{
+  title: '已完成',
+  description: '这里是多信息的描述啊'
+}, {
+  title: '进行中',
+  description: '这里是多信息的耶哦耶哦哦耶哦耶'
+}, {
+  title: '又一个待运行',
+  description: '描述啊描述啊'
+}, {
+  title: '待运行',
+  description: '这里是多信息的描述啊'
+}].map(function (s, i) {
+  return React.createElement(Step, { key: i, title: s.title, description: s.description });
+});
+
+ReactDOM.render(React.createElement(
+  _antd.Steps,
+  { current: 1 },
+  steps
+), mountNode);})()</script>
+  </div>
+  <div class="code-box-meta markdown">
+    <div class="code-box-title">
+      <a href="http://ant.design/components/steps/#demo-simple">基本用法</a>
+    </div>
+    <p>简单的步骤条。</p>
+    <span class="collapse anticon anticon-circle-o-right" unselectable="none" style="-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;"></span>
+  </div>
+<div class="highlight"><pre><code class="javascript"><span class="hljs-keyword">import</span> { Steps } <span class="hljs-keyword">from</span> <span class="hljs-string">'antd'</span>;
+<span class="hljs-keyword">const</span> Step = Steps.Step;
+
+<span class="hljs-keyword">const</span> steps = [{
+  title: <span class="hljs-string">'已完成'</span>,
+  description: <span class="hljs-string">'这里是多信息的描述啊'</span>
+}, {
+  title: <span class="hljs-string">'进行中'</span>,
+  description: <span class="hljs-string">'这里是多信息的耶哦耶哦哦耶哦耶'</span>
+}, {
+  title: <span class="hljs-string">'又一个待运行'</span>,
+  description: <span class="hljs-string">'描述啊描述啊'</span>
+}, {
+  title: <span class="hljs-string">'待运行'</span>,
+  description: <span class="hljs-string">'这里是多信息的描述啊'</span>
+}].map(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">s, i</span>) </span>{
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">Step</span> <span class="hljs-attribute">key</span>=<span class="hljs-value">{i}</span> <span class="hljs-attribute">title</span>=<span class="hljs-value">{s.title}</span> <span class="hljs-attribute">description</span>=<span class="hljs-value">{s.description}</span> /&gt;</span>
+  )</span>;
+});
+
+ReactDOM.render(<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">Steps</span> <span class="hljs-attribute">current</span>=<span class="hljs-value">{1}</span>&gt;</span>{steps}<span class="hljs-tag">&lt;/<span class="hljs-title">Steps</span>&gt;</span>, mountNode);</span></code></pre></div></div><div class="code-box" id="demo-small-size">
+  <div class="code-box-demo">
+    <div id="components-steps-demo-small-size"><div class="ant-steps ant-steps-small" data-reactid=".39"><div class="ant-steps-item ant-steps-status-finish" style="width: 380px;" data-reactid=".39.$0/=1$0"><div class="ant-steps-tail" data-reactid=".39.$0/=1$0.0"><i data-reactid=".39.$0/=1$0.0.0"></i></div><div class="ant-steps-head" data-reactid=".39.$0/=1$0.1"><div class="ant-steps-head-inner" data-reactid=".39.$0/=1$0.1.0"><span class="ant-steps-icon anticon anticon-check" data-reactid=".39.$0/=1$0.1.0.0"></span></div></div><div class="ant-steps-main" style="max-width:100px;" data-reactid=".39.$0/=1$0.2"><div class="ant-steps-title" data-reactid=".39.$0/=1$0.2.0">已完成</div><span data-reactid=".39.$0/=1$0.2.1"></span></div></div><div class="ant-steps-item ant-steps-status-process" style="width: 380px;" data-reactid=".39.$1/=1$1"><div class="ant-steps-tail" data-reactid=".39.$1/=1$1.0"><i data-reactid=".39.$1/=1$1.0.0"></i></div><div class="ant-steps-head" data-reactid=".39.$1/=1$1.1"><div class="ant-steps-head-inner" data-reactid=".39.$1/=1$1.1.0"><span class="ant-steps-icon" data-reactid=".39.$1/=1$1.1.0.0">2</span></div></div><div class="ant-steps-main" style="max-width:100px;" data-reactid=".39.$1/=1$1.2"><div class="ant-steps-title" data-reactid=".39.$1/=1$1.2.0">进行中</div><span data-reactid=".39.$1/=1$1.2.1"></span></div></div><div class="ant-steps-item ant-steps-status-wait" style="width: 380px;" data-reactid=".39.$2/=1$2"><div class="ant-steps-tail" data-reactid=".39.$2/=1$2.0"><i data-reactid=".39.$2/=1$2.0.0"></i></div><div class="ant-steps-head" data-reactid=".39.$2/=1$2.1"><div class="ant-steps-head-inner" data-reactid=".39.$2/=1$2.1.0"><span class="ant-steps-icon" data-reactid=".39.$2/=1$2.1.0.0">3</span></div></div><div class="ant-steps-main" style="max-width:100px;" data-reactid=".39.$2/=1$2.2"><div class="ant-steps-title" data-reactid=".39.$2/=1$2.2.0">待运行</div><span data-reactid=".39.$2/=1$2.2.1"></span></div></div><div class="ant-steps-item ant-steps-item-last ant-steps-status-wait" style="width: auto; position: absolute;" data-reactid=".39.$3/=1$3"><span data-reactid=".39.$3/=1$3.0"></span><div class="ant-steps-head" data-reactid=".39.$3/=1$3.1"><div class="ant-steps-head-inner" data-reactid=".39.$3/=1$3.1.0"><span class="ant-steps-icon" data-reactid=".39.$3/=1$3.1.0.0">4</span></div></div><div class="ant-steps-main" style="max-width:100px;" data-reactid=".39.$3/=1$3.2"><div class="ant-steps-title" data-reactid=".39.$3/=1$3.2.0">待运行</div><span data-reactid=".39.$3/=1$3.2.1"></span></div></div></div></div>
+    <script>mountNode = document.getElementById('components-steps-demo-small-size');</script>
+    <script>(function(){'use strict';
+
+var _antd = require('antd');
+
+var Step = _antd.Steps.Step;
+
+var steps = [{
+  status: 'finish',
+  title: '已完成'
+}, {
+  status: 'process',
+  title: '进行中'
+}, {
+  status: 'wait',
+  title: '待运行'
+}, {
+  status: 'wait',
+  title: '待运行'
+}].map(function (s, i) {
+  return React.createElement(Step, { key: i, title: s.title, description: s.description });
+});
+
+ReactDOM.render(React.createElement(
+  _antd.Steps,
+  { size: 'small', current: 1 },
+  steps
+), mountNode);})()</script>
+  </div>
+  <div class="code-box-meta markdown">
+    <div class="code-box-title">
+      <a href="http://ant.design/components/steps/#demo-small-size">迷你版</a>
+    </div>
+    <p>迷你版的步骤条，通过设置 <code>&lt;Steps size="small"&gt;</code> 启用.</p>
+    <span class="collapse anticon anticon-circle-o-right" unselectable="none" style="-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;"></span>
+  </div>
+<div class="highlight"><pre><code class="javascript"><span class="hljs-keyword">import</span> { Steps } <span class="hljs-keyword">from</span> <span class="hljs-string">'antd'</span>;
+<span class="hljs-keyword">const</span> Step = Steps.Step;
+
+<span class="hljs-keyword">const</span> steps = [{
+  status: <span class="hljs-string">'finish'</span>,
+  title: <span class="hljs-string">'已完成'</span>
+}, {
+  status: <span class="hljs-string">'process'</span>,
+  title: <span class="hljs-string">'进行中'</span>
+}, {
+  status: <span class="hljs-string">'wait'</span>,
+  title: <span class="hljs-string">'待运行'</span>
+}, {
+  status: <span class="hljs-string">'wait'</span>,
+  title: <span class="hljs-string">'待运行'</span>
+}].map(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">s, i</span>) </span>{
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">Step</span> <span class="hljs-attribute">key</span>=<span class="hljs-value">{i}</span> <span class="hljs-attribute">title</span>=<span class="hljs-value">{s.title}</span> <span class="hljs-attribute">description</span>=<span class="hljs-value">{s.description}</span> /&gt;</span>
+  )</span>;
+});
+
+ReactDOM.render(<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">Steps</span> <span class="hljs-attribute">size</span>=<span class="hljs-value">"small"</span> <span class="hljs-attribute">current</span>=<span class="hljs-value">{1}</span>&gt;</span>{steps}<span class="hljs-tag">&lt;/<span class="hljs-title">Steps</span>&gt;</span>, mountNode);</span></code></pre></div></div><div class="code-box" id="demo-icon">
+  <div class="code-box-demo">
+    <div id="components-steps-demo-icon"><div class="ant-steps" data-reactid=".3a"><div class="ant-steps-item ant-steps-status-finish ant-steps-custom" style="width: 571px;" data-reactid=".3a.$/=10"><div class="ant-steps-tail" data-reactid=".3a.$/=10.0"><i data-reactid=".3a.$/=10.0.0"></i></div><div class="ant-steps-head" data-reactid=".3a.$/=10.1"><div class="ant-steps-head-inner" data-reactid=".3a.$/=10.1.0"><span class="ant-steps-icon anticon anticon-cloud" data-reactid=".3a.$/=10.1.0.0"></span></div></div><div class="ant-steps-main" style="max-width:100px;" data-reactid=".3a.$/=10.2"><div class="ant-steps-title" data-reactid=".3a.$/=10.2.0">步骤1</div><span data-reactid=".3a.$/=10.2.1"></span></div></div><div class="ant-steps-item ant-steps-status-process ant-steps-custom" style="width: 571px;" data-reactid=".3a.$/=11"><div class="ant-steps-tail" data-reactid=".3a.$/=11.0"><i data-reactid=".3a.$/=11.0.0"></i></div><div class="ant-steps-head" data-reactid=".3a.$/=11.1"><div class="ant-steps-head-inner" data-reactid=".3a.$/=11.1.0"><span class="ant-steps-icon anticon anticon-apple" data-reactid=".3a.$/=11.1.0.0"></span></div></div><div class="ant-steps-main" style="max-width:100px;" data-reactid=".3a.$/=11.2"><div class="ant-steps-title" data-reactid=".3a.$/=11.2.0">步骤2</div><span data-reactid=".3a.$/=11.2.1"></span></div></div><div class="ant-steps-item ant-steps-item-last ant-steps-status-wait ant-steps-custom" style="width: auto; position: absolute;" data-reactid=".3a.$/=12"><span data-reactid=".3a.$/=12.0"></span><div class="ant-steps-head" data-reactid=".3a.$/=12.1"><div class="ant-steps-head-inner" data-reactid=".3a.$/=12.1.0"><span class="ant-steps-icon anticon anticon-github" data-reactid=".3a.$/=12.1.0.0"></span></div></div><div class="ant-steps-main" style="max-width:100px;" data-reactid=".3a.$/=12.2"><div class="ant-steps-title" data-reactid=".3a.$/=12.2.0">步骤3</div><span data-reactid=".3a.$/=12.2.1"></span></div></div></div></div>
+    <script>mountNode = document.getElementById('components-steps-demo-icon');</script>
+    <script>(function(){"use strict";
+
+var _antd = require("antd");
+
+var Step = _antd.Steps.Step;
+
+ReactDOM.render(React.createElement(
+  _antd.Steps,
+  null,
+  React.createElement(Step, { status: "finish", title: "步骤1", icon: "cloud" }),
+  React.createElement(Step, { status: "process", title: "步骤2", icon: "apple" }),
+  React.createElement(Step, { status: "wait", title: "步骤3", icon: "github" })
+), mountNode);})()</script>
+  </div>
+  <div class="code-box-meta markdown">
+    <div class="code-box-title">
+      <a href="http://ant.design/components/steps/#demo-icon">带ICON图标的步骤条</a>
+    </div>
+    <p>通过设置 <code>Steps.Step</code> 的 <code>icon</code> 属性，可以启用自定义图标。</p>
+    <span class="collapse anticon anticon-circle-o-right" unselectable="none" style="-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;"></span>
+  </div>
+<div class="highlight"><pre><code class="javascript"><span class="hljs-keyword">import</span> { Steps } <span class="hljs-keyword">from</span> <span class="hljs-string">'antd'</span>;
+<span class="hljs-keyword">const</span> Step = Steps.Step;
+
+ReactDOM.render(<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">Steps</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">Step</span> <span class="hljs-attribute">status</span>=<span class="hljs-value">"finish"</span> <span class="hljs-attribute">title</span>=<span class="hljs-value">"步骤1"</span> <span class="hljs-attribute">icon</span>=<span class="hljs-value">"cloud"</span> /&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">Step</span> <span class="hljs-attribute">status</span>=<span class="hljs-value">"process"</span> <span class="hljs-attribute">title</span>=<span class="hljs-value">"步骤2"</span> <span class="hljs-attribute">icon</span>=<span class="hljs-value">"apple"</span> /&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">Step</span> <span class="hljs-attribute">status</span>=<span class="hljs-value">"wait"</span> <span class="hljs-attribute">title</span>=<span class="hljs-value">"步骤3"</span> <span class="hljs-attribute">icon</span>=<span class="hljs-value">"github"</span> /&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">Steps</span>&gt;</span>, mountNode);</span></code></pre></div></div><div class="code-box" id="demo-step-next">
+  <div class="code-box-demo">
+    <div id="components-steps-demo-step-next"><div data-reactid=".3b"><div data-reactid=".3b.0"><span data-reactid=".3b.0.0">当前正在执行第 </span><span data-reactid=".3b.0.1">2</span><span data-reactid=".3b.0.2"> 步</span></div><div class="ant-steps" data-reactid=".3b.1"><div class="ant-steps-item ant-steps-status-finish" style="width: 283px;" data-reactid=".3b.1.$0/=1$0"><div class="ant-steps-tail" data-reactid=".3b.1.$0/=1$0.0"><i data-reactid=".3b.1.$0/=1$0.0.0"></i></div><div class="ant-steps-head" data-reactid=".3b.1.$0/=1$0.1"><div class="ant-steps-head-inner" data-reactid=".3b.1.$0/=1$0.1.0"><span class="ant-steps-icon anticon anticon-check" data-reactid=".3b.1.$0/=1$0.1.0.0"></span></div></div><div class="ant-steps-main" style="max-width:100px;" data-reactid=".3b.1.$0/=1$0.2"><div class="ant-steps-title" data-reactid=".3b.1.$0/=1$0.2.0">步骤1</div><span data-reactid=".3b.1.$0/=1$0.2.1"></span></div></div><div class="ant-steps-item ant-steps-status-process" style="width: 283px;" data-reactid=".3b.1.$1/=1$1"><div class="ant-steps-tail" data-reactid=".3b.1.$1/=1$1.0"><i data-reactid=".3b.1.$1/=1$1.0.0"></i></div><div class="ant-steps-head" data-reactid=".3b.1.$1/=1$1.1"><div class="ant-steps-head-inner" data-reactid=".3b.1.$1/=1$1.1.0"><span class="ant-steps-icon" data-reactid=".3b.1.$1/=1$1.1.0.0">2</span></div></div><div class="ant-steps-main" style="max-width:100px;" data-reactid=".3b.1.$1/=1$1.2"><div class="ant-steps-title" data-reactid=".3b.1.$1/=1$1.2.0">步骤2</div><span data-reactid=".3b.1.$1/=1$1.2.1"></span></div></div><div class="ant-steps-item ant-steps-status-wait" style="width: 283px;" data-reactid=".3b.1.$2/=1$2"><div class="ant-steps-tail" data-reactid=".3b.1.$2/=1$2.0"><i data-reactid=".3b.1.$2/=1$2.0.0"></i></div><div class="ant-steps-head" data-reactid=".3b.1.$2/=1$2.1"><div class="ant-steps-head-inner" data-reactid=".3b.1.$2/=1$2.1.0"><span class="ant-steps-icon" data-reactid=".3b.1.$2/=1$2.1.0.0">3</span></div></div><div class="ant-steps-main" style="max-width:100px;" data-reactid=".3b.1.$2/=1$2.2"><div class="ant-steps-title" data-reactid=".3b.1.$2/=1$2.2.0">步骤3</div><span data-reactid=".3b.1.$2/=1$2.2.1"></span></div></div><div class="ant-steps-item ant-steps-status-wait" style="width: 283px;" data-reactid=".3b.1.$3/=1$3"><div class="ant-steps-tail" data-reactid=".3b.1.$3/=1$3.0"><i data-reactid=".3b.1.$3/=1$3.0.0"></i></div><div class="ant-steps-head" data-reactid=".3b.1.$3/=1$3.1"><div class="ant-steps-head-inner" data-reactid=".3b.1.$3/=1$3.1.0"><span class="ant-steps-icon" data-reactid=".3b.1.$3/=1$3.1.0.0">4</span></div></div><div class="ant-steps-main" style="max-width:100px;" data-reactid=".3b.1.$3/=1$3.2"><div class="ant-steps-title" data-reactid=".3b.1.$3/=1$3.2.0">步骤4</div><span data-reactid=".3b.1.$3/=1$3.2.1"></span></div></div><div class="ant-steps-item ant-steps-item-last ant-steps-status-wait" style="width: auto; position: absolute;" data-reactid=".3b.1.$4/=1$4"><span data-reactid=".3b.1.$4/=1$4.0"></span><div class="ant-steps-head" data-reactid=".3b.1.$4/=1$4.1"><div class="ant-steps-head-inner" data-reactid=".3b.1.$4/=1$4.1.0"><span class="ant-steps-icon" data-reactid=".3b.1.$4/=1$4.1.0.0">5</span></div></div><div class="ant-steps-main" style="max-width:100px;" data-reactid=".3b.1.$4/=1$4.2"><div class="ant-steps-title" data-reactid=".3b.1.$4/=1$4.2.0">步骤5</div><span data-reactid=".3b.1.$4/=1$4.2.1"></span></div></div></div><div data-reactid=".3b.2"><button type="button" class="ant-btn" data-reactid=".3b.2.0"><span data-reactid=".3b.2.0.0">下一步</span></button></div></div></div>
+    <script>mountNode = document.getElementById('components-steps-demo-step-next');</script>
+    <style type="text/css">#components-steps-demo-step-next > div > div {
+  margin-bottom: 30px;
+}</style><script>(function(){'use strict';
+
+var _antd = require('antd');
+
+var Step = _antd.Steps.Step;
+var array = Array.apply(null, Array(Math.floor(Math.random() * 3) + 3));
+var steps = array.map(function (item, i) {
+  return {
+    title: '步骤' + (i + 1)
+  };
+});
+
+var App = React.createClass({
+  displayName: 'App',
+  getInitialState: function getInitialState() {
+    return {
+      currentStep: Math.floor(Math.random() * steps.length)
+    };
+  },
+  next: function next() {
+    var s = this.state.currentStep + 1;
+    if (s === steps.length) {
+      s = 0;
+    }
+    this.setState({
+      currentStep: s
+    });
+  },
+  render: function render() {
+    var cs = this.state.currentStep;
+    return React.createElement(
+      'div',
+      null,
+      React.createElement(
+        'div',
+        null,
+        '当前正在执行第 ',
+        cs + 1,
+        ' 步'
+      ),
+      React.createElement(
+        _antd.Steps,
+        { current: cs },
+        steps.map(function (s, i) {
+          return React.createElement(Step, { key: i, title: s.title, description: s.description });
+        })
+      ),
+      React.createElement(
+        'div',
+        null,
+        React.createElement(
+          _antd.Button,
+          { onClick: this.next },
+          '下一步'
+        )
+      )
+    );
+  }
+});
+
+ReactDOM.render(React.createElement(App, null), mountNode);})()</script>
+  </div>
+  <div class="code-box-meta markdown">
+    <div class="code-box-title">
+      <a href="http://ant.design/components/steps/#demo-step-next">切换到下一步</a>
+    </div>
+    <p>随机生成 3~6 个步骤，初始随机进行到其中一个步骤。</p>
+    <span class="collapse anticon anticon-circle-o-right" unselectable="none" style="-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;"></span>
+  </div>
+<div class="highlight"><pre><code class="css"><span class="hljs-id">#components-steps-demo-step-next</span> &gt; <span class="hljs-tag">div</span> &gt; <span class="hljs-tag">div</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">margin-bottom</span>:<span class="hljs-value"> <span class="hljs-number">30px</span></span></span>;
+}</span></code></pre></div><div class="highlight"><pre><code class="javascript">import { Steps, Button } from 'antd';
+const Step = Steps.Step;
+const array = Array.apply(null, Array(Math.floor(Math.random() * 3) + 3));
+const steps = array.map(function(item, i) {
+  return {
+    title: '步骤' + (i + 1)
+  };
+});
+
+const App = React.createClass({
+  getInitialState() {
+    return {
+      currentStep: Math.floor(Math.random() * steps.length)
+    };
+  },
+  next() {
+    let s = this.state.currentStep + 1;
+    if (s === steps.length) {
+      s = 0;
+    }
+    this.setState({
+      currentStep: s
+    });
+  },
+  render() {
+    const cs = this.state.currentStep;
+    return (
+      &lt;div&gt;
+        &lt;div&gt;当前正在执行第 {cs + 1} 步&lt;/div&gt;
+        &lt;Steps current={cs}&gt;
+          {steps.map((s, i) =&gt; &lt;Step key={i} title={s.title} description={s.description} /&gt;)}
+        &lt;/Steps&gt;
+        &lt;div&gt;
+          &lt;Button onClick={this.next}&gt;下一步&lt;/Button&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    );
+  }
+});
+
+ReactDOM.render(&lt;App /&gt;, mountNode);</code></pre></div></div><div class="code-box" id="demo-vertical">
+  <div class="code-box-demo">
+    <div id="components-steps-demo-vertical"><div class="ant-steps ant-steps-vertical" data-reactid=".3c"><div class="ant-steps-item ant-steps-status-finish" style="width:auto;" data-reactid=".3c.$0/=1$0"><div class="ant-steps-tail" data-reactid=".3c.$0/=1$0.0"><i data-reactid=".3c.$0/=1$0.0.0"></i></div><div class="ant-steps-head" data-reactid=".3c.$0/=1$0.1"><div class="ant-steps-head-inner" data-reactid=".3c.$0/=1$0.1.0"><span class="ant-steps-icon anticon anticon-check" data-reactid=".3c.$0/=1$0.1.0.0"></span></div></div><div class="ant-steps-main" style="max-width:auto;" data-reactid=".3c.$0/=1$0.2"><div class="ant-steps-title" data-reactid=".3c.$0/=1$0.2.0">已完成</div><div class="ant-steps-description" data-reactid=".3c.$0/=1$0.2.1">这里是信息的描述</div></div></div><div class="ant-steps-item ant-steps-status-process" style="width:auto;" data-reactid=".3c.$1/=1$1"><div class="ant-steps-tail" data-reactid=".3c.$1/=1$1.0"><i data-reactid=".3c.$1/=1$1.0.0"></i></div><div class="ant-steps-head" data-reactid=".3c.$1/=1$1.1"><div class="ant-steps-head-inner" data-reactid=".3c.$1/=1$1.1.0"><span class="ant-steps-icon" data-reactid=".3c.$1/=1$1.1.0.0">2</span></div></div><div class="ant-steps-main" style="max-width:auto;" data-reactid=".3c.$1/=1$1.2"><div class="ant-steps-title" data-reactid=".3c.$1/=1$1.2.0">进行中</div><div class="ant-steps-description" data-reactid=".3c.$1/=1$1.2.1">这里是信息的描述</div></div></div><div class="ant-steps-item ant-steps-status-wait" style="width:auto;" data-reactid=".3c.$2/=1$2"><div class="ant-steps-tail" data-reactid=".3c.$2/=1$2.0"><i data-reactid=".3c.$2/=1$2.0.0"></i></div><div class="ant-steps-head" data-reactid=".3c.$2/=1$2.1"><div class="ant-steps-head-inner" data-reactid=".3c.$2/=1$2.1.0"><span class="ant-steps-icon" data-reactid=".3c.$2/=1$2.1.0.0">3</span></div></div><div class="ant-steps-main" style="max-width:auto;" data-reactid=".3c.$2/=1$2.2"><div class="ant-steps-title" data-reactid=".3c.$2/=1$2.2.0">待运行</div><div class="ant-steps-description" data-reactid=".3c.$2/=1$2.2.1">这里是信息的描述</div></div></div><div class="ant-steps-item ant-steps-item-last ant-steps-status-wait" style="width:auto;" data-reactid=".3c.$3/=1$3"><span data-reactid=".3c.$3/=1$3.0"></span><div class="ant-steps-head" data-reactid=".3c.$3/=1$3.1"><div class="ant-steps-head-inner" data-reactid=".3c.$3/=1$3.1.0"><span class="ant-steps-icon" data-reactid=".3c.$3/=1$3.1.0.0">4</span></div></div><div class="ant-steps-main" style="max-width:auto;" data-reactid=".3c.$3/=1$3.2"><div class="ant-steps-title" data-reactid=".3c.$3/=1$3.2.0">又一个待运行</div><div class="ant-steps-description" data-reactid=".3c.$3/=1$3.2.1">这里是信息的描述</div></div></div></div></div>
+    <script>mountNode = document.getElementById('components-steps-demo-vertical');</script>
+    <script>(function(){'use strict';
+
+var _antd = require('antd');
+
+var Step = _antd.Steps.Step;
+
+var steps = [{
+  title: '已完成',
+  description: '这里是信息的描述'
+}, {
+  title: '进行中',
+  description: '这里是信息的描述'
+}, {
+  title: '待运行',
+  description: '这里是信息的描述'
+}, {
+  title: '又一个待运行',
+  description: '这里是信息的描述'
+}].map(function (s, i) {
+  return React.createElement(Step, { key: i, title: s.title, description: s.description });
+});
+
+ReactDOM.render(React.createElement(
+  _antd.Steps,
+  { direction: 'vertical', current: 1 },
+  steps
+), mountNode);})()</script>
+  </div>
+  <div class="code-box-meta markdown">
+    <div class="code-box-title">
+      <a href="http://ant.design/components/steps/#demo-vertical">竖直方向的步骤条</a>
+    </div>
+    <p>简单的竖直方向的步骤条。</p>
+    <span class="collapse anticon anticon-circle-o-right" unselectable="none" style="-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;"></span>
+  </div>
+<div class="highlight"><pre><code class="javascript"><span class="hljs-keyword">import</span> { Steps } <span class="hljs-keyword">from</span> <span class="hljs-string">'antd'</span>;
+<span class="hljs-keyword">const</span> Step = Steps.Step;
+
+<span class="hljs-keyword">const</span> steps = [{
+  title: <span class="hljs-string">'已完成'</span>,
+  description: <span class="hljs-string">'这里是信息的描述'</span>
+}, {
+  title: <span class="hljs-string">'进行中'</span>,
+  description: <span class="hljs-string">'这里是信息的描述'</span>
+}, {
+  title: <span class="hljs-string">'待运行'</span>,
+  description: <span class="hljs-string">'这里是信息的描述'</span>
+}, {
+  title: <span class="hljs-string">'又一个待运行'</span>,
+  description: <span class="hljs-string">'这里是信息的描述'</span>
+}].map(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">s, i</span>) </span>{
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">Step</span> <span class="hljs-attribute">key</span>=<span class="hljs-value">{i}</span> <span class="hljs-attribute">title</span>=<span class="hljs-value">{s.title}</span> <span class="hljs-attribute">description</span>=<span class="hljs-value">{s.description}</span> /&gt;</span>
+  )</span>;
+});
+
+ReactDOM.render(<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">Steps</span> <span class="hljs-attribute">direction</span>=<span class="hljs-value">"vertical"</span> <span class="hljs-attribute">current</span>=<span class="hljs-value">{1}</span>&gt;</span>{steps}<span class="hljs-tag">&lt;/<span class="hljs-title">Steps</span>&gt;</span>,
+  mountNode);</span></code></pre></div></div><div class="code-box" id="demo-vertical-small">
+  <div class="code-box-demo">
+    <div id="components-steps-demo-vertical-small"><div class="ant-steps ant-steps-small ant-steps-vertical" data-reactid=".3d"><div class="ant-steps-item ant-steps-status-finish" style="width:auto;" data-reactid=".3d.$0/=1$0"><div class="ant-steps-tail" data-reactid=".3d.$0/=1$0.0"><i data-reactid=".3d.$0/=1$0.0.0"></i></div><div class="ant-steps-head" data-reactid=".3d.$0/=1$0.1"><div class="ant-steps-head-inner" data-reactid=".3d.$0/=1$0.1.0"><span class="ant-steps-icon anticon anticon-check" data-reactid=".3d.$0/=1$0.1.0.0"></span></div></div><div class="ant-steps-main" style="max-width:auto;" data-reactid=".3d.$0/=1$0.2"><div class="ant-steps-title" data-reactid=".3d.$0/=1$0.2.0">已完成</div><div class="ant-steps-description" data-reactid=".3d.$0/=1$0.2.1">这里是信息的描述</div></div></div><div class="ant-steps-item ant-steps-status-process" style="width:auto;" data-reactid=".3d.$1/=1$1"><div class="ant-steps-tail" data-reactid=".3d.$1/=1$1.0"><i data-reactid=".3d.$1/=1$1.0.0"></i></div><div class="ant-steps-head" data-reactid=".3d.$1/=1$1.1"><div class="ant-steps-head-inner" data-reactid=".3d.$1/=1$1.1.0"><span class="ant-steps-icon" data-reactid=".3d.$1/=1$1.1.0.0">2</span></div></div><div class="ant-steps-main" style="max-width:auto;" data-reactid=".3d.$1/=1$1.2"><div class="ant-steps-title" data-reactid=".3d.$1/=1$1.2.0">进行中</div><div class="ant-steps-description" data-reactid=".3d.$1/=1$1.2.1">这里是信息的描述</div></div></div><div class="ant-steps-item ant-steps-item-last ant-steps-status-wait" style="width:auto;" data-reactid=".3d.$2/=1$2"><span data-reactid=".3d.$2/=1$2.0"></span><div class="ant-steps-head" data-reactid=".3d.$2/=1$2.1"><div class="ant-steps-head-inner" data-reactid=".3d.$2/=1$2.1.0"><span class="ant-steps-icon" data-reactid=".3d.$2/=1$2.1.0.0">3</span></div></div><div class="ant-steps-main" style="max-width:auto;" data-reactid=".3d.$2/=1$2.2"><div class="ant-steps-title" data-reactid=".3d.$2/=1$2.2.0">待运行</div><div class="ant-steps-description" data-reactid=".3d.$2/=1$2.2.1">这里是信息的描述</div></div></div></div></div>
+    <script>mountNode = document.getElementById('components-steps-demo-vertical-small');</script>
+    <script>(function(){'use strict';
+
+var _antd = require('antd');
+
+var Step = _antd.Steps.Step;
+
+var steps = [{
+  title: '已完成',
+  description: '这里是信息的描述'
+}, {
+  title: '进行中',
+  description: '这里是信息的描述'
+}, {
+  title: '待运行',
+  description: '这里是信息的描述'
+}].map(function (s, i) {
+  return React.createElement(Step, { key: i, title: s.title, description: s.description });
+});
+
+ReactDOM.render(React.createElement(
+  _antd.Steps,
+  { size: 'small', direction: 'vertical', current: 1 },
+  steps
+), mountNode);})()</script>
+  </div>
+  <div class="code-box-meta markdown">
+    <div class="code-box-title">
+      <a href="http://ant.design/components/steps/#demo-vertical-small">竖直方向的小型步骤条</a>
+    </div>
+    <p>简单的竖直方向的小型步骤条。</p>
+    <span class="collapse anticon anticon-circle-o-right" unselectable="none" style="-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;"></span>
+  </div>
+<div class="highlight"><pre><code class="javascript"><span class="hljs-keyword">import</span> { Steps } <span class="hljs-keyword">from</span> <span class="hljs-string">'antd'</span>;
+<span class="hljs-keyword">const</span> Step = Steps.Step;
+
+<span class="hljs-keyword">const</span> steps = [{
+  title: <span class="hljs-string">'已完成'</span>,
+  description: <span class="hljs-string">'这里是信息的描述'</span>
+}, {
+  title: <span class="hljs-string">'进行中'</span>,
+  description: <span class="hljs-string">'这里是信息的描述'</span>
+}, {
+  title: <span class="hljs-string">'待运行'</span>,
+  description: <span class="hljs-string">'这里是信息的描述'</span>
+}].map(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">s, i</span>) </span>{
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">Step</span> <span class="hljs-attribute">key</span>=<span class="hljs-value">{i}</span> <span class="hljs-attribute">title</span>=<span class="hljs-value">{s.title}</span> <span class="hljs-attribute">description</span>=<span class="hljs-value">{s.description}</span> /&gt;</span>
+  )</span>;
+});
+
+ReactDOM.render(<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">Steps</span> <span class="hljs-attribute">size</span>=<span class="hljs-value">"small"</span> <span class="hljs-attribute">direction</span>=<span class="hljs-value">"vertical"</span> <span class="hljs-attribute">current</span>=<span class="hljs-value">{1}</span>&gt;</span>{steps}<span class="hljs-tag">&lt;/<span class="hljs-title">Steps</span>&gt;</span>,
+  mountNode);</span></code></pre></div></div><div class="code-box" id="demo-status">
+  <div class="code-box-demo">
+    <div id="components-steps-demo-status"><div class="ant-steps" data-reactid=".3e"><div class="ant-steps-item ant-steps-status-finish" style="width: 359px;" data-reactid=".3e.$0/=1$0"><div class="ant-steps-tail" data-reactid=".3e.$0/=1$0.0"><i data-reactid=".3e.$0/=1$0.0.0"></i></div><div class="ant-steps-head" data-reactid=".3e.$0/=1$0.1"><div class="ant-steps-head-inner" data-reactid=".3e.$0/=1$0.1.0"><span class="ant-steps-icon anticon anticon-check" data-reactid=".3e.$0/=1$0.1.0.0"></span></div></div><div class="ant-steps-main" style="max-width:100px;" data-reactid=".3e.$0/=1$0.2"><div class="ant-steps-title" data-reactid=".3e.$0/=1$0.2.0">已完成</div><div class="ant-steps-description" data-reactid=".3e.$0/=1$0.2.1">这里是多信息的描述啊</div></div></div><div class="ant-steps-item ant-steps-status-process" style="width: 359px;" data-reactid=".3e.$1/=1$1"><div class="ant-steps-tail" data-reactid=".3e.$1/=1$1.0"><i data-reactid=".3e.$1/=1$1.0.0"></i></div><div class="ant-steps-head" data-reactid=".3e.$1/=1$1.1"><div class="ant-steps-head-inner" data-reactid=".3e.$1/=1$1.1.0"><span class="ant-steps-icon" data-reactid=".3e.$1/=1$1.1.0.0">2</span></div></div><div class="ant-steps-main" style="max-width:100px;" data-reactid=".3e.$1/=1$1.2"><div class="ant-steps-title" data-reactid=".3e.$1/=1$1.2.0">进行中</div><div class="ant-steps-description" data-reactid=".3e.$1/=1$1.2.1">这里是多信息的耶哦耶哦哦耶哦耶</div></div></div><div class="ant-steps-item ant-steps-status-wait" style="width: 353px;" data-reactid=".3e.$2/=1$2"><div class="ant-steps-tail" data-reactid=".3e.$2/=1$2.0"><i data-reactid=".3e.$2/=1$2.0.0"></i></div><div class="ant-steps-head" data-reactid=".3e.$2/=1$2.1"><div class="ant-steps-head-inner" data-reactid=".3e.$2/=1$2.1.0"><span class="ant-steps-icon" data-reactid=".3e.$2/=1$2.1.0.0">3</span></div></div><div class="ant-steps-main" style="max-width:100px;" data-reactid=".3e.$2/=1$2.2"><div class="ant-steps-title" data-reactid=".3e.$2/=1$2.2.0">又一个待运行</div><div class="ant-steps-description" data-reactid=".3e.$2/=1$2.2.1">描述啊描述啊</div></div></div><div class="ant-steps-item ant-steps-item-last ant-steps-status-wait" style="width: auto; position: absolute;" data-reactid=".3e.$3/=1$3"><span data-reactid=".3e.$3/=1$3.0"></span><div class="ant-steps-head" data-reactid=".3e.$3/=1$3.1"><div class="ant-steps-head-inner" data-reactid=".3e.$3/=1$3.1.0"><span class="ant-steps-icon" data-reactid=".3e.$3/=1$3.1.0.0">4</span></div></div><div class="ant-steps-main" style="max-width:100px;" data-reactid=".3e.$3/=1$3.2"><div class="ant-steps-title" data-reactid=".3e.$3/=1$3.2.0">待运行</div><div class="ant-steps-description" data-reactid=".3e.$3/=1$3.2.1">这里是多信息的描述啊</div></div></div></div></div>
+    <script>mountNode = document.getElementById('components-steps-demo-status');</script>
+    <script>(function(){'use strict';
+
+var _antd = require('antd');
+
+var Step = _antd.Steps.Step;
+
+var steps = [{
+  status: 'finish',
+  title: '已完成',
+  description: '这里是多信息的描述啊'
+}, {
+  status: 'process',
+  title: '进行中',
+  description: '这里是多信息的耶哦耶哦哦耶哦耶'
+}, {
+  status: 'wait',
+  title: '又一个待运行',
+  description: '描述啊描述啊'
+}, {
+  status: 'wait',
+  title: '待运行',
+  description: '这里是多信息的描述啊'
+}].map(function (s, i) {
+  return React.createElement(Step, { key: i, title: s.title, status: s.status, description: s.description });
+});
+
+ReactDOM.render(React.createElement(
+  _antd.Steps,
+  null,
+  steps
+), mountNode);})()</script>
+  </div>
+  <div class="code-box-meta markdown">
+    <div class="code-box-title">
+      <a href="http://ant.design/components/steps/#demo-status">自定义状态</a>
+    </div>
+    <p>可以使用 <code>status</code> 定义每个步骤的状态。</p>
+    <span class="collapse anticon anticon-circle-o-right" unselectable="none" style="-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;"></span>
+  </div>
+<div class="highlight"><pre><code class="javascript"><span class="hljs-keyword">import</span> { Steps } <span class="hljs-keyword">from</span> <span class="hljs-string">'antd'</span>;
+<span class="hljs-keyword">const</span> Step = Steps.Step;
+
+<span class="hljs-keyword">const</span> steps = [{
+  status: <span class="hljs-string">'finish'</span>,
+  title: <span class="hljs-string">'已完成'</span>,
+  description: <span class="hljs-string">'这里是多信息的描述啊'</span>
+}, {
+  status: <span class="hljs-string">'process'</span>,
+  title: <span class="hljs-string">'进行中'</span>,
+  description: <span class="hljs-string">'这里是多信息的耶哦耶哦哦耶哦耶'</span>
+}, {
+  status: <span class="hljs-string">'wait'</span>,
+  title: <span class="hljs-string">'又一个待运行'</span>,
+  description: <span class="hljs-string">'描述啊描述啊'</span>
+}, {
+  status: <span class="hljs-string">'wait'</span>,
+  title: <span class="hljs-string">'待运行'</span>,
+  description: <span class="hljs-string">'这里是多信息的描述啊'</span>
+}].map(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">s, i</span>) </span>{
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">Step</span> <span class="hljs-attribute">key</span>=<span class="hljs-value">{i}</span> <span class="hljs-attribute">title</span>=<span class="hljs-value">{s.title}</span> <span class="hljs-attribute">status</span>=<span class="hljs-value">{s.status}</span> <span class="hljs-attribute">description</span>=<span class="hljs-value">{s.description}</span> /&gt;</span>
+  )</span>;
+});
+
+ReactDOM.render(<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">Steps</span>&gt;</span>{steps}<span class="hljs-tag">&lt;/<span class="hljs-title">Steps</span>&gt;</span>, mountNode);</span></code></pre></div></div>
+    </div>
+</div>
+<ul class="demos-anchor">
+  <li>
+    <a title="基本用法" href="http://ant.design/components/steps/#demo-simple">
+      <span>基本用法</span>
+    </a>
+  </li>
+  <li>
+    <a title="迷你版" href="http://ant.design/components/steps/#demo-small-size">
+      <span>迷你版</span>
+    </a>
+  </li>
+  <li>
+    <a title="带ICON图标的步骤条" href="http://ant.design/components/steps/#demo-icon">
+      <span>带ICON图标的步骤条</span>
+    </a>
+  </li>
+  <li>
+    <a title="切换到下一步" href="http://ant.design/components/steps/#demo-step-next">
+      <span>切换到下一步</span>
+    </a>
+  </li>
+  <li>
+    <a title="竖直方向的步骤条" href="http://ant.design/components/steps/#demo-vertical">
+      <span>竖直方向的步骤条</span>
+    </a>
+  </li>
+  <li>
+    <a title="竖直方向的小型步骤条" href="http://ant.design/components/steps/#demo-vertical-small">
+      <span>竖直方向的小型步骤条</span>
+    </a>
+  </li>
+  <li>
+    <a title="自定义状态" href="http://ant.design/components/steps/#demo-status">
+      <span>自定义状态</span>
+    </a>
+  </li>
+</ul>
+  <div class="api-container markdown"><h2 id="api">API<a href="http://ant.design/components/steps/#api" class="anchor">#</a> </h2><div class="highlight"><pre><code class="javascript">&lt;Steps&gt;
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">Steps.Step</span> <span class="hljs-attribute">title</span>=<span class="hljs-value">"第一步"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">Steps.Step</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">Steps.Step</span> <span class="hljs-attribute">title</span>=<span class="hljs-value">"第二步"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">Steps.Step</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">Steps.Step</span> <span class="hljs-attribute">title</span>=<span class="hljs-value">"第三步"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">Steps.Step</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">Steps</span>&gt;</span></span></code></pre></div><h3 id="steps">Steps<a href="http://ant.design/components/steps/#steps" class="anchor">#</a> </h3><p>整体步骤条。</p><table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+<th>类型</th>
+<th>可选值</th>
+<th>默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>current</td>
+<td>可选参数，指定当前处理正在执行状态的步骤，从0开始记数。在子Step元素中，可以通过status属性覆盖状态。</td>
+<td>number</td>
+<td>无</td>
+<td>0</td>
+</tr>
+<tr>
+<td>size</td>
+<td>可选参数，指定大小（目前只支持普通和迷你两种大小）。</td>
+<td>string</td>
+<td>small, default</td>
+<td>default</td>
+</tr>
+<tr>
+<td>direction</td>
+<td>可选参数，指定步骤条方向（目前支持水平和竖直两种方向，默认水平方向）。</td>
+<td>string</td>
+<td>vertical</td>
+<td>无</td>
+</tr>
+<tr>
+<td>maxDescriptionWidth</td>
+<td>可选参数，指定步骤的详细描述文字的最大宽度。</td>
+<td>number</td>
+<td>无</td>
+<td>100</td>
+</tr>
+</tbody>
+</table><h3 id="steps-step">Steps.Step<a href="http://ant.design/components/steps/#steps-step" class="anchor">#</a> </h3><p>步骤条内的每一个步。</p><table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+<th>类型</th>
+<th>可选值</th>
+<th>默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>status</td>
+<td>可选参数，指定状态。当不配置该属性时，会使用父Steps元素的current来自动指定状态。</td>
+<td>string</td>
+<td>wait, process, finish</td>
+<td>wait</td>
+</tr>
+<tr>
+<td>title</td>
+<td>必要参数，标题。</td>
+<td>string/jsx</td>
+<td>无</td>
+<td>无</td>
+</tr>
+<tr>
+<td>description</td>
+<td>可选参数，步骤的详情描述。</td>
+<td>string/jsx</td>
+<td>无</td>
+<td>空</td>
+</tr>
+<tr>
+<td>icon</td>
+<td>可选参数，步骤的Icon。如果不指定，则使用默认的样式。</td>
+<td>string/jsx</td>
+<td>无</td>
+<td>空</td>
+</tr>
+</tbody>
+</table></div>
+</section>
+
+    </div>
+    <script src="./lib/T1AmXhXg0kXXXXXXXX.js" data-no-instant=""></script>
+    <script data-no-instant="">
+      InstantClick.on('change', function() {
+        InstantClickChangeFns.forEach(function(fn) {
+          fn();
+        });
+      });
+      InstantClick.init();
+    </script>
+  
+<div id="instantclick" style="opacity: 0;"><div id="instantclick-bar" class="instantclick-bar" style="transform: translate(100%);"></div></div></body></html>

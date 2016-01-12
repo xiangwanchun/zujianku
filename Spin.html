@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)http://ant.design/components/spin/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="一个 UI 设计语言">
+    <title>Spin 加载中 - Ant Design</title>
+    <link rel="icon" href="https://t.alipayobjects.com/images/T1QUBfXo4fXXXXXXXX.png" type="image/x-icon">
+    <link rel="shortcut icon" href="https://t.alipayobjects.com/images/T1QUBfXo4fXXXXXXXX.png" type="image/x-icon">
+    
+    <link rel="stylesheet" href="./dist/demo.css">
+    <link rel="stylesheet" href="./lib/style.css">
+    <link rel="stylesheet" href="./lib/tomorrow.css">
+    <!--[if IE 8]>
+    <script src="https://t.alipayobjects.com/images/rmsweb/T1q8JiXftaXXXXXXXX.js"></script>
+    <![endif]-->
+    <script src="./lib/saved_resource"></script>
+    <script src="./lib/saved_resource(1)"></script>
+    <script>
+    (function() {
+      window.ANT_COMPONENTS = [];
+      window.InstantClickChangeFns = [];
+      ANT_COMPONENTS.push({
+        title: 'Popconfirm',
+        desc: '气泡确认框'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Affix',
+        desc: '固钉'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Badge',
+        desc: '徽标数'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Breadcrumb',
+        desc: '面包屑'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Button',
+        desc: '按钮'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Calendar',
+        desc: '日历'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Carousel',
+        desc: '走马灯'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Checkbox',
+        desc: '多选框'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Collapse',
+        desc: '折叠面板'
+      });
+      ANT_COMPONENTS.push({
+        title: 'DatePicker',
+        desc: '日期选择框'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Dropdown',
+        desc: '下拉菜单'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Form',
+        desc: '表单'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Icon',
+        desc: '图标'
+      });
+      ANT_COMPONENTS.push({
+        title: 'InputNumber',
+        desc: '数字输入框'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Layout',
+        desc: '布局'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Menu',
+        desc: '导航菜单'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Message',
+        desc: '全局提示'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Modal',
+        desc: '对话框'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Notification',
+        desc: '通知提醒框'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Pagination',
+        desc: '分页'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Alert',
+        desc: '警告提示'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Popover',
+        desc: '气泡卡片'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Progress',
+        desc: '进度条'
+      });
+      ANT_COMPONENTS.push({
+        title: 'QueueAnim',
+        desc: '进出场动画'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Radio',
+        desc: '单选框'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Select',
+        desc: '选择器'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Slider',
+        desc: '滑动输入条'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Spin',
+        desc: '加载中'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Steps',
+        desc: '步骤条'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Switch',
+        desc: '开关'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Table',
+        desc: '表格'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Tabs',
+        desc: '标签页'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Tag',
+        desc: '标签'
+      });
+      ANT_COMPONENTS.push({
+        title: 'TimePicker',
+        desc: '时间选择框'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Timeline',
+        desc: '时间轴'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Tooltip',
+        desc: '文字提示'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Transfer',
+        desc: '穿梭框'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Tree',
+        desc: '树形控件'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Upload',
+        desc: '文件上传'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Validation',
+        desc: '表单校验'
+      });
+      var i = location.pathname.split('/').lastIndexOf('ant-design');
+      if (i > 0) {
+        window.rootUrl = location.origin + location.pathname.split('/').slice(0, 2+1).join('/');
+      } else {
+        window.rootUrl = location.origin;
+      }
+    })();
+    </script>
+    <script src="./lib/script.js"></script>
+    <script>
+      window.antdVersion = {
+        latest: '0.11.2'
+      };
+    </script>
+    <script src="./dist/demo.js"></script>
+    <script src="./lib/T1DrxhXe0mXXXXXXXX.js"></script>
+    
+  <style>#instantclick{position:fixed;top:0;left:0;width:100%;pointer-events:none;z-index:2147483647;transition:opacity .25s .1s;}
+  .instantclick-bar{background:#29d;width:100%;margin-left:-100%;height:2px;transition:all .25s;}</style></head>
+  <body>
+    
+    <div class="main-wrapper">
+      
+
+ 
+<section class="main-container">
+  <article class="markdown">
+    <h1>
+      Spin 加载中
+    </h1>
+    <p>用于页面和区块的加载中状态。</p>
+<h2 id="何时使用">何时使用<a href="#何时使用" class="anchor">#</a> </h2><p>页面局部处于等待异步数据或正在渲染过程时，合适的加载动效会有效缓解用户的焦虑。</p>
+
+
+  </article>
+<h2 class="component-demos">
+  代码演示
+  <i class="anticon anticon-appstore icon-all" title="展开全部代码"></i>
+</h2>
+<div class="code-boxes">
+  <div class="code-boxes-col-2-1"><div class="code-box" id="demo-basic">
+  <div class="code-box-demo">
+    <div id="components-spin-demo-basic"><div class="ant-spin ant-spin-default ant-spin-spining" data-reactid=".47"><span class="ant-spin-dot ant-spin-dot-first" data-reactid=".47.0"></span><span class="ant-spin-dot ant-spin-dot-second" data-reactid=".47.1"></span><span class="ant-spin-dot ant-spin-dot-third" data-reactid=".47.2"></span></div></div>
+    <script>mountNode = document.getElementById('components-spin-demo-basic');</script>
+    <script>(function(){'use strict';
+
+var _antd = require('antd');
+
+ReactDOM.render(React.createElement(_antd.Spin, null), mountNode);})()</script>
+  </div>
+  <div class="code-box-meta markdown">
+    <div class="code-box-title">
+      <a href="http://ant.design/components/spin/#demo-basic">基本用法</a>
+    </div>
+    <p>一个简单的 loading 状态。</p>
+    <span class="collapse anticon anticon-circle-o-right" unselectable="none" style="-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;"></span>
+  </div>
+<div class="highlight"><pre><code class="javascript"><span class="hljs-keyword">import</span> { Spin } <span class="hljs-keyword">from</span> <span class="hljs-string">'antd'</span>;
+
+ReactDOM.render(
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">Spin</span> /&gt;</span>
+, mountNode);</span></code></pre></div></div><div class="code-box" id="demo-inside">
+  <div class="code-box-demo">
+    <div id="components-spin-demo-inside"><div class="example" data-reactid=".48"><div class="ant-spin ant-spin-default ant-spin-spining" data-reactid=".48.0"><span class="ant-spin-dot ant-spin-dot-first" data-reactid=".48.0.0"></span><span class="ant-spin-dot ant-spin-dot-second" data-reactid=".48.0.1"></span><span class="ant-spin-dot ant-spin-dot-third" data-reactid=".48.0.2"></span></div></div></div>
+    <script>mountNode = document.getElementById('components-spin-demo-inside');</script>
+    <script>(function(){"use strict";
+
+var _antd = require("antd");
+
+ReactDOM.render(React.createElement(
+  "div",
+  { className: "example" },
+  React.createElement(_antd.Spin, null)
+), mountNode);})()</script><style type="text/css">.example {
+  text-align: center;
+  background: rgba(0,0,0,0.05);
+  border-radius: 4px;
+  margin-bottom: 20px;
+  padding: 30px 50px;
+  margin: 20px 0;
+}</style>
+  </div>
+  <div class="code-box-meta markdown">
+    <div class="code-box-title">
+      <a href="http://ant.design/components/spin/#demo-inside">容器</a>
+    </div>
+    <p>放入一个容器中。</p>
+    <span class="collapse anticon anticon-circle-o-right" unselectable="none" style="-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;"></span>
+  </div>
+<div class="highlight"><pre><code class="javascript"><span class="hljs-keyword">import</span> { Spin } <span class="hljs-keyword">from</span> <span class="hljs-string">'antd'</span>;
+
+ReactDOM.render(
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">className</span>=<span class="hljs-value">"example"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Spin</span> /&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+, mountNode);</span></code></pre></div><div class="highlight"><pre><code class="css"><span class="hljs-class">.example</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">text-align</span>:<span class="hljs-value"> center</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">background</span>:<span class="hljs-value"> <span class="hljs-function">rgba</span>(<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">0.05</span>)</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">border-radius</span>:<span class="hljs-value"> <span class="hljs-number">4px</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">margin-bottom</span>:<span class="hljs-value"> <span class="hljs-number">20px</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">padding</span>:<span class="hljs-value"> <span class="hljs-number">30px</span> <span class="hljs-number">50px</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">margin</span>:<span class="hljs-value"> <span class="hljs-number">20px</span> <span class="hljs-number">0</span></span></span>;
+}</span></code></pre></div></div>
+  </div>
+  <div class="code-boxes-col-2-1"><div class="code-box" id="demo-size">
+  <div class="code-box-demo">
+    <div id="components-spin-demo-size"><div data-reactid=".49"><div class="ant-spin ant-spin-small ant-spin-spining" data-reactid=".49.0"><span class="ant-spin-dot ant-spin-dot-first" data-reactid=".49.0.0"></span><span class="ant-spin-dot ant-spin-dot-second" data-reactid=".49.0.1"></span><span class="ant-spin-dot ant-spin-dot-third" data-reactid=".49.0.2"></span></div><br data-reactid=".49.1"><div class="ant-spin ant-spin-default ant-spin-spining" data-reactid=".49.2"><span class="ant-spin-dot ant-spin-dot-first" data-reactid=".49.2.0"></span><span class="ant-spin-dot ant-spin-dot-second" data-reactid=".49.2.1"></span><span class="ant-spin-dot ant-spin-dot-third" data-reactid=".49.2.2"></span></div><br data-reactid=".49.3"><div class="ant-spin ant-spin-large ant-spin-spining" data-reactid=".49.4"><span class="ant-spin-dot ant-spin-dot-first" data-reactid=".49.4.0"></span><span class="ant-spin-dot ant-spin-dot-second" data-reactid=".49.4.1"></span><span class="ant-spin-dot ant-spin-dot-third" data-reactid=".49.4.2"></span></div></div></div>
+    <script>mountNode = document.getElementById('components-spin-demo-size');</script>
+    <script>(function(){"use strict";
+
+var _antd = require("antd");
+
+ReactDOM.render(React.createElement(
+  "div",
+  null,
+  React.createElement(_antd.Spin, { size: "small" }),
+  React.createElement("br", null),
+  React.createElement(_antd.Spin, null),
+  React.createElement("br", null),
+  React.createElement(_antd.Spin, { size: "large" })
+), mountNode);})()</script>
+  </div>
+  <div class="code-box-meta markdown">
+    <div class="code-box-title">
+      <a href="http://ant.design/components/spin/#demo-size">各种大小</a>
+    </div>
+    <p>小的用于文本加载，默认用于卡片容器级加载，大的用于<strong>页面级</strong>加载。</p>
+    <span class="collapse anticon anticon-circle-o-right" unselectable="none" style="-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;"></span>
+  </div>
+<div class="highlight"><pre><code class="javascript"><span class="hljs-keyword">import</span> { Spin } <span class="hljs-keyword">from</span> <span class="hljs-string">'antd'</span>;
+
+ReactDOM.render(
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Spin</span> <span class="hljs-attribute">size</span>=<span class="hljs-value">"small"</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">br</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Spin</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">br</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Spin</span> <span class="hljs-attribute">size</span>=<span class="hljs-value">"large"</span> /&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+, mountNode);</span></code></pre></div></div><div class="code-box" id="demo-nested">
+  <div class="code-box-demo">
+    <div id="components-spin-demo-nested"><div data-reactid=".4a"><div class="" data-reactid=".4a.0"><div class="ant-spin ant-spin-default" data-reactid=".4a.0.0"><span class="ant-spin-dot ant-spin-dot-first" data-reactid=".4a.0.0.0"></span><span class="ant-spin-dot ant-spin-dot-second" data-reactid=".4a.0.0.1"></span><span class="ant-spin-dot ant-spin-dot-third" data-reactid=".4a.0.0.2"></span></div><div class="ant-spin-container" data-reactid=".4a.0.1"><div data-show="true" class="ant-alert ant-alert-info ant-alert-with-description ant-alert-no-icon" data-reactid=".4a.0.1.0"><span class="ant-alert-message" data-reactid=".4a.0.1.0.1">消息提示的文案</span><span class="ant-alert-description" data-reactid=".4a.0.1.0.2">消息提示的辅助性文字介绍消息提示的辅助性文字介绍消息提示的辅助性文字介绍</span></div></div></div><span data-reactid=".4a.1">切换加载状态：</span><span class="ant-switch-default ant-switch" data-reactid=".4a.2"><span class="ant-switch-inner" data-reactid=".4a.2.0"></span></span></div></div>
+    <script>mountNode = document.getElementById('components-spin-demo-nested');</script>
+    <script>(function(){"use strict";
+
+var _antd = require("antd");
+
+var Card = React.createClass({
+  displayName: "Card",
+  getInitialState: function getInitialState() {
+    return {
+      loading: false
+    };
+  },
+  toggle: function toggle(value) {
+    this.setState({
+      loading: value
+    });
+  },
+  render: function render() {
+    var container = React.createElement(_antd.Alert, { message: "消息提示的文案",
+      description: "消息提示的辅助性文字介绍消息提示的辅助性文字介绍消息提示的辅助性文字介绍",
+      type: "info" });
+    return React.createElement(
+      "div",
+      null,
+      React.createElement(
+        _antd.Spin,
+        { spining: this.state.loading },
+        container
+      ),
+      "切换加载状态：",
+      React.createElement(_antd.Switch, { checked: this.state.loading, onChange: this.toggle })
+    );
+  }
+});
+
+ReactDOM.render(React.createElement(Card, null), mountNode);})()</script><style type="text/css">.card-example {
+  border-radius: 4px;
+  padding: 24px;
+  height: 100px;
+  border: 1px solid #e9e9e9;
+  background: url(https://t.alipayobjects.com/images/rmsweb/T10_NiXeRcXXXXXXXX.png);
+  margin-bottom: 16px;
+}</style>
+  </div>
+  <div class="code-box-meta markdown">
+    <div class="code-box-title">
+      <a href="http://ant.design/components/spin/#demo-nested">卡片加载中</a>
+    </div>
+    <p>可以直接把内容内嵌到 <code>Spin</code> 中，将现有容器变为加载状态。</p>
+    <span class="collapse anticon anticon-circle-o-right" unselectable="none" style="-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;"></span>
+  </div>
+<div class="highlight"><pre><code class="javascript"><span class="hljs-keyword">import</span> { Spin, Switch, Alert } <span class="hljs-keyword">from</span> <span class="hljs-string">'antd'</span>;
+
+<span class="hljs-keyword">const</span> Card = React.createClass({
+  getInitialState() {
+    <span class="hljs-keyword">return</span> {
+      loading: <span class="hljs-literal">false</span>
+    };
+  },
+  toggle(value) {
+    <span class="hljs-keyword">this</span>.setState({
+      loading: value
+    });
+  },
+  render() {
+    <span class="hljs-keyword">const</span> container = <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">Alert</span> <span class="hljs-attribute">message</span>=<span class="hljs-value">"消息提示的文案"</span>
+      <span class="hljs-attribute">description</span>=<span class="hljs-value">"消息提示的辅助性文字介绍消息提示的辅助性文字介绍消息提示的辅助性文字介绍"</span>
+      <span class="hljs-attribute">type</span>=<span class="hljs-value">"info"</span> /&gt;</span>;</span>
+    <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Spin</span> <span class="hljs-attribute">spining</span>=<span class="hljs-value">{this.state.loading}</span>&gt;</span>{container}<span class="hljs-tag">&lt;/<span class="hljs-title">Spin</span>&gt;</span>
+      切换加载状态：<span class="hljs-tag">&lt;<span class="hljs-title">Switch</span> <span class="hljs-attribute">checked</span>=<span class="hljs-value">{this.state.loading}</span> <span class="hljs-attribute">onChange</span>=<span class="hljs-value">{this.toggle}</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>;</span>
+  }
+});
+
+ReactDOM.render(<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">Card</span> /&gt;</span>, mountNode);</span></code></pre></div><div class="highlight"><pre><code class="css"><span class="hljs-class">.card-example</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">border-radius</span>:<span class="hljs-value"> <span class="hljs-number">4px</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">padding</span>:<span class="hljs-value"> <span class="hljs-number">24px</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">height</span>:<span class="hljs-value"> <span class="hljs-number">100px</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">border</span>:<span class="hljs-value"> <span class="hljs-number">1px</span> solid <span class="hljs-hexcolor">#e9e9e9</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">background</span>:<span class="hljs-value"> <span class="hljs-function">url</span>(https://t.alipayobjects.com/images/rmsweb/T10_NiXeRcXXXXXXXX.png)</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">margin-bottom</span>:<span class="hljs-value"> <span class="hljs-number">16px</span></span></span>;
+}</span></code></pre></div></div>
+  </div>
+</div>
+<ul class="demos-anchor">
+  <li>
+    <a title="基本用法" href="http://ant.design/components/spin/#demo-basic">
+      <span>基本用法</span>
+    </a>
+  </li>
+  <li>
+    <a title="各种大小" href="http://ant.design/components/spin/#demo-size">
+      <span>各种大小</span>
+    </a>
+  </li>
+  <li>
+    <a title="容器" href="http://ant.design/components/spin/#demo-inside">
+      <span>容器</span>
+    </a>
+  </li>
+  <li>
+    <a title="卡片加载中" href="http://ant.design/components/spin/#demo-nested">
+      <span>卡片加载中</span>
+    </a>
+  </li>
+</ul>
+  <div class="api-container markdown"><h2 id="api">API<a href="http://ant.design/components/spin/#api" class="anchor">#</a> </h2><table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>size</td>
+<td>enum</td>
+<td>default</td>
+<td>spin组件中点的大小，可选值为 small default large</td>
+</tr>
+<tr>
+<td>spining</td>
+<td>boolean</td>
+<td>true</td>
+<td>用于内嵌其他组件的模式，可以关闭 loading 效果</td>
+</tr>
+</tbody>
+</table></div>
+</section>
+
+    </div>
+    <script src="./lib/T1AmXhXg0kXXXXXXXX.js" data-no-instant=""></script>
+    <script data-no-instant="">
+      InstantClick.on('change', function() {
+        InstantClickChangeFns.forEach(function(fn) {
+          fn();
+        });
+      });
+      InstantClick.init();
+    </script>
+  
+<div id="instantclick" style="opacity: 0;"><div id="instantclick-bar" class="instantclick-bar" style="transform: translate(100%);"></div></div></body></html>

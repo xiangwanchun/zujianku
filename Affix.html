@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)http://ant.design/components/affix/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="一个 UI 设计语言">
+    <title>Affix 固钉 - Ant Design</title>
+    <link rel="icon" href="https://t.alipayobjects.com/images/T1QUBfXo4fXXXXXXXX.png" type="image/x-icon">
+    <link rel="shortcut icon" href="https://t.alipayobjects.com/images/T1QUBfXo4fXXXXXXXX.png" type="image/x-icon">
+    
+    <link rel="stylesheet" href="./dist/demo.css">
+    <link rel="stylesheet" href="./lib/style.css">
+    <link rel="stylesheet" href="./lib/tomorrow.css">
+    <!--[if IE 8]>
+    <script src="https://t.alipayobjects.com/images/rmsweb/T1q8JiXftaXXXXXXXX.js"></script>
+    <![endif]-->
+
+   
+    <script src="./lib/script.js"></script>
+    <script>
+      window.antdVersion = {
+        latest: '0.11.2'
+      };
+    </script>
+    <script src="./dist/demo.js"></script>
+    <script src="./lib/T1DrxhXe0mXXXXXXXX.js"></script>
+    
+  <style>#instantclick{position:fixed;top:0;left:0;width:100%;pointer-events:none;z-index:2147483647;transition:opacity .25s .1s}.instantclick-bar{background:#29d;width:100%;margin-left:-100%;height:2px;transition:all .25s;}</style></head>
+  <body>
+  
+    <div class="main-wrapper">
+ 
+<section class="main-container">
+  <article class="markdown">
+    <h1>
+      Affix 固钉
+    </h1>
+    <p>将页面元素钉在可视范围。</p>
+<h2 id="何时使用">何时使用<a href="#何时使用" class="anchor">#</a> </h2><p>当内容区域比较长，需要滚动页面时，这部分内容对应的操作或者导航需要在滚动范围内始终展现。常用于侧边菜单和按钮组合。</p>
+<p>页面可视范围过小时，慎用此功能以免遮挡页面内容。</p>
+
+
+  </article>
+<h2 class="component-demos">
+  代码演示
+  <i class="anticon anticon-appstore icon-all" title="展开全部代码"></i>
+</h2>
+<div class="code-boxes">
+  <div class="code-boxes-col-2-1"><div class="code-box" id="demo-basic">
+  <div class="code-box-demo">
+    <div id="components-affix-demo-basic"><div offset="0" data-reactid=".3t"><div class="" data-reactid=".3t.0"><button type="button" class="ant-btn ant-btn-primary" data-reactid=".3t.0.0"><span data-reactid=".3t.0.0.0">固定在顶部</span></button></div></div></div>
+    <script>mountNode = document.getElementById('components-affix-demo-basic');</script>
+    <script>(function(){"use strict";
+
+var _antd = require("antd");
+
+ReactDOM.render(React.createElement(
+  _antd.Affix,
+  null,
+  React.createElement(
+    _antd.Button,
+    { type: "primary" },
+    "固定在顶部"
+  )
+), mountNode);})()</script>
+  </div>
+  <div class="code-box-meta markdown">
+    <div class="code-box-title">
+      <a href="http://ant.design/components/affix/#demo-basic">基本</a>
+    </div>
+    <p>最简单的用法。</p>
+    <span class="collapse anticon anticon-circle-o-right" unselectable="none" style="-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;"></span>
+  </div>
+<div class="highlight"><pre><code class="javascript"><span class="hljs-keyword">import</span> { Affix, Button } <span class="hljs-keyword">from</span> <span class="hljs-string">'antd'</span>;
+
+ReactDOM.render(
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">Affix</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"primary"</span>&gt;</span>固定在顶部<span class="hljs-tag">&lt;/<span class="hljs-title">Button</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">Affix</span>&gt;</span>
+, mountNode);</span></code></pre></div></div>
+  </div>
+  <div class="code-boxes-col-2-1"><div class="code-box" id="demo-offset">
+  <div class="code-box-demo">
+    <div id="components-affix-demo-offset"><div offset="75" data-reactid=".3u"><div class="" data-reactid=".3u.0"><button type="button" class="ant-btn ant-btn-primary" data-reactid=".3u.0.0"><span data-reactid=".3u.0.0.0">固定在距离顶部 75px 的位置</span></button></div></div></div>
+    <script>mountNode = document.getElementById('components-affix-demo-offset');</script>
+    <script>(function(){"use strict";
+
+var _antd = require("antd");
+
+ReactDOM.render(React.createElement(
+  _antd.Affix,
+  { offset: 75 },
+  React.createElement(
+    _antd.Button,
+    { type: "primary" },
+    "固定在距离顶部 75px 的位置"
+  )
+), mountNode);})()</script>
+  </div>
+  <div class="code-box-meta markdown">
+    <div class="code-box-title">
+      <a href="#demo-offset">偏移</a>
+    </div>
+    <p>达到一定的偏移量才触发。</p>
+    <span class="collapse anticon anticon-circle-o-right" unselectable="none" style="-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;"></span>
+  </div>
+<div class="highlight"><pre><code class="javascript"><span class="hljs-keyword">import</span> { Affix, Button } <span class="hljs-keyword">from</span> <span class="hljs-string">'antd'</span>;
+
+ReactDOM.render(
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">Affix</span> <span class="hljs-attribute">offset</span>=<span class="hljs-value">{75}</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"primary"</span>&gt;</span>固定在距离顶部 75px 的位置<span class="hljs-tag">&lt;/<span class="hljs-title">Button</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">Affix</span>&gt;</span>
+, mountNode);</span></code></pre></div></div>
+  </div>
+</div>
+<ul class="demos-anchor">
+  <li>
+    <a title="基本" href="#demo-basic">
+      <span>基本</span>
+    </a>
+  </li>
+  <li>
+    <a title="偏移" href="#demo-offset">
+      <span>偏移</span>
+    </a>
+  </li>
+</ul>
+  <div class="api-container markdown"><h2 id="api">API<a href="#api" class="anchor">#</a> </h2><table>
+<thead>
+<tr>
+<th>成员</th>
+<th>说明</th>
+<th>类型</th>
+<th>默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>offset</td>
+<td>达到指定偏移量后触发</td>
+<td>Number</td>
+<td>0</td>
+</tr>
+</tbody>
+</table></div>
+</section>
+
+    </div>
+    <script src="./lib/T1AmXhXg0kXXXXXXXX.js" data-no-instant=""></script>
+    <script data-no-instant="">
+      InstantClick.on('change', function() {
+        InstantClickChangeFns.forEach(function(fn) {
+          fn();
+        });
+      });
+      InstantClick.init();
+    </script>
+  
+<div id="instantclick" style="opacity: 0;"><div id="instantclick-bar" class="instantclick-bar" style="transform: translate(100%);"></div></div></body></html>

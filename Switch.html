@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)http://ant.design/components/switch/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="一个 UI 设计语言">
+    <title>Switch 开关 - Ant Design</title>
+    <link rel="icon" href="https://t.alipayobjects.com/images/T1QUBfXo4fXXXXXXXX.png" type="image/x-icon">
+    <link rel="shortcut icon" href="https://t.alipayobjects.com/images/T1QUBfXo4fXXXXXXXX.png" type="image/x-icon">
+    
+    <link rel="stylesheet" href="./dist/demo.css">
+    <link rel="stylesheet" href="./lib/style.css">
+    <link rel="stylesheet" href="./lib/tomorrow.css">
+    <!--[if IE 8]>
+    <script src="https://t.alipayobjects.com/images/rmsweb/T1q8JiXftaXXXXXXXX.js"></script>
+    <![endif]-->
+    <script src="./lib/saved_resource"></script>
+    <script src="./lib/saved_resource(1)"></script>
+    <script>
+    (function() {
+      window.ANT_COMPONENTS = [];
+      window.InstantClickChangeFns = [];
+      ANT_COMPONENTS.push({
+        title: 'Popconfirm',
+        desc: '气泡确认框'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Affix',
+        desc: '固钉'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Badge',
+        desc: '徽标数'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Breadcrumb',
+        desc: '面包屑'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Button',
+        desc: '按钮'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Calendar',
+        desc: '日历'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Carousel',
+        desc: '走马灯'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Checkbox',
+        desc: '多选框'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Collapse',
+        desc: '折叠面板'
+      });
+      ANT_COMPONENTS.push({
+        title: 'DatePicker',
+        desc: '日期选择框'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Dropdown',
+        desc: '下拉菜单'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Form',
+        desc: '表单'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Icon',
+        desc: '图标'
+      });
+      ANT_COMPONENTS.push({
+        title: 'InputNumber',
+        desc: '数字输入框'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Layout',
+        desc: '布局'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Menu',
+        desc: '导航菜单'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Message',
+        desc: '全局提示'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Modal',
+        desc: '对话框'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Notification',
+        desc: '通知提醒框'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Pagination',
+        desc: '分页'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Alert',
+        desc: '警告提示'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Popover',
+        desc: '气泡卡片'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Progress',
+        desc: '进度条'
+      });
+      ANT_COMPONENTS.push({
+        title: 'QueueAnim',
+        desc: '进出场动画'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Radio',
+        desc: '单选框'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Select',
+        desc: '选择器'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Slider',
+        desc: '滑动输入条'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Spin',
+        desc: '加载中'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Steps',
+        desc: '步骤条'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Switch',
+        desc: '开关'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Table',
+        desc: '表格'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Tabs',
+        desc: '标签页'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Tag',
+        desc: '标签'
+      });
+      ANT_COMPONENTS.push({
+        title: 'TimePicker',
+        desc: '时间选择框'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Timeline',
+        desc: '时间轴'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Tooltip',
+        desc: '文字提示'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Transfer',
+        desc: '穿梭框'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Tree',
+        desc: '树形控件'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Upload',
+        desc: '文件上传'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Validation',
+        desc: '表单校验'
+      });
+      var i = location.pathname.split('/').lastIndexOf('ant-design');
+      if (i > 0) {
+        window.rootUrl = location.origin + location.pathname.split('/').slice(0, 2+1).join('/');
+      } else {
+        window.rootUrl = location.origin;
+      }
+    })();
+    </script>
+    <script src="./lib/script.js"></script>
+    <script>
+      window.antdVersion = {
+        latest: '0.11.2'
+      };
+    </script>
+    <script src="./dist/demo.js"></script>
+    <script src="./lib/T1DrxhXe0mXXXXXXXX.js"></script>
+    
+  <style>#instantclick{position:fixed;top:0;left:0;width:100%;pointer-events:none;z-index:2147483647;transition:opacity .25s .1s;}
+  .instantclick-bar{background:#29d;width:100%;margin-left:-100%;height:2px;transition:all .25s;}</style></head>
+  <body>
+  
+    <div class="main-wrapper">
+      
+
+ 
+<section class="main-container">
+  <article class="markdown">
+    <h1>
+      Switch 开关
+    </h1>
+    <p>开关选择器。</p>
+<h2 id="何时使用">何时使用<a href="#何时使用" class="anchor">#</a> </h2><ul>
+<li>需要表示开关状态/两种状态之间的切换时；</li>
+<li>和 <code>checkbox</code>的区别是，切换 <code>switch</code> 会直接触发状态改变，而 <code>checkbox</code> 一般用于状态标记，需要和提交操作配合。</li>
+</ul>
+
+
+  </article>
+<h2 class="component-demos">
+  代码演示
+  <i class="anticon anticon-appstore icon-all" title="展开全部代码"></i>
+</h2>
+<div class="code-boxes">
+  <div class="code-boxes-col-2-1"><div class="code-box" id="demo-basic">
+  <div class="code-box-demo">
+    <div id="components-switch-demo-basic"><span class="ant-switch-default ant-switch" data-reactid=".28"><span class="ant-switch-inner" data-reactid=".28.0"></span></span></div>
+    <script>mountNode = document.getElementById('components-switch-demo-basic');</script>
+    <script>(function(){'use strict';
+
+var _antd = require('antd');
+
+function onChange(checked) {
+  console.log('switch to ' + checked);
+}
+
+ReactDOM.render(React.createElement(_antd.Switch, { defaultChecked: false, onChange: onChange }), mountNode);})()</script>
+  </div>
+  <div class="code-box-meta markdown">
+    <div class="code-box-title">
+      <a href="http://ant.design/components/switch/#demo-basic">简单</a>
+    </div>
+    <p>最简单的用法。</p>
+    <span class="collapse anticon anticon-circle-o-right" unselectable="none" style="-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;"></span>
+  </div>
+<div class="highlight"><pre><code class="javascript"><span class="hljs-keyword">import</span> { Switch } <span class="hljs-keyword">from</span> <span class="hljs-string">'antd'</span>;
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">onChange</span>(<span class="hljs-params">checked</span>)</span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'switch to '</span> + checked);
+}
+
+ReactDOM.render(<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">Switch</span> <span class="hljs-attribute">defaultChecked</span>=<span class="hljs-value">{false}</span> <span class="hljs-attribute">onChange</span>=<span class="hljs-value">{onChange}</span> /&gt;</span>,
+  mountNode);</span></code></pre></div></div><div class="code-box" id="demo-text">
+  <div class="code-box-demo">
+    <div id="components-switch-demo-text"><div data-reactid=".29"><span class="ant-switch-default ant-switch" data-reactid=".29.0"><span class="ant-switch-inner" data-reactid=".29.0.0">关</span></span><span data-reactid=".29.1"> </span><span class="ant-switch-default ant-switch" data-reactid=".29.2"><span class="ant-switch-inner" data-reactid=".29.2.0"><i class=" anticon anticon-cross" data-reactid=".29.2.0.0"></i></span></span></div></div>
+    <script>mountNode = document.getElementById('components-switch-demo-text');</script>
+    <script>(function(){"use strict";
+
+var _antd = require("antd");
+
+ReactDOM.render(React.createElement(
+  "div",
+  null,
+  React.createElement(_antd.Switch, { checkedChildren: "开", unCheckedChildren: "关" }),
+  React.createElement(
+    "span",
+    null,
+    " "
+  ),
+  React.createElement(_antd.Switch, { checkedChildren: React.createElement(_antd.Icon, { type: "check" }), unCheckedChildren: React.createElement(_antd.Icon, { type: "cross" }) })
+), mountNode);})()</script>
+  </div>
+  <div class="code-box-meta markdown">
+    <div class="code-box-title">
+      <a href="http://ant.design/components/switch/#demo-text">文字和图标</a>
+    </div>
+    <p>带有文字和图标。</p>
+    <span class="collapse anticon anticon-circle-o-right" unselectable="none" style="-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;"></span>
+  </div>
+<div class="highlight"><pre><code class="javascript"><span class="hljs-keyword">import</span> { Switch, Icon } <span class="hljs-keyword">from</span> <span class="hljs-string">'antd'</span>;
+
+ReactDOM.render(<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">Switch</span> <span class="hljs-attribute">checkedChildren</span>=<span class="hljs-value">"开"</span> <span class="hljs-attribute">unCheckedChildren</span>=<span class="hljs-value">"关"</span> /&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span> <span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">Switch</span> <span class="hljs-attribute">checkedChildren</span>=<span class="hljs-value">{&lt;Icon</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"check"</span> /&gt;</span>} unCheckedChildren={<span class="hljs-tag">&lt;<span class="hljs-title">Icon</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"cross"</span> /&gt;</span>} /&gt;
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>, mountNode);</span></code></pre></div></div>
+  </div>
+  <div class="code-boxes-col-2-1"><div class="code-box" id="demo-disabled">
+  <div class="code-box-demo">
+    <div id="components-switch-demo-disabled"><div data-reactid=".2a"><span class="ant-switch-default ant-switch ant-switch-disabled" data-reactid=".2a.0"><span class="ant-switch-inner" data-reactid=".2a.0.0"></span></span><br data-reactid=".2a.1"><br data-reactid=".2a.2"><button type="button" class="ant-btn ant-btn-primary" data-reactid=".2a.3"><span data-reactid=".2a.3.0">Toggle disabled</span></button></div></div>
+    <script>mountNode = document.getElementById('components-switch-demo-disabled');</script>
+    <script>(function(){"use strict";
+
+var _antd = require("antd");
+
+var Test = React.createClass({
+  displayName: "Test",
+  getInitialState: function getInitialState() {
+    return {
+      disabled: true
+    };
+  },
+  toggle: function toggle() {
+    this.setState({
+      disabled: !this.state.disabled
+    });
+  },
+  render: function render() {
+    return React.createElement(
+      "div",
+      null,
+      React.createElement(_antd.Switch, { disabled: this.state.disabled }),
+      React.createElement("br", null),
+      React.createElement("br", null),
+      React.createElement(
+        _antd.Button,
+        { type: "primary", onClick: this.toggle },
+        "Toggle disabled"
+      )
+    );
+  }
+});
+
+ReactDOM.render(React.createElement(Test, null), mountNode);})()</script>
+  </div>
+  <div class="code-box-meta markdown">
+    <div class="code-box-title">
+      <a href="http://ant.design/components/switch/#demo-disabled">不可用</a>
+    </div>
+    <p>Switch 失效状态。</p>
+    <span class="collapse anticon anticon-circle-o-right" unselectable="none" style="-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;"></span>
+  </div>
+<div class="highlight"><pre><code class="javascript"><span class="hljs-keyword">import</span> { Switch, Button } <span class="hljs-keyword">from</span> <span class="hljs-string">'antd'</span>;
+
+<span class="hljs-keyword">const</span> Test = React.createClass({
+  getInitialState() {
+    <span class="hljs-keyword">return</span> {
+      disabled: <span class="hljs-literal">true</span>
+    };
+  },
+  toggle(){
+    <span class="hljs-keyword">this</span>.setState({
+      disabled: !<span class="hljs-keyword">this</span>.state.disabled
+    });
+  },
+  render() {
+    <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Switch</span> <span class="hljs-attribute">disabled</span>=<span class="hljs-value">{this.state.disabled}</span> /&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">br</span> /&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">br</span> /&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"primary"</span> <span class="hljs-attribute">onClick</span>=<span class="hljs-value">{this.toggle}</span>&gt;</span>Toggle disabled<span class="hljs-tag">&lt;/<span class="hljs-title">Button</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>;</span>
+  }
+});
+
+ReactDOM.render(<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">Test</span> /&gt;</span>, mountNode);</span></code></pre></div></div><div class="code-box" id="demo-size">
+  <div class="code-box-demo">
+    <div id="components-switch-demo-size"><div data-reactid=".2b"><span class="ant-switch-default ant-switch" data-reactid=".2b.0"><span class="ant-switch-inner" data-reactid=".2b.0.0"></span></span><span data-reactid=".2b.1">&nbsp;</span><span class="ant-switch-small ant-switch" data-reactid=".2b.2"><span class="ant-switch-inner" data-reactid=".2b.2.0"></span></span></div></div>
+    <script>mountNode = document.getElementById('components-switch-demo-size');</script>
+    <script>(function(){"use strict";
+
+var _antd = require("antd");
+
+ReactDOM.render(React.createElement(
+  "div",
+  null,
+  React.createElement(_antd.Switch, null),
+  " ",
+  React.createElement(_antd.Switch, { size: "small" })
+), mountNode);})()</script>
+  </div>
+  <div class="code-box-meta markdown">
+    <div class="code-box-title">
+      <a href="http://ant.design/components/switch/#demo-size">两种大小</a>
+    </div>
+    <p><code>size="small"</code> 表示小号开关。</p>
+    <span class="collapse anticon anticon-circle-o-right" unselectable="none" style="-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;"></span>
+  </div>
+<div class="highlight"><pre><code class="javascript"><span class="hljs-keyword">import</span> { Switch } <span class="hljs-keyword">from</span> <span class="hljs-string">'antd'</span>;
+
+ReactDOM.render(
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Switch</span> /&gt;</span>
+    &amp;nbsp;
+    <span class="hljs-tag">&lt;<span class="hljs-title">Switch</span> <span class="hljs-attribute">size</span>=<span class="hljs-value">"small"</span> /&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+, mountNode);</span></code></pre></div></div>
+  </div>
+</div>
+<ul class="demos-anchor">
+  <li>
+    <a title="简单" href="http://ant.design/components/switch/#demo-basic">
+      <span>简单</span>
+    </a>
+  </li>
+  <li>
+    <a title="不可用" href="http://ant.design/components/switch/#demo-disabled">
+      <span>不可用</span>
+    </a>
+  </li>
+  <li>
+    <a title="文字和图标" href="http://ant.design/components/switch/#demo-text">
+      <span>文字和图标</span>
+    </a>
+  </li>
+  <li>
+    <a title="两种大小" href="http://ant.design/components/switch/#demo-size">
+      <span>两种大小</span>
+    </a>
+  </li>
+</ul>
+  <div class="api-container markdown"><h2 id="api">API<a href="http://ant.design/components/switch/#api" class="anchor">#</a> </h2><h3 id="switch">Switch<a href="http://ant.design/components/switch/#switch" class="anchor">#</a> </h3><table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+<th>类型</th>
+<th>可选值</th>
+<th>默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>checked</td>
+<td>指定当前是否选中</td>
+<td>boolean</td>
+<td></td>
+<td>false</td>
+</tr>
+<tr>
+<td>defaultChecked</td>
+<td>初始是否选中</td>
+<td>boolean</td>
+<td></td>
+<td>false</td>
+</tr>
+<tr>
+<td>onChange</td>
+<td>变化时回调函数</td>
+<td>Function(checked:boolean)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>checkedChildren</td>
+<td>选中时的内容</td>
+<td>React Node</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>unCheckedChildren</td>
+<td>非选中时的内容</td>
+<td>React Node</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>size</td>
+<td>开关大小</td>
+<td>string</td>
+<td>'default' or 'small'</td>
+<td>'default'</td>
+</tr>
+</tbody>
+</table></div>
+</section>
+
+    </div>
+    <script src="./lib/T1AmXhXg0kXXXXXXXX.js" data-no-instant=""></script>
+    <script data-no-instant="">
+      InstantClick.on('change', function() {
+        InstantClickChangeFns.forEach(function(fn) {
+          fn();
+        });
+      });
+      InstantClick.init();
+    </script>
+  
+<div id="instantclick" style="opacity: 0;"><div id="instantclick-bar" class="instantclick-bar" style="transform: translate(100%);"></div></div></body></html>

@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)http://ant.design/components/alert/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="一个 UI 设计语言">
+    <title>Alert 警告提示 - Ant Design</title>
+    <link rel="icon" href="https://t.alipayobjects.com/images/T1QUBfXo4fXXXXXXXX.png" type="image/x-icon">
+    <link rel="shortcut icon" href="https://t.alipayobjects.com/images/T1QUBfXo4fXXXXXXXX.png" type="image/x-icon">
+    
+    <link rel="stylesheet" href="./dist/demo.css">
+    <link rel="stylesheet" href="./lib/style.css">
+    <link rel="stylesheet" href="./lib/tomorrow.css">
+    <!--[if IE 8]>
+    <script src="https://t.alipayobjects.com/images/rmsweb/T1q8JiXftaXXXXXXXX.js"></script>
+    <![endif]-->
+    <script src="./lib/saved_resource"></script>
+    <script src="./lib/saved_resource(1)"></script>
+    <script>
+    (function() {
+      window.ANT_COMPONENTS = [];
+      window.InstantClickChangeFns = [];
+      ANT_COMPONENTS.push({
+        title: 'Popconfirm',
+        desc: '气泡确认框'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Affix',
+        desc: '固钉'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Badge',
+        desc: '徽标数'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Breadcrumb',
+        desc: '面包屑'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Button',
+        desc: '按钮'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Calendar',
+        desc: '日历'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Carousel',
+        desc: '走马灯'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Checkbox',
+        desc: '多选框'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Collapse',
+        desc: '折叠面板'
+      });
+      ANT_COMPONENTS.push({
+        title: 'DatePicker',
+        desc: '日期选择框'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Dropdown',
+        desc: '下拉菜单'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Form',
+        desc: '表单'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Icon',
+        desc: '图标'
+      });
+      ANT_COMPONENTS.push({
+        title: 'InputNumber',
+        desc: '数字输入框'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Layout',
+        desc: '布局'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Menu',
+        desc: '导航菜单'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Message',
+        desc: '全局提示'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Modal',
+        desc: '对话框'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Notification',
+        desc: '通知提醒框'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Pagination',
+        desc: '分页'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Alert',
+        desc: '警告提示'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Popover',
+        desc: '气泡卡片'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Progress',
+        desc: '进度条'
+      });
+      ANT_COMPONENTS.push({
+        title: 'QueueAnim',
+        desc: '进出场动画'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Radio',
+        desc: '单选框'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Select',
+        desc: '选择器'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Slider',
+        desc: '滑动输入条'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Spin',
+        desc: '加载中'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Steps',
+        desc: '步骤条'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Switch',
+        desc: '开关'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Table',
+        desc: '表格'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Tabs',
+        desc: '标签页'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Tag',
+        desc: '标签'
+      });
+      ANT_COMPONENTS.push({
+        title: 'TimePicker',
+        desc: '时间选择框'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Timeline',
+        desc: '时间轴'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Tooltip',
+        desc: '文字提示'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Transfer',
+        desc: '穿梭框'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Tree',
+        desc: '树形控件'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Upload',
+        desc: '文件上传'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Validation',
+        desc: '表单校验'
+      });
+      var i = location.pathname.split('/').lastIndexOf('ant-design');
+      if (i > 0) {
+        window.rootUrl = location.origin + location.pathname.split('/').slice(0, 2+1).join('/');
+      } else {
+        window.rootUrl = location.origin;
+      }
+    })();
+    </script>
+    <script src="./lib/script.js"></script>
+    <script>
+      window.antdVersion = {
+        latest: '0.11.2'
+      };
+    </script>
+    <script src="./dist/demo.js"></script>
+    <script src="./lib/T1DrxhXe0mXXXXXXXX.js"></script>
+    
+  <style>#instantclick{position:fixed;top:0;left:0;width:100%;pointer-events:none;z-index:2147483647;transition:opacity .25s .1s}.instantclick-bar{background:#29d;width:100%;margin-left:-100%;height:2px;transition:all .25s;}</style></head>
+  <body>
+
+    <div class="main-wrapper">
+      
+
+ 
+<section class="main-container">
+  <article class="markdown">
+    <h1>
+      Alert 警告提示
+    </h1>
+    <p>警告提示，展现需要关注的信息。</p>
+<h2 id="何时使用">何时使用<a href="http://ant.design/components/alert/#何时使用" class="anchor">#</a> </h2><ul>
+<li>当某个页面需要向用户显示警告的信息时。</li>
+<li>非浮层的静态展现形式，始终展现，不会自动消失，用户可以点击关闭。</li>
+</ul>
+
+
+  </article>
+<h2 class="component-demos">
+  代码演示
+  <i class="anticon anticon-appstore icon-all" title="展开全部代码"></i>
+</h2>
+<div class="code-boxes">
+  <div class="code-boxes-col-2-1"><div class="code-box expand" id="demo-basic">
+  <div class="code-box-demo">
+    <div id="components-alert-demo-basic"><div data-show="true" class="ant-alert ant-alert-success ant-alert-no-icon" data-reactid=".s"><span class="ant-alert-message" data-reactid=".s.1">成功提示的文案</span><span class="ant-alert-description" data-reactid=".s.2"></span></div></div>
+    <script>mountNode = document.getElementById('components-alert-demo-basic');</script>
+    <script>(function(){"use strict";
+
+var _antd = require("antd");
+
+ReactDOM.render(React.createElement(_antd.Alert, { message: "成功提示的文案", type: "success" }), mountNode);})()</script>
+  </div>
+  <div class="code-box-meta markdown">
+    <div class="code-box-title">
+      <a href="http://ant.design/components/alert/#demo-basic">基本</a>
+    </div>
+    <p>最简单的用法，适用于简短的警告提示。</p>
+    <span class="collapse anticon anticon-circle-o-right" unselectable="none" style="-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;"></span>
+  </div>
+<div class="highlight" style="display: block; opacity: 1;"><pre><code class="javascript"><span class="hljs-keyword">import</span> { Alert } <span class="hljs-keyword">from</span> <span class="hljs-string">'antd'</span>;
+
+ReactDOM.render(<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">Alert</span> <span class="hljs-attribute">message</span>=<span class="hljs-value">"成功提示的文案"</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"success"</span> /&gt;</span>
+, mountNode);</span></code></pre></div></div><div class="code-box" id="demo-closable">
+  <div class="code-box-demo">
+    <div id="components-alert-demo-closable"><div data-reactid=".t"><div data-show="true" class="ant-alert ant-alert-warn ant-alert-no-icon" data-reactid=".t.0"><span class="ant-alert-message" data-reactid=".t.0.1">警告提示的文案</span><span class="ant-alert-description" data-reactid=".t.0.2"></span><a class="ant-alert-close-icon" data-reactid=".t.0.3"><i class=" anticon anticon-cross" data-reactid=".t.0.3.0"></i></a></div><noscript data-reactid=".t.1"></noscript></div></div>
+    <script>mountNode = document.getElementById('components-alert-demo-closable');</script>
+    <script>(function(){'use strict';
+
+var _antd = require('antd');
+
+var onClose = function onClose(e) {
+  console.log(e, '我要被关闭啦！');
+};
+
+ReactDOM.render(React.createElement(
+  'div',
+  null,
+  React.createElement(_antd.Alert, { message: '警告提示的文案',
+    type: 'warn',
+    closable: true,
+    onClose: onClose }),
+  React.createElement(_antd.Alert, { message: '错误提示的文案',
+    description: '错误提示的辅助性文字介绍错误提示的辅助性文字介绍错误提示的辅助性文字介绍错误提示的辅助性文字介绍错误提示的辅助性文字介绍错误提示的辅助性文字介绍',
+    type: 'error',
+    closable: true,
+    onClose: onClose })
+), mountNode);})()</script>
+  </div>
+  <div class="code-box-meta markdown">
+    <div class="code-box-title">
+      <a href="http://ant.design/components/alert/#demo-closable">可关闭的警告提示</a>
+    </div>
+    <p>显示关闭按钮，点击可关闭警告提示。</p>
+    <span class="collapse anticon anticon-circle-o-right" unselectable="none" style="-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;"></span>
+  </div>
+<div class="highlight"><pre><code class="javascript"><span class="hljs-keyword">import</span> { Alert } <span class="hljs-keyword">from</span> <span class="hljs-string">'antd'</span>;
+
+<span class="hljs-keyword">const</span> onClose = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">e</span>) </span>{
+  <span class="hljs-built_in">console</span>.log(e, <span class="hljs-string">'我要被关闭啦！'</span>);
+};
+
+ReactDOM.render(<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">Alert</span> <span class="hljs-attribute">message</span>=<span class="hljs-value">"警告提示的文案"</span>
+    <span class="hljs-attribute">type</span>=<span class="hljs-value">"warn"</span>
+    <span class="hljs-attribute">closable</span>
+    <span class="hljs-attribute">onClose</span>=<span class="hljs-value">{onClose}</span> /&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">Alert</span> <span class="hljs-attribute">message</span>=<span class="hljs-value">"错误提示的文案"</span>
+    <span class="hljs-attribute">description</span>=<span class="hljs-value">"错误提示的辅助性文字介绍错误提示的辅助性文字介绍错误提示的辅助性文字介绍错误提示的辅助性文字介绍错误提示的辅助性文字介绍错误提示的辅助性文字介绍"</span>
+    <span class="hljs-attribute">type</span>=<span class="hljs-value">"error"</span>
+    <span class="hljs-attribute">closable</span>
+    <span class="hljs-attribute">onClose</span>=<span class="hljs-value">{onClose}</span> /&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>, mountNode);</span></code></pre></div></div><div class="code-box expand" id="demo-icon">
+  <div class="code-box-demo">
+    <div id="components-alert-demo-icon"><div data-reactid=".u"><div data-show="true" class="ant-alert ant-alert-success" data-reactid=".u.0"><i class="ant-alert-icon anticon anticon-check-circle" data-reactid=".u.0.0"></i><span class="ant-alert-message" data-reactid=".u.0.1">成功提示的文案</span><span class="ant-alert-description" data-reactid=".u.0.2"></span></div><div data-show="true" class="ant-alert ant-alert-info" data-reactid=".u.1"><i class="ant-alert-icon anticon anticon-info-circle" data-reactid=".u.1.0"></i><span class="ant-alert-message" data-reactid=".u.1.1">消息提示的文案</span><span class="ant-alert-description" data-reactid=".u.1.2"></span></div><div data-show="true" class="ant-alert ant-alert-warn" data-reactid=".u.2"><i class="ant-alert-icon anticon anticon-exclamation-circle" data-reactid=".u.2.0"></i><span class="ant-alert-message" data-reactid=".u.2.1">警告提示的文案</span><span class="ant-alert-description" data-reactid=".u.2.2"></span></div><div data-show="true" class="ant-alert ant-alert-error" data-reactid=".u.3"><i class="ant-alert-icon anticon anticon-exclamation-circle" data-reactid=".u.3.0"></i><span class="ant-alert-message" data-reactid=".u.3.1">错误提示的文案</span><span class="ant-alert-description" data-reactid=".u.3.2"></span></div><div data-show="true" class="ant-alert ant-alert-success ant-alert-with-description" data-reactid=".u.4"><i class="ant-alert-icon anticon anticon-check-circle-o" data-reactid=".u.4.0"></i><span class="ant-alert-message" data-reactid=".u.4.1">成功提示的文案</span><span class="ant-alert-description" data-reactid=".u.4.2">成功提示的辅助性文字介绍成功提示的辅助性文字介绍成功提示的辅助性文字介绍成功提示的辅助性文字介绍</span></div><div data-show="true" class="ant-alert ant-alert-info ant-alert-with-description" data-reactid=".u.5"><i class="ant-alert-icon anticon anticon-info-circle-o" data-reactid=".u.5.0"></i><span class="ant-alert-message" data-reactid=".u.5.1">消息提示的文案</span><span class="ant-alert-description" data-reactid=".u.5.2">消息提示的辅助性文字介绍消息提示的辅助性文字介绍消息提示的辅助性文字介绍</span></div><div data-show="true" class="ant-alert ant-alert-warn ant-alert-with-description" data-reactid=".u.6"><i class="ant-alert-icon anticon anticon-exclamation-circle-o" data-reactid=".u.6.0"></i><span class="ant-alert-message" data-reactid=".u.6.1">警告提示的文案</span><span class="ant-alert-description" data-reactid=".u.6.2">警告提示的辅助性文字介绍警告提示的辅助性文字介绍</span></div><div data-show="true" class="ant-alert ant-alert-error ant-alert-with-description" data-reactid=".u.7"><i class="ant-alert-icon anticon anticon-exclamation-circle-o" data-reactid=".u.7.0"></i><span class="ant-alert-message" data-reactid=".u.7.1">错误提示的文案</span><span class="ant-alert-description" data-reactid=".u.7.2">错误提示的辅助性文字介绍错误提示的辅助性文字介绍错误提示的辅助性文字介绍错误提示的辅助性文字介绍错误提示的辅助性文字介绍错误提示的辅助性文字介绍</span></div></div></div>
+    <script>mountNode = document.getElementById('components-alert-demo-icon');</script>
+    <script>(function(){"use strict";
+
+var _antd = require("antd");
+
+ReactDOM.render(React.createElement(
+  "div",
+  null,
+  React.createElement(_antd.Alert, { message: "成功提示的文案", type: "success", showIcon: true }),
+  React.createElement(_antd.Alert, { message: "消息提示的文案", type: "info", showIcon: true }),
+  React.createElement(_antd.Alert, { message: "警告提示的文案", type: "warn", showIcon: true }),
+  React.createElement(_antd.Alert, { message: "错误提示的文案", type: "error", showIcon: true }),
+  React.createElement(_antd.Alert, { message: "成功提示的文案",
+    description: "成功提示的辅助性文字介绍成功提示的辅助性文字介绍成功提示的辅助性文字介绍成功提示的辅助性文字介绍",
+    type: "success",
+    showIcon: true }),
+  React.createElement(_antd.Alert, { message: "消息提示的文案",
+    description: "消息提示的辅助性文字介绍消息提示的辅助性文字介绍消息提示的辅助性文字介绍",
+    type: "info",
+    showIcon: true }),
+  React.createElement(_antd.Alert, {
+    message: "警告提示的文案",
+    description: "警告提示的辅助性文字介绍警告提示的辅助性文字介绍",
+    type: "warn",
+    showIcon: true }),
+  React.createElement(_antd.Alert, {
+    message: "错误提示的文案",
+    description: "错误提示的辅助性文字介绍错误提示的辅助性文字介绍错误提示的辅助性文字介绍错误提示的辅助性文字介绍错误提示的辅助性文字介绍错误提示的辅助性文字介绍",
+    type: "error",
+    showIcon: true })
+), mountNode);})()</script>
+  </div>
+  <div class="code-box-meta markdown">
+    <div class="code-box-title">
+      <a href="http://ant.design/components/alert/#demo-icon">图标</a>
+    </div>
+    <p>可口的图标让信息类型更加醒目。</p>
+    <span class="collapse anticon anticon-circle-o-right" unselectable="none" style="-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;"></span>
+  </div>
+<div class="highlight" style="display: block; opacity: 1;"><pre><code class="javascript"><span class="hljs-keyword">import</span> { Alert } <span class="hljs-keyword">from</span> <span class="hljs-string">'antd'</span>;
+
+ReactDOM.render(<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">Alert</span> <span class="hljs-attribute">message</span>=<span class="hljs-value">"成功提示的文案"</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"success"</span> <span class="hljs-attribute">showIcon</span> /&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">Alert</span> <span class="hljs-attribute">message</span>=<span class="hljs-value">"消息提示的文案"</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"info"</span> <span class="hljs-attribute">showIcon</span> /&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">Alert</span> <span class="hljs-attribute">message</span>=<span class="hljs-value">"警告提示的文案"</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"warn"</span> <span class="hljs-attribute">showIcon</span> /&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">Alert</span> <span class="hljs-attribute">message</span>=<span class="hljs-value">"错误提示的文案"</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"error"</span> <span class="hljs-attribute">showIcon</span> /&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">Alert</span> <span class="hljs-attribute">message</span>=<span class="hljs-value">"成功提示的文案"</span>
+    <span class="hljs-attribute">description</span>=<span class="hljs-value">"成功提示的辅助性文字介绍成功提示的辅助性文字介绍成功提示的辅助性文字介绍成功提示的辅助性文字介绍"</span>
+    <span class="hljs-attribute">type</span>=<span class="hljs-value">"success"</span>
+    <span class="hljs-attribute">showIcon</span> /&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">Alert</span> <span class="hljs-attribute">message</span>=<span class="hljs-value">"消息提示的文案"</span>
+    <span class="hljs-attribute">description</span>=<span class="hljs-value">"消息提示的辅助性文字介绍消息提示的辅助性文字介绍消息提示的辅助性文字介绍"</span>
+    <span class="hljs-attribute">type</span>=<span class="hljs-value">"info"</span>
+    <span class="hljs-attribute">showIcon</span> /&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">Alert</span>
+    <span class="hljs-attribute">message</span>=<span class="hljs-value">"警告提示的文案"</span>
+    <span class="hljs-attribute">description</span>=<span class="hljs-value">"警告提示的辅助性文字介绍警告提示的辅助性文字介绍"</span>
+    <span class="hljs-attribute">type</span>=<span class="hljs-value">"warn"</span>
+    <span class="hljs-attribute">showIcon</span> /&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">Alert</span>
+    <span class="hljs-attribute">message</span>=<span class="hljs-value">"错误提示的文案"</span>
+    <span class="hljs-attribute">description</span>=<span class="hljs-value">"错误提示的辅助性文字介绍错误提示的辅助性文字介绍错误提示的辅助性文字介绍错误提示的辅助性文字介绍错误提示的辅助性文字介绍错误提示的辅助性文字介绍"</span>
+    <span class="hljs-attribute">type</span>=<span class="hljs-value">"error"</span>
+    <span class="hljs-attribute">showIcon</span> /&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>, mountNode);</span></code></pre></div></div>
+  </div>
+  <div class="code-boxes-col-2-1"><div class="code-box" id="demo-style">
+  <div class="code-box-demo">
+    <div id="components-alert-demo-style"><div data-reactid=".v"><div data-show="true" class="ant-alert ant-alert-success ant-alert-no-icon" data-reactid=".v.0"><span class="ant-alert-message" data-reactid=".v.0.1">成功提示的文案</span><span class="ant-alert-description" data-reactid=".v.0.2"></span></div><div data-show="true" class="ant-alert ant-alert-info ant-alert-no-icon" data-reactid=".v.1"><span class="ant-alert-message" data-reactid=".v.1.1">消息提示的文案</span><span class="ant-alert-description" data-reactid=".v.1.2"></span></div><div data-show="true" class="ant-alert ant-alert-warn ant-alert-no-icon" data-reactid=".v.2"><span class="ant-alert-message" data-reactid=".v.2.1">警告提示的文案</span><span class="ant-alert-description" data-reactid=".v.2.2"></span></div><div data-show="true" class="ant-alert ant-alert-error ant-alert-no-icon" data-reactid=".v.3"><span class="ant-alert-message" data-reactid=".v.3.1">错误提示的文案</span><span class="ant-alert-description" data-reactid=".v.3.2"></span></div></div></div>
+    <script>mountNode = document.getElementById('components-alert-demo-style');</script>
+    <script>(function(){"use strict";
+
+var _antd = require("antd");
+
+ReactDOM.render(React.createElement(
+  "div",
+  null,
+  React.createElement(_antd.Alert, { message: "成功提示的文案", type: "success" }),
+  React.createElement(_antd.Alert, { message: "消息提示的文案", type: "info" }),
+  React.createElement(_antd.Alert, { message: "警告提示的文案", type: "warn" }),
+  React.createElement(_antd.Alert, { message: "错误提示的文案", type: "error" })
+), mountNode);})()</script>
+  </div>
+  <div class="code-box-meta markdown">
+    <div class="code-box-title">
+      <a href="http://ant.design/components/alert/#demo-style">四种样式</a>
+    </div>
+    <p>共有四种样式<code>success</code>、<code>info</code>、<code>warn</code>、<code>error</code>。</p>
+    <span class="collapse anticon anticon-circle-o-right" unselectable="none" style="-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;"></span>
+  </div>
+<div class="highlight"><pre><code class="javascript"><span class="hljs-keyword">import</span> { Alert } <span class="hljs-keyword">from</span> <span class="hljs-string">'antd'</span>;
+
+ReactDOM.render(<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">Alert</span> <span class="hljs-attribute">message</span>=<span class="hljs-value">"成功提示的文案"</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"success"</span> /&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">Alert</span> <span class="hljs-attribute">message</span>=<span class="hljs-value">"消息提示的文案"</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"info"</span> /&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">Alert</span> <span class="hljs-attribute">message</span>=<span class="hljs-value">"警告提示的文案"</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"warn"</span> /&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">Alert</span> <span class="hljs-attribute">message</span>=<span class="hljs-value">"错误提示的文案"</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"error"</span> /&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>,
+mountNode);</span></code></pre></div></div><div class="code-box" id="demo-description">
+  <div class="code-box-demo">
+    <div id="components-alert-demo-description"><div data-reactid=".w"><div data-show="true" class="ant-alert ant-alert-success ant-alert-with-description ant-alert-no-icon" data-reactid=".w.0"><span class="ant-alert-message" data-reactid=".w.0.1">成功提示的文案</span><span class="ant-alert-description" data-reactid=".w.0.2">成功提示的辅助性文字介绍成功提示的辅助性文字介绍成功提示的辅助性文字介绍成功提示的辅助性文字介绍</span></div><div data-show="true" class="ant-alert ant-alert-info ant-alert-with-description ant-alert-no-icon" data-reactid=".w.1"><span class="ant-alert-message" data-reactid=".w.1.1">消息提示的文案</span><span class="ant-alert-description" data-reactid=".w.1.2">消息提示的辅助性文字介绍消息提示的辅助性文字介绍消息提示的辅助性文字介绍</span></div><div data-show="true" class="ant-alert ant-alert-warn ant-alert-with-description ant-alert-no-icon" data-reactid=".w.2"><span class="ant-alert-message" data-reactid=".w.2.1">警告提示的文案</span><span class="ant-alert-description" data-reactid=".w.2.2">警告提示的辅助性文字介绍警告提示的辅助性文字介绍</span></div><div data-show="true" class="ant-alert ant-alert-error ant-alert-with-description ant-alert-no-icon" data-reactid=".w.3"><span class="ant-alert-message" data-reactid=".w.3.1">错误提示的文案</span><span class="ant-alert-description" data-reactid=".w.3.2">错误提示的辅助性文字介绍错误提示的辅助性文字介绍错误提示的辅助性文字介绍错误提示的辅助性文字介绍错误提示的辅助性文字介绍错误提示的辅助性文字介绍</span></div></div></div>
+    <script>mountNode = document.getElementById('components-alert-demo-description');</script>
+    <script>(function(){"use strict";
+
+var _antd = require("antd");
+
+ReactDOM.render(React.createElement(
+  "div",
+  null,
+  React.createElement(_antd.Alert, { message: "成功提示的文案",
+    description: "成功提示的辅助性文字介绍成功提示的辅助性文字介绍成功提示的辅助性文字介绍成功提示的辅助性文字介绍",
+    type: "success" }),
+  React.createElement(_antd.Alert, { message: "消息提示的文案",
+    description: "消息提示的辅助性文字介绍消息提示的辅助性文字介绍消息提示的辅助性文字介绍",
+    type: "info" }),
+  React.createElement(_antd.Alert, {
+    message: "警告提示的文案",
+    description: "警告提示的辅助性文字介绍警告提示的辅助性文字介绍",
+    type: "warn" }),
+  React.createElement(_antd.Alert, {
+    message: "错误提示的文案",
+    description: "错误提示的辅助性文字介绍错误提示的辅助性文字介绍错误提示的辅助性文字介绍错误提示的辅助性文字介绍错误提示的辅助性文字介绍错误提示的辅助性文字介绍",
+    type: "error" })
+), mountNode);})()</script>
+  </div>
+  <div class="code-box-meta markdown">
+    <div class="code-box-title">
+      <a href="http://ant.design/components/alert/#demo-description">含有辅助性文字介绍</a>
+    </div>
+    <p>含有辅助性文字介绍的警告提示。</p>
+    <span class="collapse anticon anticon-circle-o-right" unselectable="none" style="-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;"></span>
+  </div>
+<div class="highlight"><pre><code class="javascript"><span class="hljs-keyword">import</span> { Alert } <span class="hljs-keyword">from</span> <span class="hljs-string">'antd'</span>;
+
+ReactDOM.render(<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">Alert</span> <span class="hljs-attribute">message</span>=<span class="hljs-value">"成功提示的文案"</span>
+    <span class="hljs-attribute">description</span>=<span class="hljs-value">"成功提示的辅助性文字介绍成功提示的辅助性文字介绍成功提示的辅助性文字介绍成功提示的辅助性文字介绍"</span>
+    <span class="hljs-attribute">type</span>=<span class="hljs-value">"success"</span> /&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">Alert</span> <span class="hljs-attribute">message</span>=<span class="hljs-value">"消息提示的文案"</span>
+    <span class="hljs-attribute">description</span>=<span class="hljs-value">"消息提示的辅助性文字介绍消息提示的辅助性文字介绍消息提示的辅助性文字介绍"</span>
+    <span class="hljs-attribute">type</span>=<span class="hljs-value">"info"</span> /&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">Alert</span>
+    <span class="hljs-attribute">message</span>=<span class="hljs-value">"警告提示的文案"</span>
+    <span class="hljs-attribute">description</span>=<span class="hljs-value">"警告提示的辅助性文字介绍警告提示的辅助性文字介绍"</span>
+    <span class="hljs-attribute">type</span>=<span class="hljs-value">"warn"</span> /&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">Alert</span>
+    <span class="hljs-attribute">message</span>=<span class="hljs-value">"错误提示的文案"</span>
+    <span class="hljs-attribute">description</span>=<span class="hljs-value">"错误提示的辅助性文字介绍错误提示的辅助性文字介绍错误提示的辅助性文字介绍错误提示的辅助性文字介绍错误提示的辅助性文字介绍错误提示的辅助性文字介绍"</span>
+    <span class="hljs-attribute">type</span>=<span class="hljs-value">"error"</span> /&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>, mountNode);</span></code></pre></div></div><div class="code-box" id="demo-close-text">
+  <div class="code-box-demo">
+    <div id="components-alert-demo-close-text"><div data-show="true" class="ant-alert ant-alert-info ant-alert-no-icon" data-reactid=".x"><span class="ant-alert-message" data-reactid=".x.1">消息提示的文案</span><span class="ant-alert-description" data-reactid=".x.2"></span><a class="ant-alert-close-icon" data-reactid=".x.3">不再提醒</a></div></div>
+    <script>mountNode = document.getElementById('components-alert-demo-close-text');</script>
+    <script>(function(){"use strict";
+
+var _antd = require("antd");
+
+ReactDOM.render(React.createElement(_antd.Alert, { message: "消息提示的文案", type: "info", closeText: "不再提醒" }), mountNode);})()</script>
+  </div>
+  <div class="code-box-meta markdown">
+    <div class="code-box-title">
+      <a href="http://ant.design/components/alert/#demo-close-text">自定义关闭</a>
+    </div>
+    <p>可以自定义关闭，自定义的文字会替换原先的关闭 <code>Icon</code>。</p>
+    <span class="collapse anticon anticon-circle-o-right" unselectable="none" style="-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;"></span>
+  </div>
+<div class="highlight"><pre><code class="javascript"><span class="hljs-keyword">import</span> { Alert } <span class="hljs-keyword">from</span> <span class="hljs-string">'antd'</span>;
+
+ReactDOM.render(
+<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">Alert</span> <span class="hljs-attribute">message</span>=<span class="hljs-value">"消息提示的文案"</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"info"</span> <span class="hljs-attribute">closeText</span>=<span class="hljs-value">"不再提醒"</span> /&gt;</span>
+, mountNode);</span></code></pre></div></div>
+  </div>
+</div>
+<ul class="demos-anchor">
+  <li>
+    <a title="基本" href="http://ant.design/components/alert/#demo-basic">
+      <span>基本</span>
+    </a>
+  </li>
+  <li>
+    <a title="四种样式" href="http://ant.design/components/alert/#demo-style">
+      <span>四种样式</span>
+    </a>
+  </li>
+  <li>
+    <a title="可关闭的警告提示" href="http://ant.design/components/alert/#demo-closable">
+      <span>可关闭的警告提示</span>
+    </a>
+  </li>
+  <li>
+    <a title="含有辅助性文字介绍" href="http://ant.design/components/alert/#demo-description">
+      <span>含有辅助性文字介绍</span>
+    </a>
+  </li>
+  <li>
+    <a title="图标" href="http://ant.design/components/alert/#demo-icon">
+      <span>图标</span>
+    </a>
+  </li>
+  <li>
+    <a title="自定义关闭" href="http://ant.design/components/alert/#demo-close-text">
+      <span>自定义关闭</span>
+    </a>
+  </li>
+</ul>
+  <div class="api-container markdown"><h2 id="api">API<a href="http://ant.design/components/alert/#api" class="anchor">#</a> </h2><table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+<th>类型</th>
+<th>默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>必选参数，指定警告提示的样式，有四种选择<code>success</code>、<code>info</code>、<code>warn</code>、<code>error</code></td>
+<td>String</td>
+<td>无</td>
+</tr>
+<tr>
+<td>closable</td>
+<td>可选参数，默认不显示关闭按钮</td>
+<td>Boolean</td>
+<td>无</td>
+</tr>
+<tr>
+<td>closeText</td>
+<td>可选参数，自定义关闭按钮</td>
+<td>String</td>
+<td>无</td>
+</tr>
+<tr>
+<td>message</td>
+<td>必选参数，警告提示内容</td>
+<td>String</td>
+<td>无</td>
+</tr>
+<tr>
+<td>description</td>
+<td>可选参数，警告提示的辅助性文字介绍</td>
+<td>String</td>
+<td>无</td>
+</tr>
+<tr>
+<td>onClose</td>
+<td>可选参数，关闭时触发的回调函数</td>
+<td>Function</td>
+<td>无</td>
+</tr>
+<tr>
+<td>showIcon</td>
+<td>可选参数，是否显示辅助图标</td>
+<td>Boolean</td>
+<td>false</td>
+</tr>
+</tbody>
+</table></div>
+</section>
+
+    </div>
+    <script src="./lib/T1AmXhXg0kXXXXXXXX.js" data-no-instant=""></script>
+    <script data-no-instant="">
+      InstantClick.on('change', function() {
+        InstantClickChangeFns.forEach(function(fn) {
+          fn();
+        });
+      });
+      InstantClick.init();
+    </script>
+  
+<div id="instantclick" style="opacity: 0;"><div id="instantclick-bar" class="instantclick-bar" style="transform: translate(100%);"></div></div></body></html>

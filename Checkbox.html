@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)http://ant.design/components/checkbox/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="一个 UI 设计语言">
+    <title>Checkbox 多选框 - Ant Design</title>
+    <link rel="icon" href="https://t.alipayobjects.com/images/T1QUBfXo4fXXXXXXXX.png" type="image/x-icon">
+    <link rel="shortcut icon" href="https://t.alipayobjects.com/images/T1QUBfXo4fXXXXXXXX.png" type="image/x-icon">
+    
+    <link rel="stylesheet" href="./dist/demo.css">
+    <link rel="stylesheet" href="./lib/style.css">
+    <link rel="stylesheet" href="./lib/tomorrow.css">
+    <!--[if IE 8]>
+    <script src="https://t.alipayobjects.com/images/rmsweb/T1q8JiXftaXXXXXXXX.js"></script>
+    <![endif]-->
+    <script src="./lib/saved_resource"></script>
+    <script src="./lib/saved_resource(1)"></script>
+    <script>
+    (function() {
+      window.ANT_COMPONENTS = [];
+      window.InstantClickChangeFns = [];
+      ANT_COMPONENTS.push({
+        title: 'Popconfirm',
+        desc: '气泡确认框'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Affix',
+        desc: '固钉'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Badge',
+        desc: '徽标数'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Breadcrumb',
+        desc: '面包屑'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Button',
+        desc: '按钮'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Calendar',
+        desc: '日历'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Carousel',
+        desc: '走马灯'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Checkbox',
+        desc: '多选框'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Collapse',
+        desc: '折叠面板'
+      });
+      ANT_COMPONENTS.push({
+        title: 'DatePicker',
+        desc: '日期选择框'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Dropdown',
+        desc: '下拉菜单'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Form',
+        desc: '表单'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Icon',
+        desc: '图标'
+      });
+      ANT_COMPONENTS.push({
+        title: 'InputNumber',
+        desc: '数字输入框'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Layout',
+        desc: '布局'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Menu',
+        desc: '导航菜单'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Message',
+        desc: '全局提示'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Modal',
+        desc: '对话框'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Notification',
+        desc: '通知提醒框'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Pagination',
+        desc: '分页'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Alert',
+        desc: '警告提示'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Popover',
+        desc: '气泡卡片'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Progress',
+        desc: '进度条'
+      });
+      ANT_COMPONENTS.push({
+        title: 'QueueAnim',
+        desc: '进出场动画'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Radio',
+        desc: '单选框'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Select',
+        desc: '选择器'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Slider',
+        desc: '滑动输入条'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Spin',
+        desc: '加载中'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Steps',
+        desc: '步骤条'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Switch',
+        desc: '开关'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Table',
+        desc: '表格'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Tabs',
+        desc: '标签页'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Tag',
+        desc: '标签'
+      });
+      ANT_COMPONENTS.push({
+        title: 'TimePicker',
+        desc: '时间选择框'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Timeline',
+        desc: '时间轴'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Tooltip',
+        desc: '文字提示'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Transfer',
+        desc: '穿梭框'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Tree',
+        desc: '树形控件'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Upload',
+        desc: '文件上传'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Validation',
+        desc: '表单校验'
+      });
+      var i = location.pathname.split('/').lastIndexOf('ant-design');
+      if (i > 0) {
+        window.rootUrl = location.origin + location.pathname.split('/').slice(0, 2+1).join('/');
+      } else {
+        window.rootUrl = location.origin;
+      }
+    })();
+    </script>
+    <script src="./lib/script.js"></script>
+    <script>
+      window.antdVersion = {
+        latest: '0.11.2'
+      };
+    </script>
+    <script src="./dist/demo.js"></script>
+    <script src="./lib/T1DrxhXe0mXXXXXXXX.js"></script>
+    
+  <style>#instantclick{position:fixed;top:0;left:0;width:100%;pointer-events:none;z-index:2147483647;transition:opacity .25s .1s;}.instantclick-bar{background:#29d;width:100%;margin-left:-100%;height:2px;transition:all .25s;}</style></head>
+  <body>
+
+    <div class="main-wrapper">
+      
+
+ 
+<section class="main-container">
+  <article class="markdown">
+    <h1>
+      Checkbox 多选框
+    </h1>
+    <p>多选框。</p>
+<h2 id="何时使用">何时使用<a href="http://ant.design/components/checkbox/#何时使用" class="anchor">#</a> </h2><ul>
+<li>需要表示开关状态/两种状态之间的切换时；</li>
+<li>和 <code>switch</code>的区别是，切换 <code>switch</code> 会直接触发状态改变，而 <code>checkbox</code> 一般用于状态标记，需要和提交操作配合。</li>
+</ul>
+
+
+
+  </article>
+<h2 class="component-demos">
+  代码演示
+  <i class="anticon anticon-appstore icon-all" title="展开全部代码"></i>
+</h2>
+<div class="code-boxes">
+  <div class="code-boxes-col-2-1"><div class="code-box" id="demo-basic">
+  <div class="code-box-demo">
+    <div id="components-checkbox-demo-basic"><label data-reactid=".9"><span class="ant-checkbox" data-reactid=".9.0"><span class="ant-checkbox-inner" data-reactid=".9.0.0"></span><input type="checkbox" class="ant-checkbox-input" data-reactid=".9.0.1"></span><span data-reactid=".9.1">Checkbox</span></label></div>
+    <script>mountNode = document.getElementById('components-checkbox-demo-basic');</script>
+    <script>(function(){'use strict';
+
+var _antd = require('antd');
+
+function onChange(e) {
+  console.log('checked = ' + e.target.checked);
+}
+
+ReactDOM.render(React.createElement(
+  'label',
+  null,
+  React.createElement(_antd.Checkbox, { defaultChecked: false, onChange: onChange }),
+  'Checkbox'
+), mountNode);})()</script>
+  </div>
+  <div class="code-box-meta markdown">
+    <div class="code-box-title">
+      <a href="http://ant.design/components/checkbox/#demo-basic">基本用法</a>
+    </div>
+    <p>简单的 checkbox。</p>
+    <span class="collapse anticon anticon-circle-o-right" unselectable="none" style="-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;"></span>
+  </div>
+<div class="highlight"><pre><code class="javascript"><span class="hljs-keyword">import</span> { Checkbox } <span class="hljs-keyword">from</span> <span class="hljs-string">'antd'</span>;
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">onChange</span>(<span class="hljs-params">e</span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'checked = '</span> + e.target.checked);
+}
+
+ReactDOM.render(<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">Checkbox</span> <span class="hljs-attribute">defaultChecked</span>=<span class="hljs-value">{false}</span> <span class="hljs-attribute">onChange</span>=<span class="hljs-value">{onChange}</span> /&gt;</span>
+  Checkbox
+<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>, mountNode);</span></code></pre></div></div><div class="code-box" id="demo-controller">
+  <div class="code-box-demo">
+    <div id="components-checkbox-demo-controller"><div data-reactid=".a"><p style="margin-bottom:20px;" data-reactid=".a.0"><label data-reactid=".a.0.0"><span class="ant-checkbox ant-checkbox-checked ant-checkbox-checked-1" data-reactid=".a.0.0.0"><span class="ant-checkbox-inner" data-reactid=".a.0.0.0.0"></span><input checked="" type="checkbox" class="ant-checkbox-input" data-reactid=".a.0.0.0.1"></span><span data-reactid=".a.0.0.1">选中-可用</span></label></p><p data-reactid=".a.1"><button type="button" class="ant-btn ant-btn-primary ant-btn-sm" data-reactid=".a.1.0"><span data-reactid=".a.1.0.0">取 消</span></button><button style="margin-left:10px;" type="button" class="ant-btn ant-btn-primary ant-btn-sm" data-reactid=".a.1.1"><span data-reactid=".a.1.1.0">不可用</span></button></p></div></div>
+    <script>mountNode = document.getElementById('components-checkbox-demo-controller');</script>
+    <script>(function(){'use strict';
+
+var _antd = require('antd');
+
+var App = React.createClass({
+  displayName: 'App',
+  getInitialState: function getInitialState() {
+    return {
+      checked: true,
+      disabled: false
+    };
+  },
+  render: function render() {
+    var label = (this.state.checked ? '选中' : '取消') + '-' + (this.state.disabled ? '不可用' : '可用');
+    return React.createElement(
+      'div',
+      null,
+      React.createElement(
+        'p',
+        { style: { marginBottom: '20px' } },
+        React.createElement(
+          'label',
+          null,
+          React.createElement(_antd.Checkbox, { checked: this.state.checked,
+            disabled: this.state.disabled,
+            onChange: this.onChange }),
+          label
+        )
+      ),
+      React.createElement(
+        'p',
+        null,
+        React.createElement(
+          _antd.Button,
+          { type: 'primary', size: 'small',
+            onClick: this.toggleChecked },
+          !this.state.checked ? '选中' : '取消'
+        ),
+        React.createElement(
+          _antd.Button,
+          { style: { marginLeft: '10px' },
+            type: 'primary', size: 'small',
+            onClick: this.toggleDisable },
+          !this.state.disabled ? '不可用' : '可用'
+        )
+      )
+    );
+  },
+  toggleChecked: function toggleChecked() {
+    this.setState({ checked: !this.state.checked });
+  },
+  toggleDisable: function toggleDisable() {
+    this.setState({ disabled: !this.state.disabled });
+  },
+  onChange: function onChange(e) {
+    console.log('checked = ', e.target.checked);
+    this.setState({
+      checked: e.target.checked
+    });
+  }
+});
+
+ReactDOM.render(React.createElement(App, null), mountNode);})()</script>
+  </div>
+  <div class="code-box-meta markdown">
+    <div class="code-box-title">
+      <a href="http://ant.design/components/checkbox/#demo-controller">和外部组件通信</a>
+    </div>
+    <p>联动 checkbox。</p>
+    <span class="collapse anticon anticon-circle-o-right" unselectable="none" style="-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;"></span>
+  </div>
+<div class="highlight"><pre><code class="javascript"><span class="hljs-keyword">import</span> { Checkbox, Button } <span class="hljs-keyword">from</span> <span class="hljs-string">'antd'</span>;
+
+<span class="hljs-keyword">const</span> App = React.createClass({
+  getInitialState() {
+    <span class="hljs-keyword">return</span> {
+      checked: <span class="hljs-literal">true</span>,
+      disabled: <span class="hljs-literal">false</span>
+    };
+  },
+  render() {
+    <span class="hljs-keyword">const</span> label = (<span class="hljs-keyword">this</span>.state.checked ? <span class="hljs-string">'选中'</span> : <span class="hljs-string">'取消'</span>) + <span class="hljs-string">'-'</span> +
+      (<span class="hljs-keyword">this</span>.state.disabled ? <span class="hljs-string">'不可用'</span> : <span class="hljs-string">'可用'</span>);
+    <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">{{marginBottom:</span> '<span class="hljs-attribute">20px</span>'}}&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">label</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">Checkbox</span> <span class="hljs-attribute">checked</span>=<span class="hljs-value">{this.state.checked}</span>
+            <span class="hljs-attribute">disabled</span>=<span class="hljs-value">{this.state.disabled}</span>
+            <span class="hljs-attribute">onChange</span>=<span class="hljs-value">{this.onChange}</span> /&gt;</span>
+            {label}
+        <span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"primary"</span> <span class="hljs-attribute">size</span>=<span class="hljs-value">"small"</span>
+          <span class="hljs-attribute">onClick</span>=<span class="hljs-value">{this.toggleChecked}</span>&gt;</span>
+          {!this.state.checked ? '选中' : '取消'}
+        <span class="hljs-tag">&lt;/<span class="hljs-title">Button</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Button</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">{{marginLeft:</span> '<span class="hljs-attribute">10px</span>'}}
+          <span class="hljs-attribute">type</span>=<span class="hljs-value">"primary"</span> <span class="hljs-attribute">size</span>=<span class="hljs-value">"small"</span>
+          <span class="hljs-attribute">onClick</span>=<span class="hljs-value">{this.toggleDisable}</span>&gt;</span>
+          {!this.state.disabled ? '不可用' : '可用'}
+        <span class="hljs-tag">&lt;/<span class="hljs-title">Button</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>;</span>
+  },
+  toggleChecked() {
+    <span class="hljs-keyword">this</span>.setState({checked: !<span class="hljs-keyword">this</span>.state.checked});
+  },
+  toggleDisable() {
+    <span class="hljs-keyword">this</span>.setState({disabled: !<span class="hljs-keyword">this</span>.state.disabled});
+  },
+  onChange(e) {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'checked = '</span>, e.target.checked);
+    <span class="hljs-keyword">this</span>.setState({
+      checked: e.target.checked,
+    });
+  }
+});
+
+ReactDOM.render(<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">App</span> /&gt;</span>, mountNode);</span></code></pre></div></div>
+  </div>
+  <div class="code-boxes-col-2-1"><div class="code-box" id="demo-disable">
+  <div class="code-box-demo">
+    <div id="components-checkbox-demo-disable"><div data-reactid=".b"><span class="ant-checkbox ant-checkbox-disabled" data-reactid=".b.0"><span class="ant-checkbox-inner" data-reactid=".b.0.0"></span><input disabled="" type="checkbox" class="ant-checkbox-input" data-reactid=".b.0.1"></span><br data-reactid=".b.1"><span class="ant-checkbox ant-checkbox-checked ant-checkbox-checked-1 ant-checkbox-disabled" data-reactid=".b.2"><span class="ant-checkbox-inner" data-reactid=".b.2.0"></span><input disabled="" type="checkbox" class="ant-checkbox-input" checked="" data-reactid=".b.2.1"></span></div></div>
+    <script>mountNode = document.getElementById('components-checkbox-demo-disable');</script>
+    <script>(function(){'use strict';
+
+var _antd = require('antd');
+
+ReactDOM.render(React.createElement(
+  'div',
+  null,
+  React.createElement(_antd.Checkbox, { defaultChecked: false, disabled: true }),
+  React.createElement('br', null),
+  React.createElement(_antd.Checkbox, { defaultChecked: true, disabled: true })
+), mountNode);})()</script>
+  </div>
+  <div class="code-box-meta markdown">
+    <div class="code-box-title">
+      <a href="http://ant.design/components/checkbox/#demo-disable">不可用</a>
+    </div>
+    <p>checkbox 不可用。</p>
+    <span class="collapse anticon anticon-circle-o-right" unselectable="none" style="-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;"></span>
+  </div>
+<div class="highlight"><pre><code class="javascript"><span class="hljs-keyword">import</span> { Checkbox } <span class="hljs-keyword">from</span> <span class="hljs-string">'antd'</span>;
+
+ReactDOM.render(<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">Checkbox</span> <span class="hljs-attribute">defaultChecked</span>=<span class="hljs-value">{false}</span> <span class="hljs-attribute">disabled</span> /&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">br</span> /&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">Checkbox</span> <span class="hljs-attribute">defaultChecked</span> <span class="hljs-attribute">disabled</span> /&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>, mountNode);</span></code></pre></div></div><div class="code-box" id="demo-group">
+  <div class="code-box-demo">
+    <div id="components-checkbox-demo-group"><div class="ant-checkbox-group" data-reactid=".c"><label class="ant-checkbox-group-item" data-reactid=".c.$Apple"><span class="ant-checkbox ant-checkbox-checked ant-checkbox-checked-1" data-reactid=".c.$Apple.0"><span class="ant-checkbox-inner" data-reactid=".c.$Apple.0.0"></span><input checked="" type="checkbox" class="ant-checkbox-input" data-reactid=".c.$Apple.0.1"></span><span data-reactid=".c.$Apple.1">Apple</span></label><label class="ant-checkbox-group-item" data-reactid=".c.$Pear"><span class="ant-checkbox" data-reactid=".c.$Pear.0"><span class="ant-checkbox-inner" data-reactid=".c.$Pear.0.0"></span><input type="checkbox" class="ant-checkbox-input" data-reactid=".c.$Pear.0.1"></span><span data-reactid=".c.$Pear.1">Pear</span></label><label class="ant-checkbox-group-item" data-reactid=".c.$Orange"><span class="ant-checkbox" data-reactid=".c.$Orange.0"><span class="ant-checkbox-inner" data-reactid=".c.$Orange.0.0"></span><input type="checkbox" class="ant-checkbox-input" data-reactid=".c.$Orange.0.1"></span><span data-reactid=".c.$Orange.1">Orange</span></label></div></div>
+    <script>mountNode = document.getElementById('components-checkbox-demo-group');</script>
+    <script>(function(){'use strict';
+
+var _antd = require('antd');
+
+var CheckboxGroup = _antd.Checkbox.Group;
+
+function onChange(checkedValues) {
+  console.log('checked = ', checkedValues);
+}
+
+ReactDOM.render(React.createElement(CheckboxGroup, { options: ['Apple', 'Pear', 'Orange'], defaultValue: ['Apple'], onChange: onChange }), mountNode);})()</script>
+  </div>
+  <div class="code-box-meta markdown">
+    <div class="code-box-title">
+      <a href="http://ant.design/components/checkbox/#demo-group">Checkbox 组</a>
+    </div>
+    <p>方便的生成一个 Checkbox 组。</p>
+    <span class="collapse anticon anticon-circle-o-right" unselectable="none" style="-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;"></span>
+  </div>
+<div class="highlight"><pre><code class="javascript"><span class="hljs-keyword">import</span> { Checkbox } <span class="hljs-keyword">from</span> <span class="hljs-string">'antd'</span>;
+<span class="hljs-keyword">const</span> CheckboxGroup = Checkbox.Group;
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">onChange</span>(<span class="hljs-params">checkedValues</span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'checked = '</span>, checkedValues);
+}
+
+ReactDOM.render(
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">CheckboxGroup</span> <span class="hljs-attribute">options</span>=<span class="hljs-value">{['Apple',</span> '<span class="hljs-attribute">Pear</span>', '<span class="hljs-attribute">Orange</span>']} <span class="hljs-attribute">defaultValue</span>=<span class="hljs-value">{['Apple']}</span> <span class="hljs-attribute">onChange</span>=<span class="hljs-value">{onChange}</span> /&gt;</span>
+, mountNode);</span></code></pre></div></div>
+  </div>
+</div>
+<ul class="demos-anchor">
+  <li>
+    <a title="基本用法" href="http://ant.design/components/checkbox/#demo-basic">
+      <span>基本用法</span>
+    </a>
+  </li>
+  <li>
+    <a title="不可用" href="http://ant.design/components/checkbox/#demo-disable">
+      <span>不可用</span>
+    </a>
+  </li>
+  <li>
+    <a title="和外部组件通信" href="http://ant.design/components/checkbox/#demo-controller">
+      <span>和外部组件通信</span>
+    </a>
+  </li>
+  <li>
+    <a title="Checkbox 组" href="http://ant.design/components/checkbox/#demo-group">
+      <span>Checkbox 组</span>
+    </a>
+  </li>
+</ul>
+  <div class="api-container markdown"><h2 id="api">API<a href="http://ant.design/components/checkbox/#api" class="anchor">#</a> </h2><h3 id="checkbox">Checkbox<a href="http://ant.design/components/checkbox/#checkbox" class="anchor">#</a> </h3><table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+<th>类型</th>
+<th>可选值</th>
+<th>默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>checked</td>
+<td>指定当前是否选中</td>
+<td>boolean</td>
+<td></td>
+<td>false</td>
+</tr>
+<tr>
+<td>defaultChecked</td>
+<td>初始是否选中</td>
+<td>boolean</td>
+<td></td>
+<td>false</td>
+</tr>
+<tr>
+<td>onChange</td>
+<td>变化时回调函数</td>
+<td>Function(e:Event)</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table><h3 id="checkbox-group">Checkbox Group<a href="http://ant.design/components/checkbox/#checkbox-group" class="anchor">#</a> </h3><table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+<th>类型</th>
+<th>可选值</th>
+<th>默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>defaultValue</td>
+<td>默认选中的选项</td>
+<td>array</td>
+<td></td>
+<td>[]</td>
+</tr>
+<tr>
+<td>value</td>
+<td>指定选中的选项</td>
+<td>array</td>
+<td></td>
+<td>[]</td>
+</tr>
+<tr>
+<td>options</td>
+<td>指定可选项</td>
+<td>array</td>
+<td></td>
+<td>[]</td>
+</tr>
+<tr>
+<td>onChange</td>
+<td>变化时回调函数</td>
+<td>Function(checkedValue)</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+</section>
+
+    </div><footer id="footer">
+  <ul>
+    <li>
+      <h2>GitHub</h2>
+      <a target="_blank " href="https://github.com/ant-design/ant-design">仓库</a>
+      <a target="_blank" href="https://github.com/ant-design/ant-design/tree/master/style">样式</a>
+      <a target="_blank" href="https://github.com/ant-tool/xtool">开发工具</a>
+    </li>
+    <li>
+      <h2>关于我们</h2>
+      <a href="https://github.com/ant-ued/blog">博客 - Ant UED</a>
+    </li>
+    <li>
+      <h2>联系我们</h2>
+      <a target="_blank" href="https://github.com/ant-design/ant-design/issues">反馈和建议</a>
+      <a target="_blank" href="https://gitter.im/ant-design/ant-design">讨论</a>
+      <a target="_blank" href="http://t.cn/R4XEpoQ">报告 Bug</a>
+    </li>
+    <li>
+      <h3>©2015 蚂蚁金服体验技术部出品</h3>
+      <h3>文档版本：<span id="versions-select"><span class="ant-select-sm ant-select ant-select-enabled" data-reactid=".e"><span class="ant-select-selection ant-select-selection--single" role="combobox" aria-autocomplete="list" aria-haspopup="true" tabindex="0" data-reactid=".e.$selection"><span class="ant-select-selection__rendered" data-reactid=".e.$selection.0"><span data-reactid=".e.$selection.0.$value">0.11.2</span></span><span class="ant-select-arrow" tabindex="-1" style="outline:none;" data-reactid=".e.$selection.$arrow"><b data-reactid=".e.$selection.$arrow.0"></b></span></span></span></span></h3>
+    </li>
+  </ul>
+</footer>
+    <script src="./lib/T1AmXhXg0kXXXXXXXX.js" data-no-instant=""></script>
+    <script data-no-instant="">
+      InstantClick.on('change', function() {
+        InstantClickChangeFns.forEach(function(fn) {
+          fn();
+        });
+      });
+      InstantClick.init();
+    </script>
+  
+<div id="instantclick" style="opacity: 0;"><div id="instantclick-bar" class="instantclick-bar" style="transform: translate(100%);"></div></div></body></html>

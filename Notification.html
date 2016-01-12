@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)http://ant.design/components/notification/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="一个 UI 设计语言">
+    <title>
+Notification 通知提醒框 - Ant Design
+</title>
+    <link rel="icon" href="https://t.alipayobjects.com/images/T1QUBfXo4fXXXXXXXX.png" type="image/x-icon">
+    <link rel="shortcut icon" href="https://t.alipayobjects.com/images/T1QUBfXo4fXXXXXXXX.png" type="image/x-icon">
+    
+    <link rel="stylesheet" href="./dist/demo.css">
+    <link rel="stylesheet" href="./lib/style.css">
+    <link rel="stylesheet" href="./lib/tomorrow.css">
+    <!--[if IE 8]>
+    <script src="https://t.alipayobjects.com/images/rmsweb/T1q8JiXftaXXXXXXXX.js"></script>
+    <![endif]-->
+    <script src="./lib/saved_resource"></script>
+    <script src="./lib/saved_resource(1)"></script>
+    <script>
+    (function() {
+      window.ANT_COMPONENTS = [];
+      window.InstantClickChangeFns = [];
+      ANT_COMPONENTS.push({
+        title: 'Popconfirm',
+        desc: '气泡确认框'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Affix',
+        desc: '固钉'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Badge',
+        desc: '徽标数'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Breadcrumb',
+        desc: '面包屑'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Button',
+        desc: '按钮'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Calendar',
+        desc: '日历'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Carousel',
+        desc: '走马灯'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Checkbox',
+        desc: '多选框'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Collapse',
+        desc: '折叠面板'
+      });
+      ANT_COMPONENTS.push({
+        title: 'DatePicker',
+        desc: '日期选择框'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Dropdown',
+        desc: '下拉菜单'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Form',
+        desc: '表单'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Icon',
+        desc: '图标'
+      });
+      ANT_COMPONENTS.push({
+        title: 'InputNumber',
+        desc: '数字输入框'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Layout',
+        desc: '布局'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Menu',
+        desc: '导航菜单'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Message',
+        desc: '全局提示'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Modal',
+        desc: '对话框'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Notification',
+        desc: '通知提醒框'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Pagination',
+        desc: '分页'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Alert',
+        desc: '警告提示'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Popover',
+        desc: '气泡卡片'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Progress',
+        desc: '进度条'
+      });
+      ANT_COMPONENTS.push({
+        title: 'QueueAnim',
+        desc: '进出场动画'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Radio',
+        desc: '单选框'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Select',
+        desc: '选择器'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Slider',
+        desc: '滑动输入条'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Spin',
+        desc: '加载中'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Steps',
+        desc: '步骤条'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Switch',
+        desc: '开关'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Table',
+        desc: '表格'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Tabs',
+        desc: '标签页'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Tag',
+        desc: '标签'
+      });
+      ANT_COMPONENTS.push({
+        title: 'TimePicker',
+        desc: '时间选择框'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Timeline',
+        desc: '时间轴'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Tooltip',
+        desc: '文字提示'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Transfer',
+        desc: '穿梭框'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Tree',
+        desc: '树形控件'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Upload',
+        desc: '文件上传'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Validation',
+        desc: '表单校验'
+      });
+      var i = location.pathname.split('/').lastIndexOf('ant-design');
+      if (i > 0) {
+        window.rootUrl = location.origin + location.pathname.split('/').slice(0, 2+1).join('/');
+      } else {
+        window.rootUrl = location.origin;
+      }
+    })();
+    </script>
+    <script src="./lib/script.js"></script>
+    <script>
+      window.antdVersion = {
+        latest: '0.11.2'
+      };
+    </script>
+    <script src="./dist/demo.js"></script>
+    <script src="./lib/T1DrxhXe0mXXXXXXXX.js"></script>
+    
+  <style>#instantclick{position:fixed;top:0;left:0;width:100%;pointer-events:none;z-index:2147483647;transition:opacity .25s .1s}.instantclick-bar{background:#29d;width:100%;margin-left:-100%;height:2px;transition:all .25s;}</style></head>
+  <body>
+  
+    <div class="main-wrapper">
+      
+
+ 
+<section class="main-container">
+  <article class="markdown">
+    <h1>
+      Notification 通知提醒框
+    </h1>
+    <p>全局展示通知提醒信息。</p>
+<h2 id="何时使用">何时使用<a href="http://ant.design/components/notification/#何时使用" class="anchor">#</a> </h2><p>在系统右上角显示通知提醒信息。经常用于以下情况：</p>
+<ul>
+<li>较为复杂的通知内容。</li>
+<li>带有交互的通知，给出用户下一步的行动点。</li>
+<li>系统主动推送。</li>
+</ul>
+
+
+
+
+
+
+
+  </article>
+<h2 class="component-demos">
+  代码演示
+  <i class="anticon anticon-appstore icon-all" title="展开全部代码"></i>
+</h2>
+<div class="code-boxes">
+  <div class="code-boxes-col-2-1"><div class="code-box" id="demo-basic">
+  <div class="code-box-demo">
+    <div id="components-notification-demo-basic"><button type="button" class="ant-btn ant-btn-primary" data-reactid=".0"><span data-reactid=".0.0">打开通知提醒框</span></button></div>
+    <script>mountNode = document.getElementById('components-notification-demo-basic');</script>
+    <script>(function(){'use strict';
+
+var _antd = require('antd');
+
+var openNotification = function openNotification() {
+  _antd.notification.open({
+    message: '这是标题',
+    description: '这是提示框的文案这是提示框的文案这是提示框的文案这是提示框的文案这是提示框的文案这是提示框的文案这是提示框的文案'
+  });
+};
+
+ReactDOM.render(React.createElement(
+  _antd.Button,
+  { type: 'primary', onClick: openNotification },
+  '打开通知提醒框'
+), mountNode);})()</script>
+  </div>
+  <div class="code-box-meta markdown">
+    <div class="code-box-title">
+      <a href="http://ant.design/components/notification/#demo-basic">基本</a>
+    </div>
+    <p>最简单的用法，五秒后自动关闭。</p>
+    <span class="collapse anticon anticon-circle-o-right" unselectable="none" style="-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;"></span>
+  </div>
+<div class="highlight"><pre><code class="javascript"><span class="hljs-keyword">import</span> { Button, notification } <span class="hljs-keyword">from</span> <span class="hljs-string">'antd'</span>;
+
+<span class="hljs-keyword">const</span> openNotification = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+  notification.open({
+    message: <span class="hljs-string">'这是标题'</span>,
+    description: <span class="hljs-string">'这是提示框的文案这是提示框的文案这是提示框的文案这是提示框的文案这是提示框的文案这是提示框的文案这是提示框的文案'</span>
+  });
+};
+
+ReactDOM.render(
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">Button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"primary"</span> <span class="hljs-attribute">onClick</span>=<span class="hljs-value">{openNotification}</span>&gt;</span>打开通知提醒框<span class="hljs-tag">&lt;/<span class="hljs-title">Button</span>&gt;</span>
+, mountNode);</span></code></pre></div></div><div class="code-box" id="demo-with-icon">
+  <div class="code-box-demo">
+    <div id="components-notification-demo-with-icon"><div data-reactid=".1"><button type="button" class="ant-btn" data-reactid=".1.0"><span data-reactid=".1.0.0">成 功</span></button><button type="button" class="ant-btn" data-reactid=".1.1"><span data-reactid=".1.1.0">消 息</span></button><button type="button" class="ant-btn" data-reactid=".1.2"><span data-reactid=".1.2.0">警 告</span></button><button type="button" class="ant-btn" data-reactid=".1.3"><span data-reactid=".1.3.0">错 误</span></button></div></div>
+    <script>mountNode = document.getElementById('components-notification-demo-with-icon');</script>
+    <script>(function(){'use strict';
+
+var _antd = require('antd');
+
+var openNotificationWithIcon = function openNotificationWithIcon(type) {
+  return function () {
+    _antd.notification[type]({
+      message: '这是标题',
+      description: '这是提示框的文案这是提示框示框的文案这是提示是提示框的文案这是提示框的文案'
+    });
+  };
+};
+
+ReactDOM.render(React.createElement(
+  'div',
+  null,
+  React.createElement(
+    _antd.Button,
+    { onClick: openNotificationWithIcon('success') },
+    '成功'
+  ),
+  React.createElement(
+    _antd.Button,
+    { onClick: openNotificationWithIcon('info') },
+    '消息'
+  ),
+  React.createElement(
+    _antd.Button,
+    { onClick: openNotificationWithIcon('warn') },
+    '警告'
+  ),
+  React.createElement(
+    _antd.Button,
+    { onClick: openNotificationWithIcon('error') },
+    '错误'
+  )
+), mountNode);})()</script><style>
+.code-box-demo .ant-btn {
+  margin-right: 1em;
+}
+</style>
+
+  </div>
+  <div class="code-box-meta markdown">
+    <div class="code-box-title">
+      <a href="http://ant.design/components/notification/#demo-with-icon">带有Icon的通知提醒框</a>
+    </div>
+    <p>通知提醒框左侧有图标。</p>
+    <span class="collapse anticon anticon-circle-o-right" unselectable="none" style="-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;"></span>
+  </div>
+<div class="highlight"><pre><code class="javascript"><span class="hljs-keyword">import</span> { Button, notification } <span class="hljs-keyword">from</span> <span class="hljs-string">'antd'</span>;
+
+<span class="hljs-keyword">const</span> openNotificationWithIcon = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">type</span>) </span>{
+  <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    notification[type]({
+      message: <span class="hljs-string">'这是标题'</span>,
+      description: <span class="hljs-string">'这是提示框的文案这是提示框示框的文案这是提示是提示框的文案这是提示框的文案'</span>
+    });
+  };
+};
+
+ReactDOM.render(<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">Button</span> <span class="hljs-attribute">onClick</span>=<span class="hljs-value">{openNotificationWithIcon('success')}</span>&gt;</span>成功<span class="hljs-tag">&lt;/<span class="hljs-title">Button</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">Button</span> <span class="hljs-attribute">onClick</span>=<span class="hljs-value">{openNotificationWithIcon('info')}</span>&gt;</span>消息<span class="hljs-tag">&lt;/<span class="hljs-title">Button</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">Button</span> <span class="hljs-attribute">onClick</span>=<span class="hljs-value">{openNotificationWithIcon('warn')}</span>&gt;</span>警告<span class="hljs-tag">&lt;/<span class="hljs-title">Button</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">Button</span> <span class="hljs-attribute">onClick</span>=<span class="hljs-value">{openNotificationWithIcon('error')}</span>&gt;</span>错误<span class="hljs-tag">&lt;/<span class="hljs-title">Button</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+, mountNode);</span></code></pre></div></div><div class="code-box" id="demo-with-btn">
+  <div class="code-box-demo">
+    <div id="components-notification-demo-with-btn"><div data-reactid=".2"><button type="button" class="ant-btn ant-btn-primary" data-reactid=".2.0"><span data-reactid=".2.0.0">打开通知提醒框</span></button></div></div>
+    <script>mountNode = document.getElementById('components-notification-demo-with-btn');</script>
+    <script>(function(){'use strict';
+
+var _antd = require('antd');
+
+var close = function close() {
+  console.log('我被默认的关闭按钮关闭了！');
+};
+
+var openNotification = function openNotification() {
+  var key = 'open' + Date.now();
+  var btnClick = function btnClick() {
+    // 隐藏提醒框
+    _antd.notification.close(key);
+  };
+  var btn = React.createElement(
+    _antd.Button,
+    { type: 'primary', size: 'small', onClick: btnClick },
+    '自定义关闭按钮并触发回调函数'
+  );
+  _antd.notification.open({
+    message: '这是标题',
+    description: '这是提示框的文案这是提示框示框的文案这是提示是提示框的文案这是提示框的文案',
+    btn: btn,
+    key: key,
+    onClose: close
+  });
+};
+
+ReactDOM.render(React.createElement(
+  'div',
+  null,
+  React.createElement(
+    _antd.Button,
+    { type: 'primary', onClick: openNotification },
+    '打开通知提醒框'
+  )
+), mountNode);})()</script>
+  </div>
+  <div class="code-box-meta markdown">
+    <div class="code-box-title">
+      <a href="http://ant.design/components/notification/#demo-with-btn">自定义</a>
+    </div>
+    <p>自定义关闭按钮的样式和文字。</p>
+    <span class="collapse anticon anticon-circle-o-right" unselectable="none" style="-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;"></span>
+  </div>
+<div class="highlight"><pre><code class="javascript"><span class="hljs-keyword">import</span> { Button, notification } <span class="hljs-keyword">from</span> <span class="hljs-string">'antd'</span>;
+
+<span class="hljs-keyword">const</span> close = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'我被默认的关闭按钮关闭了！'</span>);
+};
+
+<span class="hljs-keyword">const</span> openNotification = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">const</span> key = <span class="hljs-string">'open'</span> + <span class="hljs-built_in">Date</span>.now();
+  <span class="hljs-keyword">const</span> btnClick = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-comment">// 隐藏提醒框</span>
+    notification.close(key);
+  };
+  <span class="hljs-keyword">const</span> btn = <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">Button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"primary"</span> <span class="hljs-attribute">size</span>=<span class="hljs-value">"small"</span> <span class="hljs-attribute">onClick</span>=<span class="hljs-value">{btnClick}</span>&gt;</span>
+    自定义关闭按钮并触发回调函数
+  <span class="hljs-tag">&lt;/<span class="hljs-title">Button</span>&gt;</span>;</span>
+  notification.open({
+    message: <span class="hljs-string">'这是标题'</span>,
+    description: <span class="hljs-string">'这是提示框的文案这是提示框示框的文案这是提示是提示框的文案这是提示框的文案'</span>,
+    btn: btn,
+    key: key,
+    onClose: close
+  });
+};
+
+ReactDOM.render(
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"primary"</span> <span class="hljs-attribute">onClick</span>=<span class="hljs-value">{openNotification}</span>&gt;</span>打开通知提醒框<span class="hljs-tag">&lt;/<span class="hljs-title">Button</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>,
+mountNode);</span></code></pre></div></div>
+  </div>
+  <div class="code-boxes-col-2-1"><div class="code-box" id="demo-duration">
+  <div class="code-box-demo">
+    <div id="components-notification-demo-duration"><button type="button" class="ant-btn ant-btn-primary" data-reactid=".3"><span data-reactid=".3.0">打开通知提醒框</span></button></div>
+    <script>mountNode = document.getElementById('components-notification-demo-duration');</script>
+    <script>(function(){'use strict';
+
+var _antd = require('antd');
+
+var openNotification = function openNotification() {
+  var args = {
+    message: '这是标题',
+    description: '我不会自动关闭，我不会自动关闭，我不会自动关闭，我不会自动关闭，我不会自动关闭，我不会自动关闭，我不会自动关闭',
+    duration: 0
+  };
+  _antd.notification.open(args);
+};
+
+ReactDOM.render(React.createElement(
+  _antd.Button,
+  { type: 'primary', onClick: openNotification },
+  '打开通知提醒框'
+), mountNode);})()</script>
+  </div>
+  <div class="code-box-meta markdown">
+    <div class="code-box-title">
+      <a href="http://ant.design/components/notification/#demo-duration">自动关闭的延时</a>
+    </div>
+    <p>自定义通知框自动关闭的延时，默认<code>4.5s</code>，取消自动关闭只要将该值设为 <code>0</code> 即可。</p>
+    <span class="collapse anticon anticon-circle-o-right" unselectable="none" style="-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;"></span>
+  </div>
+<div class="highlight"><pre><code class="javascript"><span class="hljs-keyword">import</span> { Button, notification } <span class="hljs-keyword">from</span> <span class="hljs-string">'antd'</span>;
+
+<span class="hljs-keyword">const</span> openNotification = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">const</span> args = {
+    message: <span class="hljs-string">'这是标题'</span>,
+    description: <span class="hljs-string">'我不会自动关闭，我不会自动关闭，我不会自动关闭，我不会自动关闭，我不会自动关闭，我不会自动关闭，我不会自动关闭'</span>,
+    duration: <span class="hljs-number">0</span>
+  };
+  notification.open(args);
+};
+
+ReactDOM.render(
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">Button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"primary"</span> <span class="hljs-attribute">onClick</span>=<span class="hljs-value">{openNotification}</span>&gt;</span>打开通知提醒框<span class="hljs-tag">&lt;/<span class="hljs-title">Button</span>&gt;</span>
+, mountNode);</span></code></pre></div></div><div class="code-box" id="demo-onclose">
+  <div class="code-box-demo">
+    <div id="components-notification-demo-onclose"><div data-reactid=".4"><button type="button" class="ant-btn ant-btn-primary" data-reactid=".4.0"><span data-reactid=".4.0.0">打开通知提醒框</span></button></div></div>
+    <script>mountNode = document.getElementById('components-notification-demo-onclose');</script>
+    <script>(function(){'use strict';
+
+var _antd = require('antd');
+
+var close = function close() {
+  console.log('我被默认的关闭按钮关闭了！');
+};
+
+var openNotification = function openNotification() {
+  var args = {
+    message: '这是标题',
+    description: '这是提示框的文案这是提示框示框的文案这是提示是提示框的文案这是提示框的文案',
+    onClose: close
+  };
+  _antd.notification.open(args);
+};
+
+ReactDOM.render(React.createElement(
+  'div',
+  null,
+  React.createElement(
+    _antd.Button,
+    { type: 'primary', onClick: openNotification },
+    '打开通知提醒框'
+  )
+), mountNode);})()</script>
+  </div>
+  <div class="code-box-meta markdown">
+    <div class="code-box-title">
+      <a href="http://ant.design/components/notification/#demo-onclose">回调函数</a>
+    </div>
+    <p>点击关闭按钮时触发回调函数。</p>
+    <span class="collapse anticon anticon-circle-o-right" unselectable="none" style="-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;"></span>
+  </div>
+<div class="highlight"><pre><code class="javascript"><span class="hljs-keyword">import</span> { Button, notification } <span class="hljs-keyword">from</span> <span class="hljs-string">'antd'</span>;
+
+<span class="hljs-keyword">const</span> close = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'我被默认的关闭按钮关闭了！'</span>);
+};
+
+<span class="hljs-keyword">const</span> openNotification = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">const</span> args = {
+    message: <span class="hljs-string">'这是标题'</span>,
+    description: <span class="hljs-string">'这是提示框的文案这是提示框示框的文案这是提示是提示框的文案这是提示框的文案'</span>,
+    onClose: close
+  };
+  notification.open(args);
+};
+
+ReactDOM.render(
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"primary"</span> <span class="hljs-attribute">onClick</span>=<span class="hljs-value">{openNotification}</span>&gt;</span>打开通知提醒框<span class="hljs-tag">&lt;/<span class="hljs-title">Button</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>,
+mountNode);</span></code></pre></div></div>
+  </div>
+</div>
+<ul class="demos-anchor">
+  <li>
+    <a title="基本" href="http://ant.design/components/notification/#demo-basic">
+      <span>基本</span>
+    </a>
+  </li>
+  <li>
+    <a title="自动关闭的延时" href="http://ant.design/components/notification/#demo-duration">
+      <span>自动关闭的延时</span>
+    </a>
+  </li>
+  <li>
+    <a title="带有Icon的通知提醒框" href="http://ant.design/components/notification/#demo-with-icon">
+      <span>带有Icon的通知提醒框</span>
+    </a>
+  </li>
+  <li>
+    <a title="回调函数" href="http://ant.design/components/notification/#demo-onclose">
+      <span>回调函数</span>
+    </a>
+  </li>
+  <li>
+    <a title="自定义" href="http://ant.design/components/notification/#demo-with-btn">
+      <span>自定义</span>
+    </a>
+  </li>
+</ul>
+  <div class="api-container markdown"><h2 id="api">API<a href="http://ant.design/components/notification/#api" class="anchor">#</a> </h2><ul>
+<li><code>notification.success(config)</code></li>
+<li><code>notification.error(config)</code></li>
+<li><code>notification.info(config)</code></li>
+<li><code>notification.warn(config)</code></li>
+<li><code>notification.open(config)</code></li>
+<li><code>notification.close(key: String)</code></li>
+</ul><p>config 参数如下：</p><table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+<th>类型</th>
+<th>默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>message</td>
+<td>通知提醒标题，必选</td>
+<td>React.Element or String</td>
+<td>无</td>
+</tr>
+<tr>
+<td>description</td>
+<td>通知提醒内容，必选</td>
+<td>React.Element or String</td>
+<td>无</td>
+</tr>
+<tr>
+<td>btn</td>
+<td>自定义关闭按钮</td>
+<td>React.Element</td>
+<td>无</td>
+</tr>
+<tr>
+<td>key</td>
+<td>当前通知唯一标志</td>
+<td>String</td>
+<td>无</td>
+</tr>
+<tr>
+<td>onClose</td>
+<td>点击默认关闭按钮时触发的回调函数</td>
+<td>Function</td>
+<td>无</td>
+</tr>
+<tr>
+<td>duration</td>
+<td>默认 4.5 秒后自动关闭，配置为 null 则不自动关闭</td>
+<td>Number</td>
+<td>4.5</td>
+</tr>
+</tbody>
+</table><p>还提供了一个全局配置方法，需要在调用前提前配置，一次有效。</p><ul>
+<li><code>notification.config(options)</code></li>
+</ul><div class="highlight"><pre><code class="javascript">message.config({
+  top: <span class="hljs-number">100</span>
+});</code></pre></div><table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+<th>类型</th>
+<th>默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>top</td>
+<td>消息距离顶部的位置</td>
+<td>Number</td>
+<td>24px</td>
+</tr>
+</tbody>
+</table></div>
+</section>
+
+    </div>
+    <script src="./lib/T1AmXhXg0kXXXXXXXX.js" data-no-instant=""></script>
+    <script data-no-instant="">
+      InstantClick.on('change', function() {
+        InstantClickChangeFns.forEach(function(fn) {
+          fn();
+        });
+      });
+      InstantClick.init();
+    </script>
+  
+</body></html>

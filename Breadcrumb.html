@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<!-- saved from url=(0052)http://ant.design/components/breadcrumb/#/?_k=kg13vf -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="一个 UI 设计语言">
+    <title>Breadcrumb 面包屑 - Ant Design</title>
+    <link rel="icon" href="https://t.alipayobjects.com/images/T1QUBfXo4fXXXXXXXX.png" type="image/x-icon">
+    <link rel="shortcut icon" href="https://t.alipayobjects.com/images/T1QUBfXo4fXXXXXXXX.png" type="image/x-icon">
+    
+    <link rel="stylesheet" href="./dist/demo.css">
+    <link rel="stylesheet" href="./lib/style.css">
+    <link rel="stylesheet" href="./lib/tomorrow.css">
+    <!--[if IE 8]>
+    <script src="https://t.alipayobjects.com/images/rmsweb/T1q8JiXftaXXXXXXXX.js"></script>
+    <![endif]-->
+    <script src="./lib/saved_resource"></script>
+    <script src="./lib/saved_resource(1)"></script>
+    <script>
+    (function() {
+      window.ANT_COMPONENTS = [];
+      window.InstantClickChangeFns = [];
+      ANT_COMPONENTS.push({
+        title: 'Popconfirm',
+        desc: '气泡确认框'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Affix',
+        desc: '固钉'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Badge',
+        desc: '徽标数'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Breadcrumb',
+        desc: '面包屑'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Button',
+        desc: '按钮'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Calendar',
+        desc: '日历'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Carousel',
+        desc: '走马灯'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Checkbox',
+        desc: '多选框'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Collapse',
+        desc: '折叠面板'
+      });
+      ANT_COMPONENTS.push({
+        title: 'DatePicker',
+        desc: '日期选择框'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Dropdown',
+        desc: '下拉菜单'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Form',
+        desc: '表单'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Icon',
+        desc: '图标'
+      });
+      ANT_COMPONENTS.push({
+        title: 'InputNumber',
+        desc: '数字输入框'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Layout',
+        desc: '布局'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Menu',
+        desc: '导航菜单'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Message',
+        desc: '全局提示'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Modal',
+        desc: '对话框'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Notification',
+        desc: '通知提醒框'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Pagination',
+        desc: '分页'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Alert',
+        desc: '警告提示'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Popover',
+        desc: '气泡卡片'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Progress',
+        desc: '进度条'
+      });
+      ANT_COMPONENTS.push({
+        title: 'QueueAnim',
+        desc: '进出场动画'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Radio',
+        desc: '单选框'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Select',
+        desc: '选择器'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Slider',
+        desc: '滑动输入条'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Spin',
+        desc: '加载中'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Steps',
+        desc: '步骤条'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Switch',
+        desc: '开关'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Table',
+        desc: '表格'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Tabs',
+        desc: '标签页'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Tag',
+        desc: '标签'
+      });
+      ANT_COMPONENTS.push({
+        title: 'TimePicker',
+        desc: '时间选择框'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Timeline',
+        desc: '时间轴'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Tooltip',
+        desc: '文字提示'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Transfer',
+        desc: '穿梭框'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Tree',
+        desc: '树形控件'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Upload',
+        desc: '文件上传'
+      });
+      ANT_COMPONENTS.push({
+        title: 'Validation',
+        desc: '表单校验'
+      });
+      var i = location.pathname.split('/').lastIndexOf('ant-design');
+      if (i > 0) {
+        window.rootUrl = location.origin + location.pathname.split('/').slice(0, 2+1).join('/');
+      } else {
+        window.rootUrl = location.origin;
+      }
+    })();
+    </script>
+    <script src="./lib/script.js"></script>
+    <script>
+      window.antdVersion = {
+        latest: '0.11.2'
+      };
+    </script>
+    <script src="./dist/demo.js"></script>
+    <script src="./lib/T1DrxhXe0mXXXXXXXX.js"></script>
+    
+  <style>#instantclick{position:fixed;top:0;left:0;width:100%;pointer-events:none;z-index:2147483647;transition:opacity .25s .1s}.instantclick-bar{background:#29d;width:100%;margin-left:-100%;height:2px;transition:all .25s;}</style></head>
+  <body>
+    
+    <div class="main-wrapper">
+      
+
+ 
+<section class="main-container">
+  <article class="markdown">
+    <h1>
+      Breadcrumb 面包屑
+    </h1>
+    <p>显示当前页面在系统层级结构中的位置，并能向上返回。</p>
+<h2 id="何时使用">何时使用<a href="http://ant.design/components/breadcrumb/#何时使用" class="anchor">#</a> </h2><ul>
+<li>当系统拥有超过两级以上的层级结构时；</li>
+<li>当需要告知用户“你在哪里”时；</li>
+<li>当需要向上导航的功能时。</li>
+</ul>
+
+
+
+  </article>
+<h2 class="component-demos">
+  代码演示
+  <i class="anticon anticon-appstore icon-all" title="展开全部代码"></i>
+</h2>
+<div class="code-boxes">
+  <div class="code-boxes-col-2-1"><div class="code-box" id="demo-basic">
+  <div class="code-box-demo">
+    <div id="components-breadcrumb-demo-basic"><div class="ant-breadcrumb" data-reactid=".7"><span data-reactid=".7.$0/=10"><span class="ant-breadcrumb-link" data-reactid=".7.$0/=10.0">首页</span><span class="ant-breadcrumb-separator" data-reactid=".7.$0/=10.1">/</span></span><span data-reactid=".7.$1/=11"><a class="ant-breadcrumb-link" href="" data-reactid=".7.$1/=11.0">应用中心</a><span class="ant-breadcrumb-separator" data-reactid=".7.$1/=11.1">/</span></span><span data-reactid=".7.$2/=12"><a class="ant-breadcrumb-link" href="" data-reactid=".7.$2/=12.0">应用列表</a><span class="ant-breadcrumb-separator" data-reactid=".7.$2/=12.1">/</span></span><span data-reactid=".7.$3/=13"><span class="ant-breadcrumb-link" data-reactid=".7.$3/=13.0">某应用</span><span class="ant-breadcrumb-separator" data-reactid=".7.$3/=13.1">/</span></span></div></div>
+    <script>mountNode = document.getElementById('components-breadcrumb-demo-basic');</script>
+    <script>(function(){"use strict";
+
+var _antd = require("antd");
+
+ReactDOM.render(React.createElement(
+  _antd.Breadcrumb,
+  null,
+  React.createElement(
+    _antd.Breadcrumb.Item,
+    null,
+    "首页"
+  ),
+  React.createElement(
+    _antd.Breadcrumb.Item,
+    { href: "" },
+    "应用中心"
+  ),
+  React.createElement(
+    _antd.Breadcrumb.Item,
+    { href: "" },
+    "应用列表"
+  ),
+  React.createElement(
+    _antd.Breadcrumb.Item,
+    null,
+    "某应用"
+  )
+), mountNode);})()</script>
+  </div>
+  <div class="code-box-meta markdown">
+    <div class="code-box-title">
+      <a href="http://ant.design/components/breadcrumb/#demo-basic">基本</a>
+    </div>
+    <p>最简单的用法，存在 <code>href</code> 表示可点。</p>
+    <span class="collapse anticon anticon-circle-o-right" unselectable="none" style="-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;"></span>
+  </div>
+<div class="highlight"><pre><code class="javascript"><span class="hljs-keyword">import</span> { Breadcrumb } <span class="hljs-keyword">from</span> <span class="hljs-string">'antd'</span>;
+
+ReactDOM.render(
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">Breadcrumb</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Breadcrumb.Item</span>&gt;</span>首页<span class="hljs-tag">&lt;/<span class="hljs-title">Breadcrumb.Item</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Breadcrumb.Item</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">""</span>&gt;</span>应用中心<span class="hljs-tag">&lt;/<span class="hljs-title">Breadcrumb.Item</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Breadcrumb.Item</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">""</span>&gt;</span>应用列表<span class="hljs-tag">&lt;/<span class="hljs-title">Breadcrumb.Item</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Breadcrumb.Item</span>&gt;</span>某应用<span class="hljs-tag">&lt;/<span class="hljs-title">Breadcrumb.Item</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">Breadcrumb</span>&gt;</span>
+, mountNode);</span></code></pre></div></div><div class="code-box" id="demo-router">
+  <div class="code-box-demo">
+    <div id="components-breadcrumb-demo-router"><div data-reactid=".8"><div class="demo-nav" data-reactid=".8.0"><a class="" href="http://ant.design/components/breadcrumb/#/" data-reactid=".8.0.0">首页</a><a class="" href="http://ant.design/components/breadcrumb/#/apps" data-reactid=".8.0.1">应用列表</a></div><span data-reactid=".8.1">Home</span><div style="margin-bottom:15px;margin-top:15px;padding-bottom:15px;border-bottom:1px dashed #ccc;" data-reactid=".8.2">点击上面的导航切换页面，面包屑在下面：</div><div class="ant-breadcrumb" data-reactid=".8.3"><span data-reactid=".8.3.$首页"><span class="ant-breadcrumb-link" data-reactid=".8.3.$首页.0"><span data-reactid=".8.3.$首页.0.0">首页</span></span><span class="ant-breadcrumb-separator" data-reactid=".8.3.$首页.1">/</span></span></div></div></div>
+    <script>mountNode = document.getElementById('components-breadcrumb-demo-router');</script>
+    <script>(function(){'use strict';
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _antd = require('antd');
+
+var ReactRouter = require('react-router');
+var Router = ReactRouter.Router;
+var Route = ReactRouter.Route;
+var Link = ReactRouter.Link;
+
+var Apps = React.createClass({
+  displayName: 'Apps',
+  render: function render() {
+    return React.createElement(
+      'ul',
+      { className: 'app-list' },
+      React.createElement(
+        'li',
+        null,
+        React.createElement(
+          Link,
+          { to: '/apps/1' },
+          '应用1'
+        )
+      ),
+      React.createElement(
+        'li',
+        null,
+        React.createElement(
+          Link,
+          { to: '/apps/2' },
+          '应用2'
+        )
+      )
+    );
+  }
+});
+
+var Home = React.createClass({
+  displayName: 'Home',
+  render: function render() {
+    return React.createElement(
+      'div',
+      null,
+      React.createElement(
+        'div',
+        { className: 'demo-nav' },
+        React.createElement(
+          Link,
+          { to: '/' },
+          '首页'
+        ),
+        React.createElement(
+          Link,
+          { to: '/apps' },
+          '应用列表'
+        )
+      ),
+      this.props.children || 'Home',
+      React.createElement(
+        'div',
+        { style: {
+            marginBottom: 15,
+            marginTop: 15,
+            paddingBottom: 15,
+            borderBottom: '1px dashed #ccc'
+          } },
+        '点击上面的导航切换页面，面包屑在下面：'
+      ),
+      React.createElement(_antd.Breadcrumb, _extends({}, this.props, { router: ReactRouter }))
+    );
+  }
+});
+
+ReactDOM.render(React.createElement(
+  Router,
+  null,
+  React.createElement(
+    Route,
+    { name: 'home', breadcrumbName: '首页', path: '/', component: Home },
+    React.createElement(
+      Route,
+      { name: 'apps', breadcrumbName: '应用列表', path: 'apps', component: Apps },
+      React.createElement(Route, { name: 'app', breadcrumbName: '应用:id', path: ':id' })
+    )
+  )
+), mountNode);})()</script><style>
+.demo-nav {
+  height: 30px;
+  line-height: 30px;
+  margin-bottom: 15px;
+  background: #f8f8f8;
+}
+.demo-nav a {
+  line-height: 30px;
+  padding: 0 10px;
+}
+.app-list {
+  margin-top: 15px;
+}
+</style>
+
+  </div>
+  <div class="code-box-meta markdown">
+    <div class="code-box-title">
+      <a href="http://ant.design/components/breadcrumb/#demo-router">路由</a>
+    </div>
+    <p>和 <code>react-router@1.x</code> 进行结合使用。</p>
+    <span class="collapse anticon anticon-circle-o-right" unselectable="none" style="-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;"></span>
+  </div>
+<div class="highlight"><pre><code class="javascript"><span class="hljs-keyword">const</span> ReactRouter = <span class="hljs-built_in">require</span>(<span class="hljs-string">'react-router'</span>);
+<span class="hljs-keyword">let</span> { Router, Route, Link } = ReactRouter;
+<span class="hljs-keyword">import</span> { Breadcrumb } <span class="hljs-keyword">from</span> <span class="hljs-string">'antd'</span>;
+
+<span class="hljs-keyword">const</span> Apps = React.createClass({
+  render() {
+    <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">className</span>=<span class="hljs-value">"app-list"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">Link</span> <span class="hljs-attribute">to</span>=<span class="hljs-value">"/apps/1"</span>&gt;</span>应用1<span class="hljs-tag">&lt;/<span class="hljs-title">Link</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">Link</span> <span class="hljs-attribute">to</span>=<span class="hljs-value">"/apps/2"</span>&gt;</span>应用2<span class="hljs-tag">&lt;/<span class="hljs-title">Link</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>;</span>
+  }
+});
+
+<span class="hljs-keyword">const</span> Home = React.createClass({
+  render() {
+    <span class="hljs-keyword">return</span> (<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">className</span>=<span class="hljs-value">"demo-nav"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Link</span> <span class="hljs-attribute">to</span>=<span class="hljs-value">"/"</span>&gt;</span>首页<span class="hljs-tag">&lt;/<span class="hljs-title">Link</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Link</span> <span class="hljs-attribute">to</span>=<span class="hljs-value">"/apps"</span>&gt;</span>应用列表<span class="hljs-tag">&lt;/<span class="hljs-title">Link</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      {this.props.children || 'Home'}
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">{{</span>
+        <span class="hljs-attribute">marginBottom:</span> <span class="hljs-attribute">15</span>,
+        <span class="hljs-attribute">marginTop:</span> <span class="hljs-attribute">15</span>,
+        <span class="hljs-attribute">paddingBottom:</span> <span class="hljs-attribute">15</span>,
+        <span class="hljs-attribute">borderBottom:</span> '<span class="hljs-attribute">1px</span> <span class="hljs-attribute">dashed</span> #<span class="hljs-attribute">ccc</span>'
+      }}&gt;</span>点击上面的导航切换页面，面包屑在下面：<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Breadcrumb</span> {<span class="hljs-attribute">...this.props</span>} <span class="hljs-attribute">router</span>=<span class="hljs-value">{ReactRouter}</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>)</span>;
+  }
+});
+
+ReactDOM.render((
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">Router</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Route</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"home"</span> <span class="hljs-attribute">breadcrumbName</span>=<span class="hljs-value">"首页"</span> <span class="hljs-attribute">path</span>=<span class="hljs-value">"/"</span> <span class="hljs-attribute">component</span>=<span class="hljs-value">{Home}</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Route</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"apps"</span> <span class="hljs-attribute">breadcrumbName</span>=<span class="hljs-value">"应用列表"</span> <span class="hljs-attribute">path</span>=<span class="hljs-value">"apps"</span> <span class="hljs-attribute">component</span>=<span class="hljs-value">{Apps}</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Route</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"app"</span> <span class="hljs-attribute">breadcrumbName</span>=<span class="hljs-value">"应用:id"</span> <span class="hljs-attribute">path</span>=<span class="hljs-value">":id"</span> /&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">Route</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">Route</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">Router</span>&gt;</span>
+)</span>, mountNode);</code></pre></div></div>
+  </div>
+  <div class="code-boxes-col-2-1"><div class="code-box" id="demo-withicon">
+  <div class="code-box-demo">
+    <div id="components-breadcrumb-demo-withicon"><div class="ant-breadcrumb" data-reactid=".9"><span data-reactid=".9.$0/=10"><a class="ant-breadcrumb-link" href="" data-reactid=".9.$0/=10.0"><i class=" anticon anticon-home" data-reactid=".9.$0/=10.0.0"></i></a><span class="ant-breadcrumb-separator" data-reactid=".9.$0/=10.1">/</span></span><span data-reactid=".9.$1/=11"><a class="ant-breadcrumb-link" href="" data-reactid=".9.$1/=11.0"><i class=" anticon anticon-user" data-reactid=".9.$1/=11.0.0"></i><span data-reactid=".9.$1/=11.0.1">应用列表</span></a><span class="ant-breadcrumb-separator" data-reactid=".9.$1/=11.1">/</span></span><span data-reactid=".9.$2/=12"><span class="ant-breadcrumb-link" data-reactid=".9.$2/=12.0">应用</span><span class="ant-breadcrumb-separator" data-reactid=".9.$2/=12.1">/</span></span></div></div>
+    <script>mountNode = document.getElementById('components-breadcrumb-demo-withicon');</script>
+    <script>(function(){"use strict";
+
+var _antd = require("antd");
+
+ReactDOM.render(React.createElement(
+  _antd.Breadcrumb,
+  null,
+  React.createElement(
+    _antd.Breadcrumb.Item,
+    { href: "" },
+    React.createElement(_antd.Icon, { type: "home" })
+  ),
+  React.createElement(
+    _antd.Breadcrumb.Item,
+    { href: "" },
+    React.createElement(_antd.Icon, { type: "user" }),
+    "应用列表"
+  ),
+  React.createElement(
+    _antd.Breadcrumb.Item,
+    null,
+    "应用"
+  )
+), mountNode);})()</script>
+  </div>
+  <div class="code-box-meta markdown">
+    <div class="code-box-title">
+      <a href="http://ant.design/components/breadcrumb/#demo-withicon">带有图标的</a>
+    </div>
+    <p>图标放在文字前面。</p>
+    <span class="collapse anticon anticon-circle-o-right" unselectable="none" style="-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;"></span>
+  </div>
+<div class="highlight"><pre><code class="javascript"><span class="hljs-keyword">import</span> { Breadcrumb, Icon } <span class="hljs-keyword">from</span> <span class="hljs-string">'antd'</span>;
+
+ReactDOM.render(
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">Breadcrumb</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Breadcrumb.Item</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">""</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Icon</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"home"</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">Breadcrumb.Item</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Breadcrumb.Item</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">""</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Icon</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"user"</span> /&gt;</span>
+      应用列表
+    <span class="hljs-tag">&lt;/<span class="hljs-title">Breadcrumb.Item</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Breadcrumb.Item</span>&gt;</span>
+      应用
+    <span class="hljs-tag">&lt;/<span class="hljs-title">Breadcrumb.Item</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">Breadcrumb</span>&gt;</span>
+, mountNode);</span></code></pre></div></div><div class="code-box" id="demo-separator">
+  <div class="code-box-demo">
+    <div id="components-breadcrumb-demo-separator"><div class="ant-breadcrumb" data-reactid=".a"><span data-reactid=".a.$0/=10"><span class="ant-breadcrumb-link" data-reactid=".a.$0/=10.0">首页</span><span class="ant-breadcrumb-separator" data-reactid=".a.$0/=10.1">&gt;</span></span><span data-reactid=".a.$1/=11"><a class="ant-breadcrumb-link" href="" data-reactid=".a.$1/=11.0">应用中心</a><span class="ant-breadcrumb-separator" data-reactid=".a.$1/=11.1">&gt;</span></span><span data-reactid=".a.$2/=12"><a class="ant-breadcrumb-link" href="" data-reactid=".a.$2/=12.0">应用列表</a><span class="ant-breadcrumb-separator" data-reactid=".a.$2/=12.1">&gt;</span></span><span data-reactid=".a.$3/=13"><span class="ant-breadcrumb-link" data-reactid=".a.$3/=13.0">某应用</span><span class="ant-breadcrumb-separator" data-reactid=".a.$3/=13.1">&gt;</span></span></div></div>
+    <script>mountNode = document.getElementById('components-breadcrumb-demo-separator');</script>
+    <script>(function(){"use strict";
+
+var _antd = require("antd");
+
+ReactDOM.render(React.createElement(
+  _antd.Breadcrumb,
+  { separator: ">" },
+  React.createElement(
+    _antd.Breadcrumb.Item,
+    null,
+    "首页"
+  ),
+  React.createElement(
+    _antd.Breadcrumb.Item,
+    { href: "" },
+    "应用中心"
+  ),
+  React.createElement(
+    _antd.Breadcrumb.Item,
+    { href: "" },
+    "应用列表"
+  ),
+  React.createElement(
+    _antd.Breadcrumb.Item,
+    null,
+    "某应用"
+  )
+), mountNode);})()</script>
+  </div>
+  <div class="code-box-meta markdown">
+    <div class="code-box-title">
+      <a href="http://ant.design/components/breadcrumb/#demo-separator">分隔符</a>
+    </div>
+    <p>使用 <code>separator="&gt;"</code> 可以自定义分隔符。</p>
+    <span class="collapse anticon anticon-circle-o-right" unselectable="none" style="-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;"></span>
+  </div>
+<div class="highlight"><pre><code class="javascript"><span class="hljs-keyword">import</span> { Breadcrumb } <span class="hljs-keyword">from</span> <span class="hljs-string">'antd'</span>;
+
+ReactDOM.render(
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">Breadcrumb</span> <span class="hljs-attribute">separator</span>=<span class="hljs-value">"&gt;"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Breadcrumb.Item</span>&gt;</span>首页<span class="hljs-tag">&lt;/<span class="hljs-title">Breadcrumb.Item</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Breadcrumb.Item</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">""</span>&gt;</span>应用中心<span class="hljs-tag">&lt;/<span class="hljs-title">Breadcrumb.Item</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Breadcrumb.Item</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">""</span>&gt;</span>应用列表<span class="hljs-tag">&lt;/<span class="hljs-title">Breadcrumb.Item</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Breadcrumb.Item</span>&gt;</span>某应用<span class="hljs-tag">&lt;/<span class="hljs-title">Breadcrumb.Item</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">Breadcrumb</span>&gt;</span>
+, mountNode);</span></code></pre></div></div>
+  </div>
+</div>
+<ul class="demos-anchor">
+  <li>
+    <a title="基本" href="http://ant.design/components/breadcrumb/#demo-basic">
+      <span>基本</span>
+    </a>
+  </li>
+  <li>
+    <a title="带有图标的" href="http://ant.design/components/breadcrumb/#demo-withicon">
+      <span>带有图标的</span>
+    </a>
+  </li>
+  <li>
+    <a title="路由" href="http://ant.design/components/breadcrumb/#demo-router">
+      <span>路由</span>
+    </a>
+  </li>
+  <li>
+    <a title="分隔符" href="http://ant.design/components/breadcrumb/#demo-separator">
+      <span>分隔符</span>
+    </a>
+  </li>
+</ul>
+  <div class="api-container markdown"><h2 id="api">API<a href="http://ant.design/components/breadcrumb/#api" class="anchor">#</a> </h2><div class="highlight"><pre><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">Breadcrumb</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">Breadcrumb.Item</span>&gt;</span>首页<span class="hljs-tag">&lt;/<span class="hljs-title">Breadcrumb.Item</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">Breadcrumb.Item</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">""</span>&gt;</span>应用中心<span class="hljs-tag">&lt;/<span class="hljs-title">Breadcrumb.Item</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">Breadcrumb.Item</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">""</span>&gt;</span>应用列表<span class="hljs-tag">&lt;/<span class="hljs-title">Breadcrumb.Item</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">Breadcrumb.Item</span>&gt;</span>某应用<span class="hljs-tag">&lt;/<span class="hljs-title">Breadcrumb.Item</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">Breadcrumb</span>&gt;</span></code></pre></div><h3 id="breadcrumb">Breadcrumb<a href="http://ant.design/components/breadcrumb/#breadcrumb" class="anchor">#</a> </h3><table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+<th>类型</th>
+<th>可选值</th>
+<th>默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>router</td>
+<td>可传入 react-router 的实例</td>
+<td>Object</td>
+<td></td>
+<td>-</td>
+</tr>
+<tr>
+<td>routes</td>
+<td>router 的路由栈信息</td>
+<td>Array</td>
+<td></td>
+<td>-</td>
+</tr>
+<tr>
+<td>params</td>
+<td>路由的参数</td>
+<td>Object</td>
+<td></td>
+<td>-</td>
+</tr>
+<tr>
+<td>separator</td>
+<td>分隔符自定义</td>
+<td>String or Element</td>
+<td></td>
+<td>'/'</td>
+</tr>
+</tbody>
+</table><h3 id="breadcrumb-item">Breadcrumb.Item<a href="http://ant.design/components/breadcrumb/#breadcrumb-item" class="anchor">#</a> </h3><table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+<th>类型</th>
+<th>可选值</th>
+<th>默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>href</td>
+<td>链接，如不传则不可点击</td>
+<td>string</td>
+<td></td>
+<td>-</td>
+</tr>
+</tbody>
+</table></div>
+</section>
+
+    </div>
+    <script src="./lib/T1AmXhXg0kXXXXXXXX.js" data-no-instant=""></script>
+    <script data-no-instant="">
+      InstantClick.on('change', function() {
+        InstantClickChangeFns.forEach(function(fn) {
+          fn();
+        });
+      });
+      InstantClick.init();
+    </script>
+  
+<div id="instantclick" style="opacity: 0;"><div id="instantclick-bar" class="instantclick-bar" style="transform: translate(100%);"></div></div></body></html>

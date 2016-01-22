@@ -4,7 +4,7 @@ import Animate from 'rc-animate';
 import Icon from '../icon';
 
 class AntTag extends React.Component {
-  constructor(props) {
+  constructor(props){
     super(props);
 
     this.state = {

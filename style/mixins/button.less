@@ -14,7 +14,7 @@
   }
   &:active,
   &.active {
-    .button-color(shade(@color, 5%); shade(@background, 5%); shade(@background, 5%));
+    .button-color(shade(@color); shade(@background, 5%); shade(@background, 5%));
   }
   &:active,
   &.active {
@@ -55,12 +55,13 @@
   }
 
   // size
-  &-lg > .@{btnClassName} {
+  &-lg > .@{btnClassName}{
     .button-size(@btn-padding-lg; @btn-font-size-lg; @btn-border-radius-lg);
+    min-width:@btn-default-width-lg;
   }
 
   &-sm > .@{btnClassName} {
-    .button-size(@btn-padding-sm; @font-size-base; @btn-border-radius-sm);
+    .button-size(@btn-padding-sm; @font-size-base; @btn-border-radius-sm;);
     > .@{iconfont-css-prefix} {
       font-size: @font-size-base;
     }
@@ -82,6 +83,7 @@
   // outline: none;
   white-space: nowrap;
   line-height: @line-height-base;
+  min-width:@btn-default-width;
   .button-size(@btn-padding-base; @font-size-base; @btn-border-radius-base);
   .user-select(none);
   .transition(all .3s @ease-in-out);
@@ -116,10 +118,12 @@
 
   &-lg {
     .button-size(@btn-padding-lg; @btn-font-size-lg; @btn-border-radius-lg);
+    min-width: @btn-default-width-lg;
   }
 
   &-sm {
     .button-size(@btn-padding-sm; @font-size-base; @btn-border-radius-sm);
+    min-width: @btn-default-width-sm;
   }
 }
 

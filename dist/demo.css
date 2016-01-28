@@ -2149,7 +2149,8 @@ samp {
   border: 1px solid transparent;
   white-space: nowrap;
   line-height: 1.5;
-  min-width: 70px;
+  min-width: 58px;
+  height: 32px;
   padding: 7px 20px 8px 20px;
   font-size: 12px;
   border-radius: 2px;
@@ -2397,6 +2398,8 @@ fieldset[disabled] .ant-btn-dashed.active {
   padding: 0;
   font-size: 14px;
   border-radius: 50%;
+  min-width: auto !important ;
+  min-height: auto !important;
 }
 .ant-btn-circle.ant-btn-lg,
 .ant-btn-circle-outline.ant-btn-lg {
@@ -3662,7 +3665,8 @@ fieldset[disabled] .ant-btn-dashed.active {
   border: 1px solid transparent;
   white-space: nowrap;
   line-height: 1.5;
-  min-width: 70px;
+  min-width: 58px;
+  height: 32px;
   padding: 7px 20px 8px 20px;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -3880,7 +3884,7 @@ fieldset[disabled] .ant-calendar .ant-calendar-ok-btn.active {
   display: inline-block;
   padding: 4px 7px;
   width: 100%;
-  height: 28px;
+  height: 35px;
   cursor: text;
   font-size: 12px;
   line-height: 1.5;
@@ -4345,7 +4349,7 @@ textarea.ant-calendar-time .ant-time-picker-input {
   display: inline-block;
   padding: 4px 7px;
   width: 100%;
-  height: 28px;
+  height: 35px;
   cursor: text;
   font-size: 12px;
   line-height: 1.5;
@@ -5946,7 +5950,7 @@ tr.ant-table-expanded-row:hover {
   display: inline-block;
   padding: 4px 7px;
   width: 100%;
-  height: 28px;
+  height: 35px;
   cursor: text;
   font-size: 12px;
   line-height: 1.5;
@@ -6140,7 +6144,7 @@ label > .anticon {
   display: inline-block;
   padding: 4px 7px;
   width: 100%;
-  height: 28px;
+  height: 35px;
   cursor: text;
   font-size: 12px;
   line-height: 1.5;
@@ -6202,10 +6206,10 @@ textarea.ant-input {
   bottom: 0;
   right: 0;
   z-index: 2;
-  width: 28px;
-  height: 28px;
+  width: 35px;
+  height: 35px;
   font-size: 14px;
-  line-height: 28px;
+  line-height: 35px;
   text-align: center;
   pointer-events: none;
 }
@@ -6414,6 +6418,9 @@ form .ant-calendar-picker {
   border-color: #d9d9d9;
   box-shadow: none;
 }
+.ant-search-input {
+  width: 260px !important;
+}
 .ant-search-input.ant-input-group .ant-input:first-child {
   border-radius: 4px;
 }
@@ -6421,8 +6428,10 @@ form .ant-calendar-picker {
   color: #666;
   background-color: #f4f4f4;
   border-color: #d9d9d9;
+  min-width: auto;
+  width: 40px;
   border-radius: 0 3px 3px 0;
-  margin-left: -30px;
+  margin-left: -42px;
   position: relative;
   border-width: 0 0 0 1px;
   z-index: 2;
@@ -7051,6 +7060,7 @@ fieldset[disabled] .ant-search-input:hover .ant-search-btn-noempty.active {
   position: relative;
   padding: 4px 7px;
   width: 100%;
+  height: 35px;
   cursor: text;
   line-height: 1.5;
   color: #666;

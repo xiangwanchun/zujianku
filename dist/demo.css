@@ -191,7 +191,7 @@ body {
   height: 100%;
 }
 body {
-  font-family: "Microsoft YaHei", "微软雅黑", "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", Arial, sans-serif;
+  font-family: "微软雅黑", "Microsoft YaHei", "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", Arial, sans-serif;
   font-size: 12px;
   line-height: 1.5;
   color: #666;
@@ -8993,8 +8993,6 @@ label.ant-radio-button-disabled.ant-radio-button-checked {
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.17);
   color: #666;
   background: #fff;
-  line-height: 80px;
-  height: 80px;
 }
 .ant-menu-hidden {
   display: none;
@@ -9022,13 +9020,23 @@ label.ant-radio-button-disabled.ant-radio-button-checked {
 .ant-menu-horizontal .ant-menu-item,
 .ant-menu-horizontal .ant-menu-submenu {
   margin-top: -1px;
+  height: 80px;
+  line-height: 80px;
+  margin-right: 5px;
+  min-width: 50px;
+  color: #fff;
+}
+.ant-menu-horizontal {
+  background-color: #3f8aed;
+  font-size: 18px;
 }
 .ant-menu-horizontal > .ant-menu-item-active,
 .ant-menu-horizontal > .ant-menu-submenu .ant-menu-submenu-title:hover {
-  background-color: transparent;
+  background: #9fc5f6;
 }
 .ant-menu-item-selected {
-  color: #3f8aed;
+  color: #fff;
+  background: #b2d0f8;
 }
 .ant-menu-inline,
 .ant-menu-vertical {
@@ -9045,6 +9053,8 @@ label.ant-radio-button-disabled.ant-radio-button-checked {
 .ant-menu-inline .ant-menu-selected,
 .ant-menu-inline .ant-menu-item-selected {
   border-right: 2px solid #3f8aed;
+  background-color: #ecf3fd;
+  color: #3f8aed;
 }
 .ant-menu-submenu-horizontal > .ant-menu {
   top: 100%;
@@ -9150,23 +9160,23 @@ label.ant-radio-button-disabled.ant-radio-button-checked {
   position: relative;
   top: 1px;
   float: left;
-  border-bottom: 2px solid transparent;
+  /* border-bottom: 2px solid transparent; */
 }
 .ant-menu-horizontal > .ant-menu-item-active,
 .ant-menu-horizontal > .ant-menu-submenu-active,
 .ant-menu-horizontal > .ant-menu-item-selected,
 .ant-menu-horizontal > .ant-menu-submenu-selected {
-  border-bottom: 2px solid #3f8aed;
-  color: #3f8aed;
+  /*  border-bottom: 2px solid @primary-color; */
+  color: #fff;
 }
 .ant-menu-horizontal > .ant-menu-item > a,
 .ant-menu-horizontal > .ant-menu-submenu > a {
   display: block;
-  color: #666;
+  color: #fff;
 }
 .ant-menu-horizontal > .ant-menu-item > a:hover,
 .ant-menu-horizontal > .ant-menu-submenu > a:hover {
-  color: #3f8aed;
+  color: #fff;
 }
 .ant-menu-horizontal > .ant-menu-item > a:before,
 .ant-menu-horizontal > .ant-menu-submenu > a:before,
